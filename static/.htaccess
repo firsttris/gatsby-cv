@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www\.teufel-it\.de$ [NC]
+    RewriteRule (.*) https://teufel-it.de%{REQUEST_URI} [L,R=301]
+</IfModule>
