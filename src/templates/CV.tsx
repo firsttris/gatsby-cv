@@ -7,7 +7,7 @@ import { Header } from './../components/Header';
 import { LanguageList } from './../components/LanguageList';
 import { OtherSkillList } from './../components/OtherSkillList';
 import { Project, Props as ProjectProps } from './../components/Project';
-import { Props as SkillProps, ResumeSkill } from './../components/ResumeSkill';
+import { ResumeSkillList } from './../components/ResumeSkillList';
 import { getTranslatedLabel } from './../translations/provider';
 import './CV.css';
 
@@ -80,18 +80,12 @@ export default (props: Props) => (
               <section className="resume-section skills-section mb-5">
                 <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
                 <div className="resume-section-content">
-                  <div className="resume-skill-item">
-                    <h4 className="resume-skills-cat font-weight-bold">Frontend</h4>
-                    <ul className="list-unstyled mb-4">
-                      {props.data.skills.edges[0].node.childSkillsJson.frontend.map(
-                        (skill: SkillProps, index: number) => (
-                          <ResumeSkill key={index} name={skill.name} xpInPercentage={skill.xpInPercentage} />
-                        )
-                      )}
-                    </ul>
-                  </div>
-
-                  <OtherSkillList skills={['devOps', 'docker']} />
+                  <ResumeSkillList
+                    skills={props.data.skills.edges[0].node.childSkillsJson.frontend}
+                    title={'Frontend'}
+                  />
+                  <ResumeSkillList skills={props.data.skills.edges[0].node.childSkillsJson.backend} title={'Backend'} />
+                  <OtherSkillList skills={props.data.skills.edges[0].node.childSkillsJson.others} title={'Others'} />
                 </div>
               </section>
               <section className="resume-section education-section mb-5">
@@ -147,6 +141,16 @@ export default (props: Props) => (
         </div>
       </div>
     </article>
+    <p style={{ textAlign: 'center' }}>
+      <a
+        href="https://github.com/firsttris/gatsby-cv"
+        className="link-unstyled"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Sourcecode on Github
+      </a>
+    </p>
   </div>
 );
 
@@ -173,7 +177,7 @@ export const query = graphql`
         }
       }
     }
-    skills: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "skills" } }) {
+    skills: allFile(filter: { name: { eq: "skills" } }) {
       edges {
         node {
           name
@@ -186,6 +190,7 @@ export const query = graphql`
               name
               xpInPercentage
             }
+            others
           }
         }
       }

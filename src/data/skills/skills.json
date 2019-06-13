@@ -1,6 +1,10 @@
 {
     "frontend": [
         {
+            "name": "Javascript",
+            "xpInPercentage": "95%"
+        },
+        {
             "name": "react",
             "xpInPercentage": "95%"
         },
@@ -29,16 +33,8 @@
             "xpInPercentage": "75%"
         },
         {
-            "name": "HTML",
+            "name": "HTML, CSS, SCSS",
             "xpInPercentage": "95%"
-        },
-        {
-            "name": "CSS",
-            "xpInPercentage": "95%"
-        },
-        {
-            "name": "SCSS",
-            "xpInPercentage": "90%"
         },
         {
             "name": "jQuery",
@@ -78,5 +74,6 @@
             "name": "Phyton",
             "xpInPercentage": "70%"
         }
-    ]
+    ],
+    "others": ["Jira", "Confluence", "Git", "SVN", "devOps", "CI", "TDD", "CleanCode"]
 }
