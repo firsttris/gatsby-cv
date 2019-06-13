@@ -1,10 +1,10 @@
 const path = require(`path`);
 
 module.exports = {
-  // pathPrefix: '/teufel-it-gatsby',
+  pathPrefix: '/gatsby-cv',
   siteMetadata: {
-    title: 'teufel-it',
-    siteUrl: `https://teufel-it.de`
+    title: 'Tristan Teufel CV',
+    siteUrl: `https://firsttris.github.io`
   },
   plugins: [
     'gatsby-plugin-typescript',
@@ -75,7 +75,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: path.join(__dirname, `src`, `data`),
+        path: path.join(__dirname, `src`, `data`, 'projects'),
+        name: 'projects'
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `data`, 'skills'),
+        name: 'skills'
       },
     },
   ]

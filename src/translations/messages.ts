@@ -1,8 +1,8 @@
 export const messages: any = {
   de: {
-    KEY: 'VALUE'
+    CAREER_SUMMARY: 'Karriere-Zusammenfassung'
   },
   en: {
-    KEY: 'VALUE'
+    CAREER_SUMMARY: 'Career Summary'
   }
 };

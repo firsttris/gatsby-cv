@@ -1,4 +1,5 @@
-import { graphql } from 'gatsby';
+// tslint:disable: jsx-no-lambda
+import { graphql, navigate } from 'gatsby';
 import * as React from 'react';
 import { CertificationList } from './../components/CertificationList';
 import { EducationList } from './../components/EducationList';
@@ -6,15 +7,26 @@ import { Header } from './../components/Header';
 import { LanguageList } from './../components/LanguageList';
 import { OtherSkillList } from './../components/OtherSkillList';
 import { Project, Props as ProjectProps } from './../components/Project';
-import { ResumeSkillList } from './../components/ResumeSkillList';
+import { Props as SkillProps, ResumeSkill } from './../components/ResumeSkill';
+import { getTranslatedLabel } from './../translations/provider';
 import './CV.css';
 
 interface Props {
+  location: any;
   data: any;
+  pageContext: any;
 }
+
+const onLanguageClick = (pathname: string) => {
+  const newPathname: string = pathname.includes('/de/')
+    ? pathname.replace('/de/', '/en/')
+    : pathname.replace('/en/', '/de/');
+  navigate(newPathname);
+};
 
 export default (props: Props) => (
   <div className="container">
+    {console.log(props)}
     <article className="resume-wrapper text-center position-relative">
       <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
         <Header
@@ -30,8 +42,13 @@ export default (props: Props) => (
           }}
         />
         <div className="resume-body p-5">
+          <p onClick={() => onLanguageClick(props.location.pathname)} style={{ cursor: 'pointer' }}>
+            {props.pageContext.locale === 'de' ? 'German' : 'English'}
+          </p>
           <section className="resume-section summary-section mb-5">
-            <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">CAREER SUMMARY</h2>
+            <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+              {getTranslatedLabel('CAREER_SUMMARY', props.pageContext.locale)}
+            </h2>
             <div className="resume-section-content">
               <p className="mb-0">
                 Summarise your career here. You can make a PDF version of your resume using our free Sketch template
@@ -50,7 +67,7 @@ export default (props: Props) => (
                 <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
                 <div className="resume-section-content">
                   <div className="resume-timeline position-relative">
-                    {props.data.allFile.edges[0].node.childProjectsJson.projects.map(
+                    {props.data.projects.edges[0].node.childProjectsJson.projects.map(
                       (project: ProjectProps, index: number) => (
                         <Project key={index} {...project} />
                       )
@@ -63,9 +80,16 @@ export default (props: Props) => (
               <section className="resume-section skills-section mb-5">
                 <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
                 <div className="resume-section-content">
-                  <ResumeSkillList title="Frontend" skills={[{ name: 'reactjs', xpInPercentage: '50%' }]} />
-
-                  <ResumeSkillList title="Backend" skills={[{ name: 'nodeJs', xpInPercentage: '50%' }]} />
+                  <div className="resume-skill-item">
+                    <h4 className="resume-skills-cat font-weight-bold">Frontend</h4>
+                    <ul className="list-unstyled mb-4">
+                      {props.data.skills.edges[0].node.childSkillsJson.frontend.map(
+                        (skill: SkillProps, index: number) => (
+                          <ResumeSkill key={index} name={skill.name} xpInPercentage={skill.xpInPercentage} />
+                        )
+                      )}
+                    </ul>
+                  </div>
 
                   <OtherSkillList skills={['devOps', 'docker']} />
                 </div>
@@ -127,8 +151,8 @@ export default (props: Props) => (
 );
 
 export const query = graphql`
-  query MyQuery {
-    allFile(filter: { name: { eq: "projects-de" } }) {
+  query($locale: String!) {
+    projects: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "projects" } }) {
       edges {
         node {
           name
@@ -144,6 +168,23 @@ export const query = graphql`
               technologies
               achievements
               location
+            }
+          }
+        }
+      }
+    }
+    skills: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "skills" } }) {
+      edges {
+        node {
+          name
+          childSkillsJson {
+            frontend {
+              name
+              xpInPercentage
+            }
+            backend {
+              name
+              xpInPercentage
             }
           }
         }
