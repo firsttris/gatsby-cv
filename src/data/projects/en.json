@@ -15,7 +15,21 @@
                 "Created a NodeJs backend with Sequilize SQL and PostGres"
             ],
             "technologies": [
-                "React", "Typescript", "Docker", "Jest", "Webpack", "REST", "NodeJs", "VSCode", "Jira", "Confluence", "Mattermost", "PostGres", "Traefik", "Sequilize"
+                "React",
+                "Typescript",
+                "Jest",
+                "Webpack",
+                "NodeJs",
+                "PostGres",
+                "Docker",
+                "Traefik",
+                "Sequilize",
+                "REST",
+                "Swagger",
+                "OpenAPI",
+                "Git",
+                "Jira",
+                "Confluence"
             ]
         },
         {
@@ -34,7 +48,18 @@
                 "Implemented a webpack job to dynamically inject configuration to the frontend at runtime"
             ],
             "technologies": [
-                "Angular 1.x", "React", "REST", "Docker", "Kubernetes", "NodeJs", "VSCode", "Git", "Jira", "Confluence", "Slack", "Webpack"
+                "Angular 1.x",
+                "React",
+                "REST",
+                "Docker",
+                "Kubernetes",
+                "NodeJs",
+                "Git",
+                "Jira",
+                "Confluence",
+                "Webpack",
+                "Swagger",
+                "OpenAPI"
             ]
         },
         {
@@ -51,10 +76,17 @@
                 "Created intergration tests with postman",
                 "Created new template for Lout (API documentation for HapiJs",
                 "Created a new mongo DB layer with promise support"
-
             ],
             "technologies": [
-                "JavaScript", "NodeJs", "MongoDb", "HapiJs", "Lout", "Lab", "VSCode", "Jira", "Slack"
+                "JavaScript",
+                "NodeJs",
+                "MongoDb",
+                "HapiJs",
+                "Lout",
+                "Lab",
+                "Jira",
+                "Confluence",
+                "Git"
             ]
         },
         {
@@ -72,7 +104,15 @@
                 "Some PHP & Wordpress development"
             ],
             "technologies": [
-                "Angular 1.x", "Webstorm", "JavaScript", "jQuery", "PHP", "Wordpress", "JsPlump", "Git", "BitBucket"
+                "Angular 1.x",
+                "Webstorm",
+                "JavaScript",
+                "jQuery",
+                "PHP",
+                "Wordpress",
+                "JsPlump",
+                "Git",
+                "BitBucket"
             ]
         },
         {
@@ -91,7 +131,13 @@
                 "The InApp Payment achieves about 15$ a quater which is enough to pay developer fee"
             ],
             "technologies": [
-                "Python", "Swift", "Xcode", "Travis CI", "Kodi", "Git", "Github"
+                "Python",
+                "Swift",
+                "Xcode",
+                "Travis CI",
+                "Kodi",
+                "Git",
+                "Github"
             ]
         },
         {
@@ -114,7 +160,16 @@
                 "Solved tickets from jira"
             ],
             "technologies": [
-                "Eclipse", "Maven", "Java", "Java 8", "JUnit", "Confluence", "Jira", "Oracle SQL Developer", "Subversion", "Groovy"
+                "Eclipse",
+                "Maven",
+                "Java",
+                "Java 8",
+                "JUnit",
+                "Confluence",
+                "Jira",
+                "Oracle SQL Developer",
+                "Subversion",
+                "Groovy"
             ]
         },
         {

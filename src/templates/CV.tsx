@@ -50,15 +50,7 @@ export default (props: Props) => (
               {getTranslatedLabel('CAREER_SUMMARY', props.pageContext.locale)}
             </h2>
             <div className="resume-section-content">
-              <p className="mb-0">
-                Summarise your career here. You can make a PDF version of your resume using our free Sketch template
-                here. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum
-                dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-                vel, aliquet nec, vulputate eget.
-              </p>
+              <p className="mb-0" dangerouslySetInnerHTML={{ __html: props.data.summary.html }} />
             </div>
           </section>
           <div className="row">
@@ -67,7 +59,7 @@ export default (props: Props) => (
                 <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
                 <div className="resume-section-content">
                   <div className="resume-timeline position-relative">
-                    {props.data.projects.edges[0].node.childProjectsJson.projects.map(
+                    {props.data.projects.nodes[0].childProjectsJson.projects.map(
                       (project: ProjectProps, index: number) => (
                         <Project key={index} {...project} />
                       )
@@ -80,44 +72,21 @@ export default (props: Props) => (
               <section className="resume-section skills-section mb-5">
                 <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
                 <div className="resume-section-content">
-                  <ResumeSkillList
-                    skills={props.data.skills.edges[0].node.childSkillsJson.frontend}
-                    title={'Frontend'}
-                  />
-                  <ResumeSkillList skills={props.data.skills.edges[0].node.childSkillsJson.backend} title={'Backend'} />
-                  <OtherSkillList skills={props.data.skills.edges[0].node.childSkillsJson.others} title={'Others'} />
+                  <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.frontend} title={'Frontend'} />
+                  <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.backend} title={'Backend'} />
+                  <OtherSkillList skills={props.data.skills.nodes[0].childSkillsJson.others} title={'Others'} />
                 </div>
               </section>
               <section className="resume-section education-section mb-5">
                 <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
                 <div className="resume-section-content">
-                  <EducationList
-                    educations={[
-                      {
-                        titel: 'bachelor',
-                        uni: 'karlsruhe',
-                        from: '2008',
-                        to: '2012'
-                      },
-                      {
-                        titel: 'bachelor',
-                        uni: 'karlsruhe',
-                        from: '2008',
-                        to: '2012'
-                      }
-                    ]}
-                  />
+                  <EducationList educations={props.data.educations.nodes[0].childEducationsJson.educations} />
                 </div>
               </section>
               <section className="resume-section reference-section mb-5">
                 <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Certifications</h2>
                 <div className="resume-section-content">
-                  <CertificationList
-                    certifications={[
-                      { title: 'Oracle ADF', description: 'Some oracle JAva Thing' },
-                      { title: 'FreecodeCamp', description: 'Responsive Web Development Projects' }
-                    ]}
-                  />
+                  <CertificationList certifications={props.data.certs.nodes[0].childCertsJson.certs} />
                 </div>
               </section>
               <section className="resume-section language-section mb-5">
@@ -156,41 +125,67 @@ export default (props: Props) => (
 
 export const query = graphql`
   query($locale: String!) {
+    summary: markdownRemark(frontmatter: { locale: { eq: $locale }, name: { eq: "summary" } }) {
+      html
+      frontmatter {
+        locale
+        name
+      }
+    }
+    certs: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "certs" } }) {
+      nodes {
+        childCertsJson {
+          certs {
+            title
+            description
+          }
+        }
+      }
+    }
     projects: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "projects" } }) {
-      edges {
-        node {
-          name
-          childProjectsJson {
-            id
-            projects {
-              title
-              company
-              description
-              from
-              role
-              to
-              technologies
-              achievements
-              location
-            }
+      nodes {
+        name
+        childProjectsJson {
+          id
+          projects {
+            title
+            company
+            description
+            from
+            role
+            to
+            technologies
+            achievements
+            location
           }
         }
       }
     }
     skills: allFile(filter: { name: { eq: "skills" } }) {
-      edges {
-        node {
-          name
-          childSkillsJson {
-            frontend {
-              name
-              xpInPercentage
-            }
-            backend {
-              name
-              xpInPercentage
-            }
-            others
+      nodes {
+        name
+        childSkillsJson {
+          frontend {
+            name
+            xpInPercentage
+          }
+          backend {
+            name
+            xpInPercentage
+          }
+          others
+        }
+      }
+    }
+    educations: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "educations" } }) {
+      nodes {
+        childEducationsJson {
+          id
+          educations {
+            from
+            titel
+            to
+            uni
           }
         }
       }

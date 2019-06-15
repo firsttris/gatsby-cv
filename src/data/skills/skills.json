@@ -1,50 +1,42 @@
 {
     "frontend": [
         {
-            "name": "Javascript",
-            "xpInPercentage": "95%"
-        },
-        {
-            "name": "react",
-            "xpInPercentage": "95%"
-        },
-        {
-            "name": "redux",
-            "xpInPercentage": "95%"
-        },
-        {
-            "name": "immutable-js",
-            "xpInPercentage": "90%"
-        },
-        {
-            "name": "webpack",
-            "xpInPercentage": "95%"
-        },
-        {
-            "name": "vue",
-            "xpInPercentage": "85%"
-        },
-        {
-            "name": "angular 1.x",
-            "xpInPercentage": "95%"
-        },
-        {
-            "name": "angular next",
-            "xpInPercentage": "75%"
+            "name": "Javascript / Typescript",
+            "xpInPercentage": "100%"
         },
         {
             "name": "HTML, CSS, SCSS",
             "xpInPercentage": "95%"
         },
         {
-            "name": "jQuery",
+            "name": "Webpack",
+            "xpInPercentage": "100%"
+        },
+        {
+            "name": "React",
+            "xpInPercentage": "98%"
+        },
+        {
+            "name": "Redux",
             "xpInPercentage": "95%"
+        },
+        {
+            "name": "Vue",
+            "xpInPercentage": "85%"
+        },
+        {
+            "name": "Angular",
+            "xpInPercentage": "75%"
         }
     ],
     "backend": [
         {
             "name": "NodeJs",
             "xpInPercentage": "95%"
+        },
+        {
+            "name": "Swagger / OpenAPI",
+            "xpInPercentage": "85%"
         },
         {
             "name": "MongoDb",
@@ -75,5 +67,5 @@
             "xpInPercentage": "70%"
         }
     ],
-    "others": ["Jira", "Confluence", "Git", "SVN", "devOps", "CI", "TDD", "CleanCode"]
+    "others": ["Jira", "Confluence", "Git", "SVN", "devOps", "CI", "TDD", "CleanCode", "Linux", "Immutable-js", "jQuery"]
 }

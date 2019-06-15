@@ -71,6 +71,14 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `markdown-pages`),
+        name: `markdown-pages`
+      }
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -84,6 +92,20 @@ module.exports = {
       options: {
         path: path.join(__dirname, `src`, `data`, 'skills'),
         name: 'skills'
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `data`, 'certs'),
+        name: 'certs'
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `data`, 'educations'),
+        name: 'educations'
       },
     },
   ]

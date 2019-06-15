@@ -1,0 +1,12 @@
+{ 
+    "certs": [
+        {
+            "title": "Oracle ADF 11g Implementation Specialist",
+            "description": "Oracle's commercial end-to-end Java EE framework"
+        },
+        {
+            "title": "FreeCodeCamp: Responsive Web Development Projects",
+            "description": "Non-profit organization that consists of an interactive learning web platform"
+        }
+    ]
+}
