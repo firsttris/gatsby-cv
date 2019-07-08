@@ -43,6 +43,10 @@
             "xpInPercentage": "90%"
         },
         {
+            "name": "GraphQL",
+            "xpInPercentage": "80%"
+        },
+        {
             "name": "SQL",
             "xpInPercentage": "90%"
         },
@@ -51,15 +55,11 @@
             "xpInPercentage": "85%"
         },
         {
-            "name": "Java",
+            "name": "Java / Groovy",
             "xpInPercentage": "70%"
         },
         {
             "name": "PHP",
-            "xpInPercentage": "70%"
-        },
-        {
-            "name": "Groovy",
             "xpInPercentage": "70%"
         },
         {

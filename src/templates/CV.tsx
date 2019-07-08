@@ -18,10 +18,7 @@ interface Props {
 }
 
 const onLanguageClick = (pathname: string) => {
-  const newPathname: string = pathname.includes('/de/')
-    ? pathname.replace('/de/', '/en/')
-    : pathname.replace('/en/', '/de/');
-  navigate(newPathname);
+  pathname.includes('/de/') ? navigate('/en/') : navigate('/de/');
 };
 
 export default (props: Props) => (
@@ -36,9 +33,9 @@ export default (props: Props) => (
           email="tristanteufel@gmail.com"
           socialMedia={{
             github: 'github.com/firsttris',
-            linkedin: 'sadsadadasd',
-            website: 'sadasdasdasd',
-            xing: 'asdasdasd'
+            linkedin: 'de.linkedin.com/in/tristanteufel',
+            website: 'teufel-it.de',
+            xing: 'xing.com/profile/Tristan_Teufel'
           }}
         />
         <div className="resume-body p-5">
@@ -56,7 +53,9 @@ export default (props: Props) => (
           <div className="row">
             <div className="col-lg-9">
               <section className="resume-section experience-section mb-5">
-                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
+                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  {getTranslatedLabel('WORK_XP', props.pageContext.locale)}
+                </h2>
                 <div className="resume-section-content">
                   <div className="resume-timeline position-relative">
                     {props.data.projects.nodes[0].childProjectsJson.projects.map(
@@ -70,7 +69,9 @@ export default (props: Props) => (
             </div>
             <div className="col-lg-3">
               <section className="resume-section skills-section mb-5">
-                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
+                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  {getTranslatedLabel('SKILLS', props.pageContext.locale)}
+                </h2>
                 <div className="resume-section-content">
                   <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.frontend} title={'Frontend'} />
                   <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.backend} title={'Backend'} />
@@ -78,30 +79,47 @@ export default (props: Props) => (
                 </div>
               </section>
               <section className="resume-section education-section mb-5">
-                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
+                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  {getTranslatedLabel('EDUCATION', props.pageContext.locale)}
+                </h2>
                 <div className="resume-section-content">
                   <EducationList educations={props.data.educations.nodes[0].childEducationsJson.educations} />
                 </div>
               </section>
               <section className="resume-section reference-section mb-5">
-                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Certifications</h2>
+                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  {getTranslatedLabel('CERTIFICATIONS', props.pageContext.locale)}
+                </h2>
                 <div className="resume-section-content">
                   <CertificationList certifications={props.data.certs.nodes[0].childCertsJson.certs} />
                 </div>
               </section>
               <section className="resume-section language-section mb-5">
-                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Languages</h2>
+                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  {getTranslatedLabel('LANGUAGES', props.pageContext.locale)}
+                </h2>
                 <div className="resume-section-content">
-                  <LanguageList languages={[{ language: 'German', skill: '(native)' }]} />
+                  <LanguageList
+                    languages={[
+                      {
+                        language: getTranslatedLabel('GERMAN', props.pageContext.locale),
+                        skill: getTranslatedLabel('NATIVE', props.pageContext.locale)
+                      },
+                      {
+                        language: getTranslatedLabel('ENGLISH', props.pageContext.locale),
+                        skill: getTranslatedLabel('FLUENT', props.pageContext.locale)
+                      }
+                    ]}
+                  />
                 </div>
               </section>
               <section className="resume-section interests-section mb-5">
-                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
+                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  {getTranslatedLabel('INTEREST', props.pageContext.locale)}
+                </h2>
                 <div className="resume-section-content">
                   <ul className="list-unstyled">
-                    <li className="mb-1">Climbing</li>
-                    <li className="mb-1">Snowboarding</li>
-                    <li className="mb-1">Cooking</li>
+                    <li className="mb-1">{getTranslatedLabel('WATERSPORT', props.pageContext.locale)}</li>
                   </ul>
                 </div>
               </section>
