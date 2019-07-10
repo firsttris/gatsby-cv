@@ -12,11 +12,11 @@ interface Props {
 }
 
 export const Header = (props: Props) => (
-  <header className="resume-header pt-4 pt-md-0">
-    <div className="media flex-column flex-md-row">
+  <header className="resume-header pt-4 pt-lg-0">
+    <div className="media flex-column flex-lg-row">
       <img className="mr-3 img-fluid picture mx-auto" src={profil} alt="" />
       <div
-        className="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0"
+        className="media-body p-4 d-flex flex-column flex-lg-row mx-auto mx-lg-0"
         style={{ backgroundImage: `url(${Paper})`, color: 'lightgrey' }}
       >
         <div className="primary-info">

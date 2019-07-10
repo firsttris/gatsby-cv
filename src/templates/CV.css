@@ -25,14 +25,8 @@
     max-width: 1000px;
   }
   
-  .resume-header {
-    background: #434E5E;
-    color: rgba(255, 255, 255, 0.9);
-    height: 220px;
-  }
-  
   .resume-header .picture {
-    width: 220px;
+    width: 219px;
   }
   
   .resume-header .name {
@@ -185,7 +179,7 @@
     color: #fb866a;
   }
   
-  @media (max-width: 767.98px) {
+  @media (max-width: 769px) {
     .resume-wrapper {
       padding-top: 0;
     }
@@ -195,5 +189,8 @@
     .resume-header .picture {
       width: 120px;
       border-radius: 4px;
+    }
+    .media-body {
+      width: 100%
     }
   }
