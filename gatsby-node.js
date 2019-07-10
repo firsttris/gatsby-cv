@@ -10,7 +10,7 @@ exports.createPages = async ({ page, actions }) => {
 
   const locales = ['de', 'en'];
 
-  const types = ['work', 'opensource'];
+  const types = ['', 'work', 'opensource'];
 
   router.forEach(route => {
     locales.forEach(locale => {

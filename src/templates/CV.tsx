@@ -36,20 +36,22 @@ const saveScrollPosition = () => {
   }
 };
 
-const onLanguageClick = (pathname: string) => {
-  saveScrollPosition();
-  pathname.includes('/de/') ? navigate(pathname.replace('de', 'en')) : navigate(pathname.replace('en', 'de'));
-};
-
 export default (props: Props) => {
   initLocale(props.pageContext.locale);
+
+  const isWorkSelected = () => {
+    return (
+      (!props.location.pathname.includes('work') && !props.location.pathname.includes('opensource')) ||
+      props.location.pathname.includes('work')
+    );
+  };
+
+  const [selectedItem, setSelectedItem] = React.useState(isWorkSelected() ? 0 : 1);
   const [items, setItems] = React.useState([
     {
       name: getTranslatedLabel('WORK_XP'),
       path: 'work',
-      checked:
-        (!props.location.pathname.includes('work') && !props.location.pathname.includes('opensource')) ||
-        props.location.pathname.includes('work'),
+      checked: isWorkSelected(),
       icon: 'fas fa-briefcase'
     },
     {
@@ -63,6 +65,13 @@ export default (props: Props) => {
   React.useEffect(() => {
     setTimeout(() => scrollToY(), 100);
   });
+
+  const onLanguageClick = (pathname: string) => {
+    saveScrollPosition();
+    pathname.includes('/de/')
+      ? navigate(`/en/${items[selectedItem].path}`)
+      : navigate(`/de/${items[selectedItem].path}`);
+  };
 
   return (
     <div className="container">
@@ -106,6 +115,7 @@ export default (props: Props) => {
                   items={items}
                   onClick={index => {
                     saveScrollPosition();
+                    setSelectedItem(index);
                     navigate(`/${props.pageContext.locale}/${items[index].path}`);
                   }}
                 />
@@ -339,3 +349,4 @@ export const query = graphql`
     }
   }
 `;
+
