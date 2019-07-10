@@ -1,8 +1,14 @@
 import { messages } from './messages';
 
-export const getTranslatedLabel = (key: string, lang: string): string => {
-  if (messages[lang] && messages[lang][key]) {
-    return messages[lang][key];
+let loca = 'en';
+
+export const initLocale = (lang: string) => {
+  loca = lang;
+};
+
+export const getTranslatedLabel = (key: string): string => {
+  if (messages[loca] && messages[loca][key]) {
+    return messages[loca][key];
   }
   return `key-not-found [${key}]`;
 };
