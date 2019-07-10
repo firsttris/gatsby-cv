@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+const Paper = require('../../src/assets/images/backgrounds/paper.png');
+
 export interface Props {
   name: string;
   xpInPercentage: string;
@@ -10,9 +12,9 @@ export const ResumeSkill = (props: Props) => (
     <div className="resume-skill-name">{props.name}</div>
     <div className="progress resume-progress">
       <div
-        className="progress-bar theme-progress-bar-dark"
+        className="progress-bar"
         role="progressbar"
-        style={{ width: props.xpInPercentage }}
+        style={{ width: props.xpInPercentage, backgroundImage: `url(${Paper})` }}
       />
     </div>
   </li>

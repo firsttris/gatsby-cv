@@ -11,6 +11,8 @@ import { ResumeSkillList } from './../components/ResumeSkillList';
 import { getTranslatedLabel, initLocale } from './../translations/provider';
 import './CV.css';
 
+const Lines = require('./../assets/images/backgrounds/lines.png');
+
 interface Props {
   location: any;
   data: any;
@@ -39,7 +41,7 @@ export default (props: Props) => (
             xing: 'xing.com/profile/Tristan_Teufel'
           }}
         />
-        <div className="resume-body p-5">
+        <div className="resume-body p-5" style={{ backgroundImage: `url(${Lines})`}}>
           <p onClick={() => onLanguageClick(props.location.pathname)} style={{ cursor: 'pointer' }}>
             {props.pageContext.locale === 'de' ? 'German' : 'English'}
           </p>
@@ -51,6 +53,22 @@ export default (props: Props) => (
               <p className="mb-0" dangerouslySetInnerHTML={{ __html: props.data.summary.html }} />
             </div>
           </section>
+          <div className="row">
+          <ul className="nav nav-tabs">
+  <li className="nav-item">
+    <a className="nav-link active" href="#">Active</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link" href="#">Link</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link" href="#">Link</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+</div>
           <div className="row">
             <div className="col-lg-9">
               <section className="resume-section experience-section mb-5">

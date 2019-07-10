@@ -2,6 +2,8 @@ import * as React from 'react';
 import { AchievementList } from './AchievementList';
 import { TechnologyList } from './TechnologyList';
 
+const Paper = require('../../src/assets/images/backgrounds/paper.png');
+
 export interface Props {
   title: string;
   role: string;
@@ -28,7 +30,7 @@ export const Project = (props: Props) => (
         {props.from} - {props.to}{' '}
         <span
           style={{
-            backgroundColor: '#434E5E',
+            backgroundImage: `url(${Paper})`,
             color: 'white',
             padding: '0px 7px',
             borderRadius: '25px',

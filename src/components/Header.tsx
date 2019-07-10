@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Props as socialMediaProps, SocialMedia } from './SocialMedia';
 const profil = require('../../src/assets/images/profil.png');
+const Paper = require('../../src/assets/images/backgrounds/paper.png');
 
 interface Props {
   name: string;
@@ -16,7 +17,7 @@ export const Header = (props: Props) => (
       <img className="mr-3 img-fluid picture mx-auto" src={profil} alt="" style={{ height: '216px' }} />
       <div
         className="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0"
-        style={{ backgroundColor: '#434E5E', color: 'lightgrey' }}
+        style={{ backgroundImage: `url(${Paper})`, color: 'lightgrey' }}
       >
         <div className="primary-info">
           <h1 className="name mt-0 mb-1 text-white text-uppercase text-uppercase">{props.name}</h1>

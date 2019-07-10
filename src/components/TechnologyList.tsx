@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+const Paper = require('../../src/assets/images/backgrounds/paper.png');
+
 export interface Props {
   technologies: string[];
 }
@@ -10,7 +12,7 @@ export const TechnologyList = (props: Props) => (
     <ul className="list-inline">
       {props.technologies.map((tech: string, index: number) => (
         <li className="list-inline-item" key={index}>
-          <span className="badge badge-primary badge-pill" style={{ backgroundColor: '#434E5E' }}>
+          <span className="badge badge-primary badge-pill" style={{ backgroundImage: `url(${Paper})`, fontWeight: 'normal' }}>
             <a
               href={`http://google.com/search?q=${tech}`}
               target="_blank"
