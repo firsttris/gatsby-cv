@@ -26,6 +26,7 @@ const onLanguageClick = (pathname: string) => {
 };
 
 export default (props: Props) => {
+  initLocale(props.pageContext.locale);
   const [items, setItems] = React.useState([
     { name: getTranslatedLabel('WORK_XP'), checked: true, icon: 'fas fa-briefcase' },
     { name: getTranslatedLabel('OPENSOURCE'), checked: false, icon: 'fab fa-github' }
@@ -33,8 +34,6 @@ export default (props: Props) => {
 
   return (
     <div className="container">
-      {console.log(props)}
-      {initLocale(props.pageContext.locale)}
       <article className="resume-wrapper text-center position-relative">
         <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
           <Header
