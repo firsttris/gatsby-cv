@@ -30,10 +30,10 @@
             "from": "12/2017",
             "to": "today",
             "location": "Buehl/DE",
-            "description": "Simple way to run or debug a single or multiple Jest-Tests from context menu. As it is possible in IntelliJ / Webstorm",
+            "description": "Simple way to run or debug a single or multiple Jest tests from context menu. As it is possible in IntelliJ / Webstorm",
             "achievements": [
                 "Created a VSCode Addon with Typescript",
-                "Runs Jest Tests from Context & Command Menu",
+                "Runs Jest tests from context & command menu",
                 "17.782 active installs",
                 "5 star rating in Visual Studio Marketplace",
                 "11 stars, 11 contributors"
@@ -60,7 +60,7 @@
                 "Set up a Travis CI job which regularly re-builds the kodi-addon with a recent YoutubeDL version",
                 "Developed a native iOS App with Swift which uses the integrated share option to send links to Kodi",
                 "Added an InApp Payment for multiple hosts",
-                "The InApp Payment achieves about 15$ a quater which is enough to pay the developer fee",
+                "The InApp Payment achieves about 15$ a quater, which is enough to pay the developer fee",
                 "Two other developers created Apps which make use of my python plugin (see Github Page)",
                 "23 stars, 5 contributors"
             ],
