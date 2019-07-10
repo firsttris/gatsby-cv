@@ -120,31 +120,6 @@
             ]
         },
         {
-            "title": "SendToKodi iOS App",
-            "role": "Lead Developer",
-            "company": "Teufel-IT",
-            "from": "01/2016",
-            "to": "02/2016",
-            "location": "Buehl/DE",
-            "description": "SendToKodi is a iOS App which resolves various video streams using youtube-dl to play them on Kodi",
-            "achievements": [
-                "Created a kodi-addon (python) which extracts video streams from website urls with YoutubeDL",
-                "Set up a Travis CI job which regularly re-builds the kodi-addon with a recent YoutubeDL version",
-                "Developed a native iOS App with Swift which uses the integrated share option to send links to Kodi",
-                "Added an InApp Payment for multiple hosts",
-                "The InApp Payment achieves about 15$ a quater which is enough to pay the developer fee"
-            ],
-            "technologies": [
-                "Python",
-                "Swift",
-                "Xcode",
-                "Travis CI",
-                "Kodi",
-                "Git",
-                "Github"
-            ]
-        },
-        {
             "title": "Development of a debt collection software system",
             "role": "Developer",
             "company": "arvato Financial Solutions - Bertelsmann SE & Co. KGaA",

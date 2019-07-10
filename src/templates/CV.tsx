@@ -171,6 +171,7 @@ export default (props: Props) => {
                   <div className="resume-section-content">
                     <ul className="list-unstyled">
                       <li className="mb-1">{getTranslatedLabel('WATERSPORT')}</li>
+                      <li className="mb-1">{getTranslatedLabel('HOMEAUTOMATION')}</li>
                     </ul>
                   </div>
                 </section>
