@@ -68,6 +68,7 @@ export default (props: Props) => (
                 </div>
               </section>
             </div>
+
             <div className="col-lg-3">
               <section className="resume-section skills-section mb-5">
                 <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
@@ -126,6 +127,24 @@ export default (props: Props) => (
               </section>
             </div>
           </div>
+          <div className="row">
+          <div className="col-lg-9">
+              <section className="resume-section experience-section mb-5">
+                <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                  {getTranslatedLabel('OPENSOURCE')}
+                </h2>
+                <div className="resume-section-content">
+                  <div className="resume-timeline position-relative">
+                    {props.data.opensource.nodes[0].childOpensourceJson.projects.map(
+                      (project: ProjectProps, index: number) => (
+                        <Project key={index} {...project} />
+                      )
+                    )}
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     </article>
@@ -157,6 +176,26 @@ export const query = graphql`
           certs {
             title
             description
+          }
+        }
+      }
+    }
+    opensource: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "opensource" } }) {
+      nodes {
+        name
+        childOpensourceJson {
+          id
+          projects {
+            title
+            company
+            description
+            from
+            role
+            url
+            to
+            technologies
+            achievements
+            location
           }
         }
       }

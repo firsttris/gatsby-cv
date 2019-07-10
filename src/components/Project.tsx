@@ -5,6 +5,7 @@ import { TechnologyList } from './TechnologyList';
 export interface Props {
   title: string;
   role: string;
+  url: string;
   company: string;
   from: string;
   to: string;
@@ -22,6 +23,7 @@ export const Project = (props: Props) => (
         <div className="resume-company-name ml-auto">{props.company}</div>
       </div>
       {props.role}
+      <a href={props.url} rel="external nofollow" className="link-unstyled" target="_blank">{props.url}</a>
       <div className="resume-position-time">
         {props.from} - {props.to}{' '}
         <span

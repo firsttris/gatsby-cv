@@ -11,7 +11,8 @@ export const messages: any = {
     GERMAN: 'Deutsch',
     ENGLISH: 'Englisch',
     NATIVE: 'Muttersprache',
-    FLUENT: 'Fließend'
+    FLUENT: 'Fließend',
+    OPENSOURCE: 'Open Source'
   },
   en: {
     CAREER_SUMMARY: 'Career Summary',
@@ -25,6 +26,7 @@ export const messages: any = {
     GERMAN: 'German',
     ENGLISH: 'English',
     NATIVE: 'Native',
-    FLUENT: 'Fluent'
+    FLUENT: 'Fluent',
+    OPENSOURCE: 'Open Source'
   }
 };

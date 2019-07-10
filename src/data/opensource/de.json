@@ -1,97 +1,66 @@
 {
     "projects": [
         {
-            "title": "Web Application Development for Daimler projects",
+            "title": "Typescript / React for Etecture",
+            "url": "",
             "role": "Lead Developer",
             "company": "ETECTURE GmbH",
             "from": "10/2017",
             "to": "06/2019",
             "location": "Karlsruhe/DE",
-            "description": "Taking development lead for multiple web projects (backend and frontend) for ETECUTREs customer Daimler.",
+            "description": "ETECTURE GmbH is a Software development company in Karlsruhe. Supporting and taking development lead in various customer projects",
             "achievements": [
                 "Created a new build system (webpack)",
-                "Created a new starter kit for react",
-                "Set up a Docker Cluster with reverse proxy (traefik)",
-                "Developed a NodeJs backend with Sequilize SQL and PostGres",
-                "Set up OpenAPI with SwaggerUI in NodeJs"
+                "Created a new starter kit",
+                "Created a docker Cluster with reverse proxy (traefik)",
+                "Created a NodeJs backend with Sequilize SQL and PostGres"
             ],
             "technologies": [
-                "React",
-                "Typescript",
-                "Jest",
-                "Webpack",
-                "NodeJs",
-                "PostGres",
-                "Docker",
-                "Traefik",
-                "Sequilize",
-                "REST",
-                "Swagger",
-                "OpenAPI",
-                "Git",
-                "Jira",
-                "Confluence"
+                "React", "Typescript", "Docker", "Jest", "Webpack", "REST", "NodeJs", "VSCode", "Jira", "Confluence", "Mattermost", "PostGres", "Traefik", "Sequilize"
             ]
         },
         {
-            "title": "Developing a gaming platform",
+            "title": "NodeJs / React for Gameforge",
+            "url": "",
             "role": "Developer",
             "company": "Gameforge 4D GmbH",
             "from": "05/2017",
             "to": "09/2017",
             "location": "Karlsruhe/DE",
-            "description": "Working together with Gameforge, one of the biggest game publishers in Europe, to create a gaming platform.",
+            "description": "Gameforge 4D is one of the biggest game publisher in Europe. Working together with Gameforge to create their new steam competitor.",
             "achievements": [
                 "Created middleware and microservices",
-                "Set up Docker scripts",
-                "Implemented a global logging solution for microservices in a container environment",
+                "Created Docker scripts",
+                "Implemented a global logging solution for microservices in container environment",
                 "PoC for migrating their web app from angular 1.x to react",
-                "Set up a webpack job to dynamically inject configuration to the frontend at runtime"
+                "Implemented a webpack job to dynamically inject configuration to the frontend at runtime"
             ],
             "technologies": [
-                "Angular 1.x",
-                "React",
-                "REST",
-                "Docker",
-                "Kubernetes",
-                "NodeJs",
-                "Git",
-                "Jira",
-                "Confluence",
-                "Webpack",
-                "Swagger",
-                "OpenAPI"
+                "Angular 1.x", "React", "REST", "Docker", "Kubernetes", "NodeJs", "VSCode", "Git", "Jira", "Confluence", "Slack", "Webpack"
             ]
         },
         {
-            "title": "Backend Development of an appointment scheduling system",
+            "title": "NodeJs Development for Timify",
             "role": "Developer",
             "company": "Termin App GmbH (Timify)",
             "from": "01/2017",
             "to": "04/2017",
             "location": "Munich/DE",
-            "description": "Improving the microservices of Timify, an appointment scheduling system, as well as writing unit and integration tests and building templates for their automatic API documentation.",
+            "description": "Timify is customer appointment manager for small businesses. I was helping on improving their microservices. Created unit-tests with Lab (HapiJs) and integration-tests with Postman. I created new templates for their automatic API-Documentation with Lout.",
             "achievements": [
                 "Refactored microservices",
-                "Wrote unit-tests with Lab",
-                "Wrote intergration tests with postman",
-                "Created new template for Lout (API documentation for HapiJs)",
-                "Developed a new mongo DB layer with promise support"
+                "Created unit-tests with Lab",
+                "Created intergration tests with postman",
+                "Created new template for Lout (API documentation for HapiJs",
+                "Created a new mongo DB layer with promise support"
+
             ],
             "technologies": [
-                "JavaScript",
-                "NodeJs",
-                "MongoDb",
-                "HapiJs",
-                "Lout",
-                "Lab",
-                "Jira",
-                "Confluence",
-                "Git"
+                "JavaScript", "NodeJs", "MongoDb", "HapiJs", "Lout", "Lab", "VSCode", "Jira", "Slack"
             ]
         },
         {
-            "title": "Angular 1.x Development",
+            "title": "Angular 1.x Development for Cyber Manufaktur",
             "role": "Developer",
             "company": "Cyber Manufaktur GmbH",
             "from": "03/2016",
@@ -105,15 +74,7 @@
                 "Some PHP & Wordpress development"
             ],
             "technologies": [
-                "Angular 1.x",
-                "Webstorm",
-                "JavaScript",
-                "jQuery",
-                "PHP",
-                "Wordpress",
-                "JsPlump",
-                "Git",
-                "BitBucket"
+                "Angular 1.x", "Webstorm", "JavaScript", "jQuery", "PHP", "Wordpress", "JsPlump", "Git", "BitBucket"
             ]
         },
         {
@@ -123,26 +84,20 @@
             "from": "01/2016",
             "to": "02/2016",
             "location": "Buehl/DE",
-            "description": "SendToKodi is a iOS App which resolves various video streams using youtube-dl to play them on Kodi",
+            "description": "SendToKodi is a iOS App which resolves various video streams using youtube-dl to play them on kodi",
             "achievements": [
-                "Created a kodi-addon (python) which extracts video streams from website urls with YoutubeDL",
-                "Set up a Travis CI job which regularly re-builds the kodi-addon with a recent YoutubeDL version",
-                "Developed a native iOS App with Swift which uses the integrated share option to send links to Kodi",
-                "Added an InApp Payment for multiple hosts",
-                "The InApp Payment achieves about 15$ a quater which is enough to pay the developer fee"
+                "Created a kodi-addon (python) which extracts video stream from websites urls with YoutubeDL",
+                "Created a Travis CI job which regularly re-builds the kodi-addon with a recent YoutubeDL version",
+                "Created a native iOS App with Swift which uses the integrated share option to send links to Kodi",
+                "Created a InApp Payment for multiple Hosts",
+                "The InApp Payment achieves about 15$ a quater which is enough to pay developer fee"
             ],
             "technologies": [
-                "Python",
-                "Swift",
-                "Xcode",
-                "Travis CI",
-                "Kodi",
-                "Git",
-                "Github"
+                "Python", "Swift", "Xcode", "Travis CI", "Kodi", "Git", "Github"
             ]
         },
         {
-            "title": "Development of an debt collection software system",
+            "title": "Java 8 Development with Arvato Bertelsmann",
             "role": "Developer",
             "company": "arvato Financial Solutions - Bertelsmann SE & Co. KGaA",
             "from": "01/2015",
@@ -154,23 +109,14 @@
                 "Requirements engineering",
                 "Schema changes in Oracle SQL",
                 "Test driven development",
-                "Wrote unit tests with JUnit",
+                "Created unit tests with JUnit",
                 "Created mappings",
                 "Created Groovy scripts for advanced data transformation",
-                "Wrote documentation in Confluence",
-                "Solved tickets from Jira"
+                "Created documentations in confluence",
+                "Solved tickets from jira"
             ],
             "technologies": [
-                "Eclipse",
-                "Maven",
-                "Java",
-                "Java 8",
-                "JUnit",
-                "Confluence",
-                "Jira",
-                "Oracle SQL Developer",
-                "Subversion",
-                "Groovy"
+                "Eclipse", "Maven", "Java", "Java 8", "JUnit", "Confluence", "Jira", "Oracle SQL Developer", "Subversion", "Groovy"
             ]
         },
         {
