@@ -34,27 +34,34 @@ export default (props: Props) => {
   return (
     <div className="container">
       {console.log(props)}
-      {console.log('items')}
-      {console.log(items)}
       {initLocale(props.pageContext.locale)}
       <article className="resume-wrapper text-center position-relative">
         <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
           <Header
-            role="Full Stack Developer"
-            name="Tristan Teufel"
-            phone="0176 45744166"
-            email="tristanteufel@gmail.com"
+            profile={props.data.profile.childImageSharp.fluid}
+            role={props.data.social.nodes[0].childSocialJson.role}
+            name={props.data.social.nodes[0].childSocialJson.name}
+            phone={props.data.social.nodes[0].childSocialJson.phone}
+            email={props.data.social.nodes[0].childSocialJson.email}
             socialMedia={{
-              github: 'github.com/firsttris',
-              linkedin: 'de.linkedin.com/in/tristanteufel',
-              website: 'teufel-it.de',
-              xing: 'xing.com/profile/Tristan_Teufel'
+              github: props.data.social.nodes[0].childSocialJson.social.github,
+              linkedin: props.data.social.nodes[0].childSocialJson.social.linkedin,
+              website: props.data.social.nodes[0].childSocialJson.social.website,
+              xing: props.data.social.nodes[0].childSocialJson.social.xing
             }}
           />
           <div className="resume-body p-5" style={{ backgroundImage: `url(${Lines})` }}>
-            <p onClick={() => onLanguageClick(props.location.pathname)} style={{ cursor: 'pointer' }}>
-              {props.pageContext.locale === 'de' ? 'German' : 'English'}
-            </p>
+            <div className="text-right">
+              <button
+                type="button"
+                className="btn"
+                onClick={() => onLanguageClick(props.location.pathname)}
+                style={{ cursor: 'pointer', backgroundImage: `url(${Paper})`, color: 'lightgrey' }}
+              >
+                {props.pageContext.locale === 'de' ? 'EN' : 'DE'}
+              </button>
+            </div>
+
             <section className="resume-section summary-section mb-5">
               <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
                 {getTranslatedLabel('CAREER_SUMMARY')}
@@ -179,7 +186,7 @@ export default (props: Props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Sourcecode on Github
+          {getTranslatedLabel('SOURCEONGITHUB')}
         </a>
       </p>
     </div>
@@ -188,6 +195,13 @@ export default (props: Props) => {
 
 export const query = graphql`
   query($locale: String!) {
+    profile: file(relativePath: { eq: "profil.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     summary: markdownRemark(frontmatter: { locale: { eq: $locale }, name: { eq: "summary" } }) {
       html
       frontmatter {
@@ -257,6 +271,22 @@ export const query = graphql`
             xpInPercentage
           }
           others
+        }
+      }
+    }
+    social: allFile(filter: { name: { eq: "social" } }) {
+      nodes {
+        childSocialJson {
+          email
+          name
+          phone
+          role
+          social {
+            github
+            linkedin
+            website
+            xing
+          }
         }
       }
     }

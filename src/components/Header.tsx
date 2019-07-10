@@ -1,3 +1,4 @@
+import Img from 'gatsby-image';
 import * as React from 'react';
 import { Props as socialMediaProps, SocialMedia } from './SocialMedia';
 const profil = require('../../src/assets/images/profil.png');
@@ -9,12 +10,13 @@ interface Props {
   email: string;
   phone: string;
   socialMedia: socialMediaProps;
+  profile: any;
 }
 
 export const Header = (props: Props) => (
   <header className="resume-header pt-4 pt-lg-0">
     <div className="media flex-column flex-lg-row">
-      <img className="mr-3 img-fluid picture mx-auto" src={profil} alt="" />
+      <Img className="mr-3 img-fluid picture mx-auto" fluid={props.profile} />
       <div
         className="media-body p-4 d-flex flex-column flex-lg-row mx-auto mx-lg-0"
         style={{ backgroundImage: `url(${Paper})`, color: 'lightgrey' }}

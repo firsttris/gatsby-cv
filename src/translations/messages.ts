@@ -12,7 +12,8 @@ export const messages: any = {
     ENGLISH: 'Englisch',
     NATIVE: 'Muttersprache',
     FLUENT: 'Fließend',
-    OPENSOURCE: 'Open Source'
+    OPENSOURCE: 'Open Source Projekte',
+    SOURCEONGITHUB: 'Quellcode auf Github'
   },
   en: {
     CAREER_SUMMARY: 'Career Summary',
@@ -27,6 +28,7 @@ export const messages: any = {
     ENGLISH: 'English',
     NATIVE: 'Native',
     FLUENT: 'Fluent',
-    OPENSOURCE: 'Open Source'
+    OPENSOURCE: 'Open Source Projects',
+    SOURCEONGITHUB: 'Sourcecode on Github'
   }
 };

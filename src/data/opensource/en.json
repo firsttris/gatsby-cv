@@ -7,7 +7,7 @@
             "company": "Teufel-IT",
             "from": "07/2018",
             "to": "today",
-            "location": "Buehl/DE",
+            "location": "Github",
             "description": "This plugin simplifies the creation of script tags for module and nomodule for a webpack multi build configuration.",
             "achievements": [
                 "Created a multi build plugin for html-webpack-plugin",
@@ -29,7 +29,7 @@
             "company": "Teufel-IT",
             "from": "12/2017",
             "to": "today",
-            "location": "Buehl/DE",
+            "location": "Github",
             "description": "Simple way to run or debug a single or multiple Jest-Tests from context menu. As it is possible in IntelliJ / Webstorm",
             "achievements": [
                 "Created a VSCode Addon with Typescript",
@@ -53,7 +53,7 @@
             "company": "Teufel-IT",
             "from": "01/2016",
             "to": "today",
-            "location": "Buehl/DE",
+            "location": "Github",
             "description": "SendToKodi is a iOS App which resolves various video streams using youtube-dl to play them on Kodi",
             "achievements": [
                 "Created a kodi-addon (python) which extracts video streams from website urls with YoutubeDL",
@@ -81,7 +81,7 @@
             "company": "Teufel-IT",
             "from": "01/2016",
             "to": "today",
-            "location": "Buehl/DE",
+            "location": "Github",
             "description": "JavaScript class to control MFRC522 RFID Module with your Raspberry-pi",
             "achievements": [
                 "Control MFRC522 Module with your Raspberry PI & Javascript",
