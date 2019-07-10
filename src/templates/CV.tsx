@@ -23,18 +23,31 @@ interface Props {
 }
 
 const onLanguageClick = (pathname: string) => {
-  pathname.includes('/de/') ? navigate('/en/') : navigate('/de/');
+  pathname.includes('/de/') ? navigate(pathname.replace('de', 'en')) : navigate(pathname.replace('en', 'de'));
 };
 
 export default (props: Props) => {
   initLocale(props.pageContext.locale);
   const [items, setItems] = React.useState([
-    { name: getTranslatedLabel('WORK_XP'), checked: false, icon: 'fas fa-briefcase' },
-    { name: getTranslatedLabel('OPENSOURCE'), checked: true, icon: 'fab fa-github' }
+    {
+      name: getTranslatedLabel('WORK_XP'),
+      path: 'work',
+      checked:
+        (!props.location.pathname.includes('work') && !props.location.pathname.includes('opensource')) ||
+        props.location.pathname.includes('work'),
+      icon: 'fas fa-briefcase'
+    },
+    {
+      name: getTranslatedLabel('OPENSOURCE'),
+      path: 'opensource',
+      checked: props.location.pathname.includes('opensource'),
+      icon: 'fab fa-github'
+    }
   ]);
 
   return (
     <div className="container">
+      {console.log(props.location)}
       <article className="resume-wrapper text-center position-relative">
         <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
           <Header
@@ -74,13 +87,7 @@ export default (props: Props) => {
                 <TabSelector
                   items={items}
                   onClick={index => {
-                    const newItems = [...items];
-                    for (const i in newItems) {
-                      if (newItems[i]) {
-                        newItems[i].checked = i === index.toString();
-                      }
-                    }
-                    setItems(newItems);
+                    navigate(`/${props.pageContext.locale}/${items[index].path}`);
                   }}
                 />
                 <div className="mb-3" />
