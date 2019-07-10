@@ -14,7 +14,7 @@ interface Props {
 export const Header = (props: Props) => (
   <header className="resume-header pt-4 pt-md-0">
     <div className="media flex-column flex-md-row">
-      <img className="mr-3 img-fluid picture mx-auto" src={profil} alt="" style={{ height: '216px' }} />
+      <img className="mr-3 img-fluid picture mx-auto" src={profil} alt="" />
       <div
         className="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0"
         style={{ backgroundImage: `url(${Paper})`, color: 'lightgrey' }}
@@ -24,13 +24,13 @@ export const Header = (props: Props) => (
           <div className="title mb-3">{props.role}</div>
           <ul className="list-unstyled">
             <li className="mb-2">
-              <a href="#" className="link-unstyled">
+              <a href={`mailto:${props.email}`} className="link-unstyled">
                 <i className="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3" />
                 {props.email}
               </a>
             </li>
             <li>
-              <a href="#" className="link-unstyled">
+              <a href={`tel:${props.phone}`} className="link-unstyled">
                 <i className="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6" />
                 {props.phone}
               </a>

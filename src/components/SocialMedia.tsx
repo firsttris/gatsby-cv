@@ -28,7 +28,7 @@ export const SocialMedia = (props: Props) => (
       <li className="mb-3">
         <a href={`http://${props.github}`} target="_blank" rel="noopener noreferrer" className="link-unstyled">
           <span className="fa-container text-center mr-2">
-            <i className="fab fa-github-alt fa-fw" style={iconsStyle} />
+            <i className="fab fa-github fa-fw" style={iconsStyle} />
           </span>
           {props.github}
         </a>
