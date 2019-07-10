@@ -11,7 +11,8 @@ import { ResumeSkillList } from './../components/ResumeSkillList';
 import { TabSelector } from './../components/TabSelector';
 import { getTranslatedLabel, initLocale } from './../translations/provider';
 import './CV.css';
-
+const HtmlToReactParser = require('html-to-react').Parser;
+const htmlToReactParser = new HtmlToReactParser();
 const Lines = require('./../assets/images/backgrounds/lines.png');
 const Paper = require('../../src/assets/images/backgrounds/paper.png');
 
@@ -66,7 +67,7 @@ export default (props: Props) => {
                 {getTranslatedLabel('CAREER_SUMMARY')}
               </h2>
               <div className="resume-section-content">
-                <p className="mb-0" dangerouslySetInnerHTML={{ __html: props.data.summary.html }} />
+                <p className="mb-0">{htmlToReactParser.parse(props.data.summary.html)}</p>
               </div>
             </section>
             <div className="row mb-3">
