@@ -11,11 +11,11 @@
             "achievements": [
                 "Created a new build system (webpack)",
                 "Created a new starter kit for react",
-                "Developed a NodeJs backend with Sequilize SQL and PostGres",
+                "Developed a NodeJs backend with Sequelize SQL and PostGres",
                 "Set up OpenAPI with SwaggerUI for our middleware",
                 "Set up a Jest Snapshop Test-Suite",
                 "Set up a JSON Webtoken Authentication for our middleware",
-                "Created Docker Compose yaml build scrtipts",
+                "Created Docker Compose yaml build scripts",
                 "Set up a Docker Cluster with reverse proxy (traefik)"
             ],
             "technologies": [
@@ -76,7 +76,7 @@
             "description": "Improving the microservices of Timify, an appointment scheduling system, as well as writing unit and integration tests and building templates for their automatic API documentation.",
             "achievements": [
                 "Refactored microservices",
-                "Wrote unit-tests with Lab",
+                "Wrote unit tests with Lab",
                 "Wrote intergration tests with postman",
                 "Created new template for Lout (API documentation for HapiJs)",
                 "Developed a new mongo DB layer with promise support"
@@ -145,7 +145,7 @@
             ]
         },
         {
-            "title": "Development of an debt collection software system",
+            "title": "Development of a debt collection software system",
             "role": "Developer",
             "company": "arvato Financial Solutions - Bertelsmann SE & Co. KGaA",
             "from": "01/2015",
@@ -160,8 +160,7 @@
                 "Wrote unit tests with JUnit",
                 "Created mappings",
                 "Created Groovy scripts for advanced data transformation",
-                "Wrote documentation in Confluence",
-                "Solved tickets from Jira"
+                "Wrote documentation in Confluence"
             ],
             "technologies": [
                 "Eclipse",
@@ -187,8 +186,7 @@
             "achievements": [
                 "Hold trainings about HTML, CSS and JavaScript",
                 "Created a new CSS Theme for Oracle Siebel OpenUI",
-                "Created new Business Services with Siebel Tools",
-                "Solved Tickets"
+                "Created new Business Services with Siebel Tools"
             ],
             "technologies": [
                 "Oracle siebel CRM",
@@ -252,7 +250,7 @@
             "location": "Duisburg/DE, Montreux/CH, Lyon/FR, Newbury/UK",
             "description": "„Stryker – New Sales Attribution Tool“: Planning, design and implementation of an JavaEE application for multi-na-tional (EMEA) and multi-lingual (English, German, French, Italian) Territory Management. Ec4u expert consulting covers all processes: Requirements and needs analysis, project lead and management, development, customizing, delivery and training.",
             "achievements": [
-                "Independent development of a JavaEE web application which unifies and simplifies pro-cesses from Oracle Sales Cloud (Fusion CRM) Territory Management",
+                "Independent development of a JavaEE web application which unifies and simplifies processes from Oracle Sales Cloud (Fusion CRM) Territory Management",
                 "Development of SOA interfaces to integrate Oracle Sales Cloud (Fusion CRM) with other legacy systems",
                 "Independent development of a JavaEE / Oracle ADF web application which represents the process of Invoice Exception Management",
                 "Management and deployment for Oracle Java & Database Cloud Service"
