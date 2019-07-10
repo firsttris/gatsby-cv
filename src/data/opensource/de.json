@@ -56,13 +56,13 @@
             "location": "Github",
             "description": "SendToKodi ist eine iOS-App, die verschiedene Videostreams mit youtube-dl auflöst, um sie auf Kodi abzuspielen",
             "achievements": [
-                "Created a kodi-addon (python) which extracts video streams from website urls with YoutubeDL",
-                "Set up a Travis CI job which regularly re-builds the kodi-addon with a recent YoutubeDL version",
-                "Developed a native iOS App with Swift which uses the integrated share option to send links to Kodi",
-                "Added an InApp Payment for multiple hosts",
-                "The InApp Payment achieves about 15$ a quater, which is enough to pay the developer fee",
-                "Two other developers created Apps which make use of my python plugin (see Github Page)",
-                "23 stars, 5 contributors"
+                "Ein Kodi-Addon (Python), das Videostreams von Website-URLs mit YoutubeDL extrahiert",
+                "Ein Travis CI-Job, der das Kodi-Addon regelmäßig mit einer aktuellen YoutubeDL-Version neu erstellt",
+                "Eine native iOS-App (Swift), die die integrierte Freigabeoption zum Senden von Links an Kodi bereitstellt",
+                "In-App-Zahlungs Option für mehrere Hosts hinzugefügt",
+                "Mit der In-App-Zahlung werden ungefähr 15 US-Dollar pro Quartal erzielt, was ausreicht, um die Entwicklergebühr zu zahlen",
+                "Zwei andere Entwickler haben Apps erstellt, die mein Python-Plugin verwenden (siehe Github-Seite).",
+                "23 Sterne, 5 Mitwirkende"
             ],
             "technologies": [
                 "Python",
@@ -82,12 +82,12 @@
             "from": "01/2016",
             "to": "today",
             "location": "Github",
-            "description": "JavaScript class to control MFRC522 RFID Module with your Raspberry-pi",
+            "description": "JavaScript-Klasse zur Steuerung des MFRC522-RFID-Moduls mit Ihrem Raspberry-pi",
             "achievements": [
-                "Control MFRC522 Module with your Raspberry PI & Javascript",
-                "Reverse Engineered Arduino C++ Code to JavaScript (NodeJs)",
-                "Set up a Testing Suite",
-                "57 stars, 2 contributors"
+                "Steuern Sie das MFRC522-Modul mit Ihrem Raspberry PI und Javascript",
+                "Rückwärtsentwicklung von Arduino C++ Code zu JavaScript (NodeJs)",
+                "Einrichten einer Testsuite",
+                "57 Sterne, 2 Mitwirkende"
             ],
             "technologies": [
                 "Raspberry PI",

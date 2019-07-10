@@ -4,8 +4,8 @@ export const messages: any = {
     CERTIFICATIONS: 'Zertifizierungen',
     WORK_XP: 'Arbeitserfahrung',
     WATERSPORT: 'Wassersport',
-    HOMEAUTOMATION: 'Home Automation',
-    SKILLS: 'Kentnisse & Tools',
+    HOMEAUTOMATION: 'Heim Automation',
+    SKILLS: 'Kentnisse',
     EDUCATION: 'Ausbildung',
     LANGUAGES: 'Sprachen',
     INTEREST: 'Interessen',
@@ -14,7 +14,11 @@ export const messages: any = {
     NATIVE: 'Muttersprache',
     FLUENT: 'Fließend',
     OPENSOURCE: 'Open Source Projekte',
-    SOURCEONGITHUB: 'Quellcode auf Github'
+    SOURCEONGITHUB: 'Quellcode auf Github',
+    ACHIEVEMENTS: 'Ergebnisse',
+    TECHNOLOGY_USED: 'Verwendete Technologie',
+    OTHERS: 'Andere',
+    MORE_PROJECTS: 'Mehr Projekte auf Github'
   },
   en: {
     CAREER_SUMMARY: 'Career Summary',
@@ -22,7 +26,7 @@ export const messages: any = {
     WORK_XP: 'Work Experience',
     WATERSPORT: 'Watersports',
     HOMEAUTOMATION: 'Home Automation',
-    SKILLS: 'Skills & Tools',
+    SKILLS: 'Skills',
     EDUCATION: 'Education',
     LANGUAGES: 'Languages',
     INTEREST: 'Interest',
@@ -31,6 +35,10 @@ export const messages: any = {
     NATIVE: 'Native',
     FLUENT: 'Fluent',
     OPENSOURCE: 'Open Source Projects',
-    SOURCEONGITHUB: 'Sourcecode on Github'
+    SOURCEONGITHUB: 'Sourcecode on Github',
+    ACHIEVEMENTS: 'Achievements',
+    TECHNOLOGY_USED: 'Technology used',
+    OTHERS: 'Others',
+    MORE_PROJECTS: 'More Projects on Github'
   }
 };

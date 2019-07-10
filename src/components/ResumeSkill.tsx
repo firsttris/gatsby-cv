@@ -9,7 +9,16 @@ export interface Props {
 
 export const ResumeSkill = (props: Props) => (
   <li className="mb-2">
-    <div className="resume-skill-name">{props.name}</div>
+    <div className="resume-skill-name">
+      <a
+        href={`http://google.com/search?q=${props.name}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link-unstyled"
+      >
+        {props.name}
+      </a>
+    </div>
     <div className="progress resume-progress">
       <div
         className="progress-bar"

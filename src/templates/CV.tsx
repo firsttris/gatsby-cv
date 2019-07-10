@@ -16,13 +16,28 @@ const htmlToReactParser = new HtmlToReactParser();
 const Lines = require('./../assets/images/backgrounds/lines.png');
 const Paper = require('../../src/assets/images/backgrounds/paper.png');
 
+let scrollTo = 0;
+
 interface Props {
   location: any;
   data: any;
   pageContext: any;
 }
 
+const scrollToY = () => {
+  if (window && scrollTo !== 0) {
+    window.scrollTo(0, scrollTo);
+  }
+};
+
+const saveScrollPosition = () => {
+  if (document) {
+    scrollTo = document.documentElement.scrollTop;
+  }
+};
+
 const onLanguageClick = (pathname: string) => {
+  saveScrollPosition();
   pathname.includes('/de/') ? navigate(pathname.replace('de', 'en')) : navigate(pathname.replace('en', 'de'));
 };
 
@@ -45,9 +60,12 @@ export default (props: Props) => {
     }
   ]);
 
+  React.useEffect(() => {
+    setTimeout(() => scrollToY(), 100);
+  });
+
   return (
     <div className="container">
-      {console.log(props.location)}
       <article className="resume-wrapper text-center position-relative">
         <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
           <Header
@@ -87,6 +105,7 @@ export default (props: Props) => {
                 <TabSelector
                   items={items}
                   onClick={index => {
+                    saveScrollPosition();
                     navigate(`/${props.pageContext.locale}/${items[index].path}`);
                   }}
                 />
@@ -115,10 +134,21 @@ export default (props: Props) => {
                         )}
                       </div>
                     </div>
+                    <div className="my-5 text-center">
+                      <div>{getTranslatedLabel('MORE_PROJECTS')}</div>
+                      <a
+                        href="https://github.com/firsttris?tab=repositories"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-unstyled"
+                      >
+                        https://github.com/firsttris?tab=repositories
+                      </a>
+                    </div>
                   </section>
                 )}
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-3" style={{ marginTop: '40px' }}>
                 <section className="resume-section skills-section mb-5">
                   <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
                     {getTranslatedLabel('SKILLS')}
@@ -126,7 +156,10 @@ export default (props: Props) => {
                   <div className="resume-section-content">
                     <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.frontend} title={'Frontend'} />
                     <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.backend} title={'Backend'} />
-                    <OtherSkillList skills={props.data.skills.nodes[0].childSkillsJson.others} title={'Others'} />
+                    <OtherSkillList
+                      skills={props.data.skills.nodes[0].childSkillsJson.others}
+                      title={getTranslatedLabel('OTHERS')}
+                    />
                   </div>
                 </section>
                 <section className="resume-section education-section mb-5">

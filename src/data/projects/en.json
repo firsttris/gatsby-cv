@@ -73,7 +73,7 @@
             "from": "01/2017",
             "to": "04/2017",
             "location": "Munich/DE",
-            "description": "Improving the microservices of Timify, an appointment scheduling system, as well as writing unit and integration tests and building templates for their automatic API documentation.",
+            "description": "Backend development with nodeJs for Timify. A startup from Munich which creates an appointment scheduling system for medium-sized companies",
             "achievements": [
                 "Refactored microservices",
                 "Wrote unit tests with Lab",
@@ -161,7 +161,8 @@
             "achievements": [
                 "Hold trainings about HTML, CSS and JavaScript",
                 "Created a new CSS Theme for Oracle Siebel OpenUI",
-                "Created new Business Services with Siebel Tools"
+                "Created new Business Services with Siebel Tools",
+                "Created automated tests with Selenium IDE"
             ],
             "technologies": [
                 "Oracle siebel CRM",
@@ -223,7 +224,7 @@
             "from": "12/2012",
             "to": "11/2013",
             "location": "Duisburg/DE, Montreux/CH, Lyon/FR, Newbury/UK",
-            "description": "„Stryker – New Sales Attribution Tool“: Planning, design and implementation of an JavaEE application for multi-na-tional (EMEA) and multi-lingual (English, German, French, Italian) Territory Management. Ec4u expert consulting covers all processes: Requirements and needs analysis, project lead and management, development, customizing, delivery and training.",
+            "description": "Stryker – New Sales Attribution Tool: Planning, design and implementation of an JavaEE application for multi-na-tional (EMEA) and multi-lingual (English, German, French, Italian) Territory Management. Ec4u expert consulting covers all processes: Requirements and needs analysis, project lead and management, development, customizing, delivery and training.",
             "achievements": [
                 "Independent development of a JavaEE web application which unifies and simplifies processes from Oracle Sales Cloud (Fusion CRM) Territory Management",
                 "Development of SOA interfaces to integrate Oracle Sales Cloud (Fusion CRM) with other legacy systems",

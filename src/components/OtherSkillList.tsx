@@ -14,7 +14,14 @@ export const OtherSkillList = (props: Props) => (
       {props.skills.map((skill: string, index: number) => (
         <li className="list-inline-item" key={index}>
           <span className="badge" style={{ backgroundImage: `url(${Paper})`, color: 'white' }}>
-            {skill}
+            <a
+              href={`http://google.com/search?q=${skill}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-unstyled"
+            >
+              {skill}
+            </a>
           </span>
         </li>
       ))}
