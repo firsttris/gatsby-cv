@@ -1,19 +1,19 @@
 {
     "educations": [
         {
-          "titel": "Bachelor of Science (B.Sc.) Business Information Systems",
+          "titel": "Bachelor of Science (B.Sc.) Wirtschaftsinformatik",
           "uni": "Hochschule Karlsruhe – Technik und Wirtschaft",
           "from": "2008",
           "to": "2012"
         },  
         { 
-          "titel": "Higher education entrance qualification in Business Information Systems",
+          "titel": "2 Jährige Fachhochschulreife für Wirtschaftsinformatik",
           "uni": "Handelslehranstalt Gernsbach",
           "from": "2006",
           "to": "2008"
         },
         {
-          "titel": "IHK Certified Automotive Sales Person",
+          "titel": "Automobilkaufmann (IHK)",
           "uni": "Autoboos GmbH",
           "from": "2003",
           "to": "2006"

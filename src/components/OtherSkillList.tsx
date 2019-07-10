@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+const Paper = require('../../src/assets/images/backgrounds/paper.png');
+
 interface Props {
   title: string;
   skills: string[];
@@ -11,7 +13,9 @@ export const OtherSkillList = (props: Props) => (
     <ul className="list-inline">
       {props.skills.map((skill: string, index: number) => (
         <li className="list-inline-item" key={index}>
-          <span className="badge badge-dark">{skill}</span>
+          <span className="badge" style={{ backgroundImage: `url(${Paper})`, color: 'white' }}>
+            {skill}
+          </span>
         </li>
       ))}
     </ul>

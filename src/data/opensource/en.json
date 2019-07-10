@@ -33,7 +33,7 @@
             "description": "Simple way to run or debug a single or multiple Jest tests from context menu. As it is possible in IntelliJ / Webstorm",
             "achievements": [
                 "Created a VSCode Addon with Typescript",
-                "Runs Jest tests from context & command menu",
+                "Possibility to run Jest tests from context & command menu",
                 "17.782 active installs",
                 "5 star rating in Visual Studio Marketplace",
                 "11 stars, 11 contributors"

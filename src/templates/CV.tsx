@@ -29,8 +29,8 @@ const onLanguageClick = (pathname: string) => {
 export default (props: Props) => {
   initLocale(props.pageContext.locale);
   const [items, setItems] = React.useState([
-    { name: getTranslatedLabel('WORK_XP'), checked: true, icon: 'fas fa-briefcase' },
-    { name: getTranslatedLabel('OPENSOURCE'), checked: false, icon: 'fab fa-github' }
+    { name: getTranslatedLabel('WORK_XP'), checked: false, icon: 'fas fa-briefcase' },
+    { name: getTranslatedLabel('OPENSOURCE'), checked: true, icon: 'fab fa-github' }
   ]);
 
   return (
@@ -66,12 +66,11 @@ export default (props: Props) => {
               <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
                 {getTranslatedLabel('CAREER_SUMMARY')}
               </h2>
-              <div className="resume-section-content">
-                <p className="mb-0">{htmlToReactParser.parse(props.data.summary.html)}</p>
-              </div>
+              <div className="resume-section-content">{htmlToReactParser.parse(props.data.summary.html)}</div>
             </section>
-            <div className="row mb-3">
-              <div className="col">
+
+            <div className="row">
+              <div className="col-lg-9">
                 <TabSelector
                   items={items}
                   onClick={index => {
@@ -84,12 +83,8 @@ export default (props: Props) => {
                     setItems(newItems);
                   }}
                 />
-              </div>
-            </div>
-
-            <div className="row">
-              {items[0].checked && (
-                <div className="col-lg-9">
+                <div className="mb-3" />
+                {items[0].checked && (
                   <section className="resume-section experience-section mb-5">
                     <div className="resume-section-content">
                       <div className="resume-timeline position-relative">
@@ -101,10 +96,8 @@ export default (props: Props) => {
                       </div>
                     </div>
                   </section>
-                </div>
-              )}
-              {items[1].checked && (
-                <div className="col-lg-9">
+                )}
+                {items[1].checked && (
                   <section className="resume-section experience-section mb-5">
                     <div className="resume-section-content">
                       <div className="resume-timeline position-relative">
@@ -116,8 +109,8 @@ export default (props: Props) => {
                       </div>
                     </div>
                   </section>
-                </div>
-              )}
+                )}
+              </div>
               <div className="col-lg-3">
                 <section className="resume-section skills-section mb-5">
                   <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">

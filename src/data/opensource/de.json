@@ -1,291 +1,101 @@
 {
     "projects": [
         {
-            "title": "Typescript / React for Etecture",
-            "url": "",
-            "role": "Lead Developer",
-            "company": "ETECTURE GmbH",
-            "from": "10/2017",
-            "to": "06/2019",
-            "location": "Karlsruhe/DE",
-            "description": "ETECTURE GmbH is a Software development company in Karlsruhe. Supporting and taking development lead in various customer projects",
+            "title": "html-webpack-multi-build-plugin",
+            "role": "",
+            "url": "https://github.com/firsttris/html-webpack-multi-build-plugin",
+            "company": "Teufel-IT",
+            "from": "07/2018",
+            "to": "heute",
+            "location": "Github",
+            "description": "Dieses Plugin vereinfacht die Erstellung von Skript-Tags für Module und Nomodule für eine Webpack-Multi-Build-Konfiguration",
             "achievements": [
-                "Created a new build system (webpack)",
-                "Created a new starter kit",
-                "Created a docker Cluster with reverse proxy (traefik)",
-                "Created a NodeJs backend with Sequilize SQL and PostGres"
+                "Ein Multi-Build-Plugin für HTML-Webpack-Plugin erstellt",
+                "Bundles für ES6+ (moderne) und ES5 (ältere Browser) einrichten",
+                "38 Sterne, 3 Mitwirkende"
             ],
             "technologies": [
-                "React", "Typescript", "Docker", "Jest", "Webpack", "REST", "NodeJs", "VSCode", "Jira", "Confluence", "Mattermost", "PostGres", "Traefik", "Sequilize"
+                "JavaScript",
+                "Webpack API",
+                "Git",
+                "Github",
+                "html-webpack-plugin"
             ]
         },
         {
-            "title": "NodeJs / React for Gameforge",
-            "url": "",
-            "role": "Developer",
-            "company": "Gameforge 4D GmbH",
-            "from": "05/2017",
-            "to": "09/2017",
-            "location": "Karlsruhe/DE",
-            "description": "Gameforge 4D is one of the biggest game publisher in Europe. Working together with Gameforge to create their new steam competitor.",
+            "title": "VSCode Addon Jest Runner",
+            "role": "",
+            "url": "https://github.com/firsttris/vscode-jest-runner.git",
+            "company": "Teufel-IT",
+            "from": "12/2017",
+            "to": "heute",
+            "location": "Github",
+            "description": "Einfache Möglichkeit, einen oder mehrere Jest-Tests über das Kontextmenü auszuführen oder zu debuggen. Wie es in IntelliJ / Webstorm möglich ist",
             "achievements": [
-                "Created middleware and microservices",
-                "Created Docker scripts",
-                "Implemented a global logging solution for microservices in container environment",
-                "PoC for migrating their web app from angular 1.x to react",
-                "Implemented a webpack job to dynamically inject configuration to the frontend at runtime"
+                "Ein VSCode Addon mit Typescript erstellt",
+                "Möglichkeit, Jest-Tests über das Kontext- und Befehlsmenü auszuführen",
+                "17.782 aktive installationen",
+                "5 Sternebewertung in Visual Studio Marketplace",
+                "11 Sterne, 11 Mitwirkende"
             ],
             "technologies": [
-                "Angular 1.x", "React", "REST", "Docker", "Kubernetes", "NodeJs", "VSCode", "Git", "Jira", "Confluence", "Slack", "Webpack"
-            ]
-        },
-        {
-            "title": "NodeJs Development for Timify",
-            "role": "Developer",
-            "company": "Termin App GmbH (Timify)",
-            "from": "01/2017",
-            "to": "04/2017",
-            "location": "Munich/DE",
-            "description": "Timify is customer appointment manager for small businesses. I was helping on improving their microservices. Created unit-tests with Lab (HapiJs) and integration-tests with Postman. I created new templates for their automatic API-Documentation with Lout.",
-            "achievements": [
-                "Refactored microservices",
-                "Created unit-tests with Lab",
-                "Created intergration tests with postman",
-                "Created new template for Lout (API documentation for HapiJs",
-                "Created a new mongo DB layer with promise support"
-
-            ],
-            "technologies": [
-                "JavaScript", "NodeJs", "MongoDb", "HapiJs", "Lout", "Lab", "VSCode", "Jira", "Slack"
-            ]
-        },
-        {
-            "title": "Angular 1.x Development for Cyber Manufaktur",
-            "role": "Developer",
-            "company": "Cyber Manufaktur GmbH",
-            "from": "03/2016",
-            "to": "12/2016",
-            "location": "Karlsruhe/DE",
-            "description": "Development of various Angular 1.x components for Cyber Manufaktur GmbH",
-            "achievements": [
-                "Created a webpack 1 build job for our angular 1.x project",
-                "Integrated JsPlump with angular 1.x to create a chart based on a json file",
-                "Created angular 1.x components for customers of Cyber Manufaktur GmbH",
-                "Some PHP & Wordpress development"
-            ],
-            "technologies": [
-                "Angular 1.x", "Webstorm", "JavaScript", "jQuery", "PHP", "Wordpress", "JsPlump", "Git", "BitBucket"
+                "Typescript",
+                "VSCode API",
+                "Git",
+                "Github",
+                "Jest"
             ]
         },
         {
             "title": "SendToKodi iOS App",
-            "role": "Lead Developer",
+            "role": "",
+            "url": "https://github.com/firsttris/plugin.video.sendtokodi",
             "company": "Teufel-IT",
             "from": "01/2016",
-            "to": "02/2016",
-            "location": "Buehl/DE",
-            "description": "SendToKodi is a iOS App which resolves various video streams using youtube-dl to play them on kodi",
+            "to": "heute",
+            "location": "Github",
+            "description": "SendToKodi ist eine iOS-App, die verschiedene Videostreams mit youtube-dl auflöst, um sie auf Kodi abzuspielen",
             "achievements": [
-                "Created a kodi-addon (python) which extracts video stream from websites urls with YoutubeDL",
-                "Created a Travis CI job which regularly re-builds the kodi-addon with a recent YoutubeDL version",
-                "Created a native iOS App with Swift which uses the integrated share option to send links to Kodi",
-                "Created a InApp Payment for multiple Hosts",
-                "The InApp Payment achieves about 15$ a quater which is enough to pay developer fee"
+                "Created a kodi-addon (python) which extracts video streams from website urls with YoutubeDL",
+                "Set up a Travis CI job which regularly re-builds the kodi-addon with a recent YoutubeDL version",
+                "Developed a native iOS App with Swift which uses the integrated share option to send links to Kodi",
+                "Added an InApp Payment for multiple hosts",
+                "The InApp Payment achieves about 15$ a quater, which is enough to pay the developer fee",
+                "Two other developers created Apps which make use of my python plugin (see Github Page)",
+                "23 stars, 5 contributors"
             ],
             "technologies": [
-                "Python", "Swift", "Xcode", "Travis CI", "Kodi", "Git", "Github"
-            ]
-        },
-        {
-            "title": "Java 8 Development with Arvato Bertelsmann",
-            "role": "Developer",
-            "company": "arvato Financial Solutions - Bertelsmann SE & Co. KGaA",
-            "from": "01/2015",
-            "to": "12/2015",
-            "location": "Baden-Baden/DE",
-            "description": "Java development in one of arvato's Java Enterprise Applications for accounts receivable management.",
-            "achievements": [
-                "Development/coverage of various artifacts from requirement to go-live",
-                "Requirements engineering",
-                "Schema changes in Oracle SQL",
-                "Test driven development",
-                "Created unit tests with JUnit",
-                "Created mappings",
-                "Created Groovy scripts for advanced data transformation",
-                "Created documentations in confluence",
-                "Solved tickets from jira"
-            ],
-            "technologies": [
-                "Eclipse", "Maven", "Java", "Java 8", "JUnit", "Confluence", "Jira", "Oracle SQL Developer", "Subversion", "Groovy"
-            ]
-        },
-        {
-            "title": "jQuery with Oracle Siebel OpenUI",
-            "role": "Developer",
-            "company": "Swisscom (Switzerland) Ltd with ec4u",
-            "from": "06/2014",
-            "to": "12/2014",
-            "location": "Bern/CH",
-            "description": "Oracle Siebel OpenUI is a lightweight jQuery frontend for Oracle Siebel CRM. Exploring better usability in SiebelCRM due to the use of jQuery UI Widgets & Siebel OpenUI.",
-            "achievements": [
-                "Hold trainings about HTML, CSS and JavaScript",
-                "Created a new CSS Theme for Oracle Siebel OpenUI",
-                "Created new Business Services with Siebel Tools",
-                "Solved Tickets"
-            ],
-            "technologies": [
-                "Oracle siebel CRM",
-                "Firebug IDE",
-                "Selenium IDE",
-                "JavaScript",
-                "jQuery",
-                "jQuery UI"
-            ]
-        },
-        {
-            "title": "jQuery with Oracle Siebel OpenUI",
-            "role": "Developer",
-            "company": "JTI International S.A. with ec4u",
-            "from": "11/2013",
-            "to": "06/2014",
-            "location": "Madrid/ES",
-            "description": "Oracle Siebel OpenUI is a lightweight jQuery frontend for Oracle Siebel CRM. Rapid Prototyping of jQuery UI Widgets and Views for different applets.",
-            "achievements": [
-                "Requirements Engineering",
-                "Created Widgets according to requirements",
-                "Prototyping of Applets",
-                "Created automated Selenium tests with Selenium IDE"
-            ],
-            "technologies": [
-                "Oracle siebel CRM",
-                "Firebug IDE",
-                "Selenium IDE",
-                "JavaScript",
-                "jQuery",
-                "jQuery UI"
-            ]
-        },
-        {
-            "title": "Oracle on Demand CRM Desktop Integration",
-            "role": "Developer",
-            "company": "SGS S.A. with ec4u",
-            "from": "01/2014",
-            "to": "03/2014",
-            "location": "Camberley/GB",
-            "description": "Oracle on Demand CRM Desktop is an Outlook plugin which interacts due webservices and is customizable with JavaScript and XML.",
-            "achievements": [
-                "Created data mappings with XML",
-                "Created transformation logic with JavaScript",
-                "Integration of new fields"
-            ],
-            "technologies": [
-                "Oracle on Demand CRM",
-                "JavaScript",
-                "XML",
-                "Nodepad++",
-                "Subversion"
-            ]
-        },
-        {
-            "title": "JavaEE WebApp with Oracle ADF",
-            "role": "Developer",
-            "company": "Stryker S.A. with ec4u",
-            "from": "12/2012",
-            "to": "11/2013",
-            "location": "Duisburg/DE, Montreux/CH, Lyon/FR, Newbury/UK",
-            "description": "„Stryker – New Sales Attribution Tool“: Planning, design and implementation of an JavaEE application for multi-na-tional (EMEA) and multi-lingual (English, German, French, Italian) Territory Management. Ec4u expert consulting covers all processes: Requirements and needs analysis, project lead and management, development, customizing, delivery and training.",
-            "achievements": [
-                "Independent development of a JavaEE web application which unifies and simplifies pro-cesses from Oracle Sales Cloud (Fusion CRM) Territory Management",
-                "Development of SOA interfaces to integrate Oracle Sales Cloud (Fusion CRM) with other legacy systems",
-                "Independent development of a JavaEE / Oracle ADF web application which represents the process of Invoice Exception Management",
-                "Management and deployment for Oracle Java & Database Cloud Service"
-            ],
-            "technologies": [
-                "Oracle ADF",
-                "Oracle Sales Cloud",
-                "Oracle Fusion CRM",
-                "SoapUI",
-                "JDeveloper",
-                "SQLDeveloper",
-                "Oracel Public Cloud",
-                "Java",
-                "JavaEE",
-                "Oracle SOA Suite"
-            ]
-        },
-        {
-            "title": "Cordova App with jQuery Mobile",
-            "role": "Lead Developer",
-            "company": "ec4u expert consulting ag",
-            "from": "09/2012",
-            "to": "12/2014",
-            "location": "Karlsruhe/DE",
-            "description": "Independent development of a cross-platform hybrid mobile application for recruiting. (“ec4u jobs” in AppStore and PlayStore)",
-            "achievements": [
-                "Development of a hybrid mobile application with jQuery mobile and PhoneGap",
-                "Packaging and compilation for iOS and Android",
-                "Design and layout of user interface and graphics",
-                "Integration of REST Services from Wordpress (JSON)",
-                "Pre, post processing and transformation of data",
-                "Certificate management and publication in Apple App-Store and Google Play-Store"
-            ],
-            "technologies": [
-                "PhoneGap",
-                "Cordova",
-                "Eclipse",
+                "Python",
+                "Swift",
                 "Xcode",
-                "Adobe Photoshop CS5",
-                "Wordpress",
-                "REST",
-                "JavaScript",
-                "jQuery Mobile",
-                "jQuery"
+                "Travis CI",
+                "Kodi",
+                "Git",
+                "Github"
             ]
         },
         {
-            "title": "Oracle Siebel CRM Webservices Integration",
-            "role": "Student",
-            "company": "ec4u expert consulting ag",
-            "from": "03/2012",
-            "to": "08/2012",
-            "location": "Karlsruhe/DE",
-            "description": "Bachelor thesis: Development of a mobile Web application that maps the process for applications for leave from Oracle Siebel CRM.",
+            "title": "mfrc522-rpi",
+            "role": "",
+            "url": "https://github.com/firsttris/mfrc522-rpi",
+            "company": "Teufel-IT",
+            "from": "01/2016",
+            "to": "today",
+            "location": "Github",
+            "description": "JavaScript class to control MFRC522 RFID Module with your Raspberry-pi",
             "achievements": [
-                "Development of a mobile Web application based on jQuery mobile",
-                "Integration of a SOAP webservice from Oracle Siebel CRM",
-                "Data transformation"
+                "Control MFRC522 Module with your Raspberry PI & Javascript",
+                "Reverse Engineered Arduino C++ Code to JavaScript (NodeJs)",
+                "Set up a Testing Suite",
+                "57 stars, 2 contributors"
             ],
             "technologies": [
-                "Eclipse",
-                "SoapUI",
-                "SOAP",
-                "PHP",
+                "Raspberry PI",
+                "MFRC522",
                 "JavaScript",
-                "jQuery",
-                "jQuery Mobile"
-            ]
-        },
-        {
-            "title": "Evaluation of Google Checkout & Wallet API",
-            "role": "Student",
-            "company": "ec4u expert consulting ag",
-            "from": "09/2011",
-            "to": "03/2012",
-            "location": "Karlsruhe/DE",
-            "description": "Application project within the studies at Hochschule Karlsruhe: Exemplary implementation of a mobile Web application for the evaluation of the Google Payment-APIs (Google Checkout and Google Wallet).",
-            "achievements": [
-                "Development of a mobile Web application based on jQuery mobile",
-                "Development of a PHP based Webshop",
-                "Integration of the Google Checkout API (PHP)",
-                "Integration of the Google Wallet API (JavaScript)",
-                "Authentication with Google OAuth"
-            ],
-            "technologies": [
-                "Netbeans",
-                "PHP",
-                "JavaScript",
-                "jQuery",
-                "jQuery Mobile"
+                "NodeJs",
+                "Git",
+                "Github"
             ]
         }
     ]
