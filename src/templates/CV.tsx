@@ -74,7 +74,7 @@ export default (props: Props) => {
   };
 
   return (
-    <div className="container">
+    <div className="container" style={{ userSelect: 'none' }}>
       <article className="resume-wrapper text-center position-relative">
         <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
           <Header
