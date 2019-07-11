@@ -23,7 +23,7 @@ export const ResumeSkill = (props: Props) => (
       <div
         className="progress-bar"
         role="progressbar"
-        style={{ width: props.xpInPercentage, backgroundImage: `url(${Paper})` }}
+        style={{ width: props.xpInPercentage, backgroundImage: `url(${Paper})`, backgroundColor: '#e9ecef' }}
       />
     </div>
   </li>
