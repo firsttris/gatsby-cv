@@ -90,7 +90,7 @@ export default (props: Props) => {
               xing: props.data.social.nodes[0].childSocialJson.social.xing
             }}
           />
-          <div className="resume-body p-5" style={{ backgroundImage: `url(${Lines})` }}>
+          <div className="resume-body p-5" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
             <div className="text-right">
               <button
                 type="button"
