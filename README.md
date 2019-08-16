@@ -1,6 +1,6 @@
 # Curriculum Vitae
 
-Curriculum Vitae with [gatsbyJS](https://www.gatsbyjs.org/) a static page generator for reactJs.
+Curriculum Vitae with [gatsbyJS](https://www.gatsbyjs.org/) a static page generator for [reactJs](https://reactjs.org/).
 
 ## Motivation
 
