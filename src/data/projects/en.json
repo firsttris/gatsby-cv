@@ -3,7 +3,7 @@
         {
             "title": "Development of a chat application",
             "role": "Developer",
-            "company": "Teamviewer GmbH",
+            "company": "Teamviewer GmbH with Gulp",
             "from": "08/2019",
             "to": "10/2019",
             "location": "Göppingen/DE",
@@ -20,6 +20,32 @@
                 "Webpack",
                 "C++",
                 "VisualStudio2017",
+                "Git",
+                "Jira",
+                "Confluence"
+            ]
+        },
+        {
+            "title": "Development of a configurator for drugstores",
+            "role": "Developer",
+            "company": "Procter & Gamble (P&G) with typzwo",
+            "from": "08/2019",
+            "to": "today",
+            "location": "Karlsruhe/DE",
+            "description": "Development of a configurator for drugstores",
+            "achievements": [
+                "Introduced JSX and render functions in VueJs",
+                "Components divided according to automic design principles",
+                "Schema extensions in MySQL",
+                "Further development of the configurator according to requirements"
+            ],
+            "technologies": [
+                "VueJs",
+                "Javascript",
+                "Webpack",
+                "PHP",
+                "MySQL",
+                "Laravel",
                 "Git",
                 "Jira",
                 "Confluence"
@@ -64,7 +90,7 @@
         {
             "title": "Developing a gaming platform",
             "role": "Developer",
-            "company": "Gameforge 4D GmbH",
+            "company": "Gameforge 4D GmbH with Gulp",
             "from": "05/2017",
             "to": "09/2017",
             "location": "Karlsruhe/DE",
@@ -94,7 +120,7 @@
         {
             "title": "Backend Development of an appointment scheduling system",
             "role": "Developer",
-            "company": "Termin App GmbH (Timify)",
+            "company": "Termin App GmbH (Timify) with Etengo",
             "from": "01/2017",
             "to": "04/2017",
             "location": "Munich/DE",
