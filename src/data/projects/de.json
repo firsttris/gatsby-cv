@@ -1,6 +1,31 @@
 {
     "projects": [
         {
+            "title": "Weiterentwicklung einer Chat-Applikation",
+            "role": "Entwickler",
+            "company": "Teamviewer GmbH",
+            "from": "08/2019",
+            "to": "10/2019",
+            "location": "Göppingen/DE",
+            "description": "Entwicklung und Integration neuer Komponenten für den Chat von Teamviewer und Blizz.com",
+            "achievements": [
+                "Toolchain vom Projekt refactored und aktualisiert (Webpack)",
+                "Komponenten basierte Entwicklung eingeführt",
+                "Komponenten nach Designvorlagen erstellt",
+                "Weiterentwicklung der Chat funktionalität"
+            ],
+            "technologies": [
+                "KnockoutJs",
+                "Typescript",
+                "Webpack",
+                "C++",
+                "VisualStudio2017",
+                "Git",
+                "Jira",
+                "Confluence"
+            ]
+        },
+        {
             "title": "Entwicklung von Webanwendungen für Daimler-Projekte",
             "role": "Leitender Entwickler",
             "company": "ETECTURE GmbH",
