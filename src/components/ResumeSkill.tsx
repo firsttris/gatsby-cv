@@ -19,11 +19,15 @@ export const ResumeSkill = (props: Props) => (
         {props.name}
       </a>
     </div>
-    <div className="progress resume-progress">
+    <div className="progress resume-progress" style={{ height: '0.6rem' }}>
       <div
         className="progress-bar"
         role="progressbar"
-        style={{ width: props.xpInPercentage, backgroundImage: `url(${Paper})`, backgroundColor: '#e9ecef' }}
+        style={{
+          width: props.xpInPercentage,
+          backgroundImage: `url(${Paper})`,
+          backgroundColor: '#e9ecef'
+        }}
       />
     </div>
   </li>

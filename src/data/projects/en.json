@@ -11,8 +11,8 @@
             "achievements": [
                 "Toolchain from project refactored and updated (webpack)",
                 "Introduced Component based development",
-                "Created Components according to design templates",
-                "Further development of chat functionality"
+                "Developed components for chat functionality",
+                "Technological approach to lazy loading an emoji picker"
             ],
             "technologies": [
                 "KnockoutJs",
@@ -30,14 +30,14 @@
             "role": "Developer",
             "company": "Procter & Gamble (P&G) with typzwo",
             "from": "08/2019",
-            "to": "today",
+            "to": "12/2019",
             "location": "Karlsruhe/DE",
             "description": "Development of a configurator for drugstores",
             "achievements": [
                 "Introduced JSX and render functions in VueJs",
                 "Components divided according to automic design principles",
                 "Schema extensions in MySQL",
-                "Further development of the configurator according to requirements"
+                "Development of components for the configurator"
             ],
             "technologies": [
                 "VueJs",

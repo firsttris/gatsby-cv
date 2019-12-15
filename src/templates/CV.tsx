@@ -223,16 +223,28 @@ export default (props: Props) => {
           </div>
         </div>
       </article>
-      <p style={{ textAlign: 'center' }}>
-        <a
-          href="https://github.com/firsttris/gatsby-cv"
-          className="link-unstyled"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {getTranslatedLabel('SOURCEONGITHUB')}
-        </a>
-      </p>
+      <footer className="footer text-center pt-2">
+        <small className="copyright">
+          Designed with <i className="fas fa-heart" /> by{' '}
+          <a href="http://themes.3rdwavemedia.com" target="_blank">
+            Xiaoying Riley
+          </a>{' '}
+          for developers
+        </small>
+      </footer>
+      <footer className="footer text-center pt-2 pb-5">
+        <small className="source-code">
+          <i className="fab fa-github" />{' '}
+          <a
+            href="https://github.com/firsttris/gatsby-cv"
+            className="link-unstyled"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {getTranslatedLabel('SOURCEONGITHUB')}
+          </a>
+        </small>
+      </footer>
     </div>
   );
 };
