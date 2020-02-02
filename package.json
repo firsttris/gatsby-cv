@@ -42,13 +42,16 @@
     "@types/node": "^13.7.0",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
     "classnames": "^2.2.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.2",
+    "typescript": "^3.7.5",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1",
-    "tslint": "^6.0.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.1.0",
-    "tslint-react": "^4.2.0",
     "uuid": "^3.4.0"
   }
 }
