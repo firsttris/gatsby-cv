@@ -9,9 +9,9 @@
             "location": "Bretten/DE",
             "description": "Unterstützen mit praktischem React Wissen",
             "achievements": [
-                "Tickets nach Anforderungen abarbeiten",
-                "Unit-Tests mit Jest erstellt",
-                "Integrierte unser Projekt mit Prettier"
+                "Tickets nach Anforderungen entwickelt",
+                "Unit-Tests mit Jest geschrieben",
+                "Projekt mit Prettier integriert"
             ],
             "technologies": [
                 "Java 8",
