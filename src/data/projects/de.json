@@ -1,11 +1,58 @@
 {
     "projects": [
         {
+            "title": "Entwicklung von Software für Automobilzulieferer",
+            "role": "Developer",
+            "company": "Seeburger ag",
+            "from": "01/2020",
+            "to": "heute",
+            "location": "Bretten/DE",
+            "description": "Unterstützen mit praktischem React Wissen",
+            "achievements": [
+                "Tickets nach Anforderungen abarbeiten",
+                "Unit-Tests mit Jest erstellt",
+                "Integrierte unser Projekt mit Prettier"
+            ],
+            "technologies": [
+                "Java 8",
+                "Gerrit",
+                "IntelliJ IDEA",
+                "Typescript",
+                "React",
+                "Material-ui",
+                "Jira",
+                "Redmine"
+            ]
+        },
+        {
+            "title": "Entwicklung von Templates für ein CMS",
+            "role": "Entwickler",
+            "company": "ETECTURE Düsseldorf GmbH",
+            "from": "11/2019",
+            "to": "12/2019",
+            "location": "Düsseldorf/DE",
+            "description": "Unterstützen bei der Erstellung eines neuen CMS für die SWKBank",
+            "achievements": [
+                "Verschiedene Vorlagen mit Bootstrap und Sass erstellt"
+            ],
+            "technologies": [
+                "PHP",
+                "Symphony",
+                "eZ Publish",
+                "JavaScript",
+                "Bootstraps 4",
+                "Sass",
+                "Git",
+                "Jira",
+                "Confluence"
+            ]
+        },
+        {
             "title": "Weiterentwicklung einer Chat-Applikation",
             "role": "Entwickler",
             "company": "Teamviewer GmbH über Gulp",
             "from": "08/2019",
-            "to": "10/2019",
+            "to": "11/2019",
             "location": "Göppingen/DE",
             "description": "Entwicklung und Integration neuer Komponenten für den Chat von Teamviewer und Blizz.com",
             "achievements": [
@@ -41,6 +88,7 @@
             ],
             "technologies": [
                 "VueJs",
+                "Vuex",
                 "Javascript",
                 "Webpack",
                 "PHP",
@@ -71,6 +119,9 @@
             ],
             "technologies": [
                 "React",
+                "Redux",
+                "Reselect",
+                "Immutable.js",
                 "Typescript",
                 "Jest",
                 "Webpack",
@@ -90,7 +141,7 @@
         {
             "title": "Entwicklung einer Spieleplattform",
             "role": "Entwickler",
-            "company": "Gameforge GmbH with Gulp",
+            "company": "Gameforge GmbH über Gulp",
             "from": "05/2017",
             "to": "09/2017",
             "location": "Karlsruhe/DE",
@@ -105,6 +156,7 @@
             "technologies": [
                 "Angular 1.x",
                 "React",
+                "Redux",
                 "REST",
                 "Docker",
                 "Kubernetes",
@@ -120,7 +172,7 @@
         {
             "title": "Backend Entwicklung eines Terminplanungssystems",
             "role": "Entwickler",
-            "company": "Termin App GmbH (Timify) with Etengo",
+            "company": "Termin App GmbH (Timify) über Etengo",
             "from": "01/2017",
             "to": "04/2017",
             "location": "Munich/DE",
