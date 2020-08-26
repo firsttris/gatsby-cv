@@ -17,14 +17,7 @@ export const TechnologyList = (props: Props) => (
             className="badge badge-primary badge-pill"
             style={{ backgroundImage: `url(${Paper})`, fontWeight: 'normal' }}
           >
-            <a
-              href={`http://google.com/search?q=${tech}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-unstyled"
-            >
-              {tech}
-            </a>
+            {tech}
           </span>
         </li>
       ))}

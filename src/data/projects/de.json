@@ -5,46 +5,33 @@
             "role": "Developer",
             "company": "Seeburger ag",
             "from": "01/2020",
-            "to": "heute",
+            "to": "09/2020",
             "location": "Bretten/DE",
-            "description": "Unterstützen mit praktischem React Wissen",
+            "description": "Testgetriebene Entwicklung neuer Features und Komponenten",
             "achievements": [
-                "Tickets nach Anforderungen entwickelt",
-                "Unit-Tests mit Jest geschrieben",
-                "Projekt mit Prettier integriert"
+                "Entwicklung neuer Komponenten mit React und MaterialUI",
+                "Customizing von MaterialUI Komponenten",
+                "Erstellung von Tests mit React-Testing-Library und Jest",
+                "Neue Dependency-Cruiser Regeln definiert",
+                "Ansatz zum laden einer PWA in einem Monolith",
+                "Webservices JAX-RS implementiert und OpenAPI Annotationen hinzugefügt",
+                "Custom Filter für AgGrid erstellt"
             ],
             "technologies": [
                 "Java 8",
+                "OpenAPI",
                 "Gerrit",
                 "IntelliJ IDEA",
                 "Typescript",
                 "React",
+                "Redux",
+                "React-Testing-Library",
+                "Jest",
                 "Material-ui",
+                "AgGrid",
                 "Jira",
-                "Redmine"
-            ]
-        },
-        {
-            "title": "Entwicklung von Templates für ein CMS",
-            "role": "Entwickler",
-            "company": "ETECTURE Düsseldorf GmbH",
-            "from": "11/2019",
-            "to": "12/2019",
-            "location": "Düsseldorf/DE",
-            "description": "Unterstützen bei der Erstellung eines neuen CMS für die SWKBank",
-            "achievements": [
-                "Verschiedene Vorlagen mit Bootstrap und Sass erstellt"
-            ],
-            "technologies": [
-                "PHP",
-                "Symphony",
-                "eZ Publish",
-                "JavaScript",
-                "Bootstraps 4",
-                "Sass",
-                "Git",
-                "Jira",
-                "Confluence"
+                "Confluence",
+                "BitBucket"
             ]
         },
         {

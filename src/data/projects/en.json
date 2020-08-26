@@ -5,46 +5,33 @@
             "role": "Developer",
             "company": "Seeburger ag",
             "from": "01/2020",
-            "to": "today",
+            "to": "09/2020",
             "location": "Bretten/DE",
-            "description": "Supporting with practical React knowledge",
+            "description": "Test-driven development of new features and components",
             "achievements": [
-                "Development of tickets according to requirements",
-                "Created Unit-Tests with Jest",
-                "Integrated our project with Prettier"
+                "Development of new components with React and MaterialUI",
+                "Customizing of MaterialUI components",
+                "Creation of tests with React-Testing-Library and Jest",
+                "New dependency cruiser rules defined",
+                "Approach to Loading a PWA in a Monolith",
+                "JAX-RS web services implemented and OpenAPI annotations added",
+                "Custom filter created for AgGrid"
             ],
             "technologies": [
                 "Java 8",
+                "OpenAPI",
                 "Gerrit",
                 "IntelliJ IDEA",
                 "Typescript",
                 "React",
+                "Redux",
+                "React-Testing-Library",
+                "Jest",
                 "Material-ui",
+                "AgGrid",
                 "Jira",
-                "Redmine"
-            ]
-        },
-        {
-            "title": "Development of templates for a CMS",
-            "role": "Developer",
-            "company": "ETECTURE Düsseldorf GmbH",
-            "from": "11/2019",
-            "to": "12/2019",
-            "location": "Düsseldorf/DE",
-            "description": "Supporting creating a new CMS for SWKBank",
-            "achievements": [
-                "Created various templates with Bootstraps and Sass"
-            ],
-            "technologies": [
-                "PHP",
-                "Symphony",
-                "eZ Publish",
-                "JavaScript",
-                "Bootstraps 4",
-                "Sass",
-                "Git",
-                "Jira",
-                "Confluence"
+                "Confluence",
+                "BitBucket"
             ]
         },
         {

@@ -5,7 +5,7 @@ export const messages: any = {
     WORK_XP: 'Arbeitserfahrung',
     WATERSPORT: 'Wassersport',
     HOMEAUTOMATION: 'Heim Automation',
-    SKILLS: 'Kentnisse',
+    SKILLS: 'Kenntnisse',
     EDUCATION: 'Ausbildung',
     LANGUAGES: 'Sprachen',
     INTEREST: 'Interessen',
@@ -18,7 +18,7 @@ export const messages: any = {
     ACHIEVEMENTS: 'Ergebnisse',
     TECHNOLOGY_USED: 'Verwendete Technologie',
     OTHERS: 'Andere',
-    MORE_PROJECTS: 'Mehr Projekte auf Github'
+    MORE_PROJECTS: 'Mehr Projekte auf Github',
   },
   en: {
     CAREER_SUMMARY: 'Career Summary',
@@ -39,6 +39,6 @@ export const messages: any = {
     ACHIEVEMENTS: 'Achievements',
     TECHNOLOGY_USED: 'Technology used',
     OTHERS: 'Others',
-    MORE_PROJECTS: 'More Projects on Github'
-  }
+    MORE_PROJECTS: 'More Projects on Github',
+  },
 };
