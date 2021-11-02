@@ -52,19 +52,19 @@ export default (props: Props) => {
       name: getTranslatedLabel('WORK_XP'),
       path: 'work',
       checked: isWorkSelected(),
-      icon: 'fas fa-briefcase'
+      icon: 'fas fa-briefcase',
     },
     {
       name: getTranslatedLabel('OPENSOURCE'),
       path: 'opensource',
       checked: props.location.pathname.includes('opensource'),
-      icon: 'fab fa-github'
-    }
+      icon: 'fab fa-github',
+    },
   ]);
 
   React.useEffect(() => {
-    setTimeout(() => scrollToY(), 100);
-  });
+    scrollToY();
+  }, [props.location.pathname]);
 
   const onLanguageClick = (pathname: string) => {
     saveScrollPosition();
@@ -87,7 +87,7 @@ export default (props: Props) => {
               github: props.data.social.nodes[0].childSocialJson.social.github,
               linkedin: props.data.social.nodes[0].childSocialJson.social.linkedin,
               website: props.data.social.nodes[0].childSocialJson.social.website,
-              xing: props.data.social.nodes[0].childSocialJson.social.xing
+              xing: props.data.social.nodes[0].childSocialJson.social.xing,
             }}
           />
           <div className="resume-body p-5" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
@@ -113,7 +113,7 @@ export default (props: Props) => {
               <div className="col-lg-9">
                 <TabSelector
                   items={items}
-                  onClick={index => {
+                  onClick={(index) => {
                     saveScrollPosition();
                     setSelectedItem(index);
                     navigate(`/${props.pageContext.locale}/${items[index].path}`);
@@ -197,12 +197,12 @@ export default (props: Props) => {
                       languages={[
                         {
                           language: getTranslatedLabel('GERMAN'),
-                          skill: getTranslatedLabel('NATIVE')
+                          skill: getTranslatedLabel('NATIVE'),
                         },
                         {
                           language: getTranslatedLabel('ENGLISH'),
-                          skill: getTranslatedLabel('FLUENT')
-                        }
+                          skill: getTranslatedLabel('FLUENT'),
+                        },
                       ]}
                     />
                   </div>
