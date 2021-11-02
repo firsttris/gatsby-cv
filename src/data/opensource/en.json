@@ -1,28 +1,6 @@
 {
     "projects": [
         {
-            "title": "html-webpack-multi-build-plugin",
-            "role": "",
-            "url": "https://github.com/firsttris/html-webpack-multi-build-plugin",
-            "company": "Teufel-IT",
-            "from": "07/2018",
-            "to": "today",
-            "location": "Github",
-            "description": "This plugin simplifies the creation of script tags for module and nomodule for a webpack multi build configuration.",
-            "achievements": [
-                "Created a multi build plugin for html-webpack-plugin",
-                "Set up bundles for ES6+ (modern) and ES5 (older browsers)",
-                "47 stars, 3 contributors"
-            ],
-            "technologies": [
-                "JavaScript",
-                "Webpack API",
-                "Git",
-                "Github",
-                "html-webpack-plugin"
-            ]
-        },
-        {
             "title": "VSCode Addon Jest Runner",
             "role": "",
             "url": "https://github.com/firsttris/vscode-jest-runner.git",
@@ -32,11 +10,11 @@
             "location": "Github",
             "description": "Simple way to run or debug a single or multiple Jest tests from context menu. As it is possible in IntelliJ / Webstorm",
             "achievements": [
-                "Created a VSCode Addon with Typescript",
-                "Possibility to run Jest tests from context & command menu",
-                "36,113 active installs",
+                "#2 if you search for Jest in Visual Studio Marketplace",
+                "Jest-Runner will be installed as recommended extension by nrwl's nx-tools",
+                "274,540 installs",
                 "5 star rating in Visual Studio Marketplace",
-                "30 stars, 14 contributors"
+                "155 stars on Github, 38 contributors"
             ],
             "technologies": [
                 "Typescript",
@@ -62,7 +40,7 @@
                 "Added an InApp Payment for multiple hosts",
                 "The InApp Payment achieves about 15$ a quater, which is enough to pay the developer fee",
                 "Two other developers created Apps which make use of my python plugin (see Github Page)",
-                "28 stars, 5 contributors"
+                "54 stars, 5 contributors"
             ],
             "technologies": [
                 "Python",
@@ -87,7 +65,7 @@
                 "Control MFRC522 Module with your Raspberry PI & Javascript",
                 "Reverse Engineered Arduino C++ Code to JavaScript (NodeJs)",
                 "Set up a Testing Suite",
-                "71 stars, 3 contributors"
+                "94 stars, 3 contributors"
             ],
             "technologies": [
                 "Raspberry PI",

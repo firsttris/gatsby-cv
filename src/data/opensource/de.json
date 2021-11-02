@@ -1,28 +1,6 @@
 {
     "projects": [
         {
-            "title": "html-webpack-multi-build-plugin",
-            "role": "",
-            "url": "https://github.com/firsttris/html-webpack-multi-build-plugin",
-            "company": "Teufel-IT",
-            "from": "07/2018",
-            "to": "heute",
-            "location": "Github",
-            "description": "Dieses Plugin vereinfacht die Erstellung von Skript-Tags für Module und Nomodule für eine Webpack-Multi-Build-Konfiguration",
-            "achievements": [
-                "Ein Multi-Build-Plugin für HTML-Webpack-Plugin erstellt",
-                "Bundles für ES6+ (moderne) und ES5 (ältere Browser) einrichten",
-                "47 Sterne, 3 Mitwirkende"
-            ],
-            "technologies": [
-                "JavaScript",
-                "Webpack API",
-                "Git",
-                "Github",
-                "html-webpack-plugin"
-            ]
-        },
-        {
             "title": "VSCode Addon Jest Runner",
             "role": "",
             "url": "https://github.com/firsttris/vscode-jest-runner.git",
@@ -32,11 +10,11 @@
             "location": "Github",
             "description": "Einfache Möglichkeit, einen oder mehrere Jest-Tests über das Kontextmenü auszuführen oder zu debuggen. Wie es in IntelliJ / Webstorm möglich ist",
             "achievements": [
-                "Ein VSCode Addon mit Typescript erstellt",
-                "Möglichkeit, Jest-Tests über das Kontext- und Befehlsmenü auszuführen",
-                "36,113 aktive installationen",
-                "5 Sternebewertung in Visual Studio Marketplace",
-                "30 Sterne, 14 Mitwirkende"
+                "#2, wenn Sie im Visual Studio Marketplace nach Jest suchen",
+                "Jest-Runner wird als empfohlene Erweiterung von nrwl's NX-Tools installiert",
+                "274.540 Installationen",
+                "5-Sterne-Bewertung im Visual Studio Marketplace",
+                "155 Sterne auf Github, 38 Mitwirkende"
             ],
             "technologies": [
                 "Typescript",
@@ -62,7 +40,7 @@
                 "In-App-Zahlungs Option für mehrere Hosts hinzugefügt",
                 "Mit der In-App-Zahlung werden ungefähr 15 US-Dollar pro Quartal erzielt, was ausreicht, um die Entwicklergebühr zu zahlen",
                 "Zwei andere Entwickler haben Apps erstellt, die mein Python-Plugin verwenden (siehe Github-Seite).",
-                "28 Sterne, 5 Mitwirkende"
+                "54 Sterne, 5 Mitwirkende"
             ],
             "technologies": [
                 "Python",
@@ -87,7 +65,7 @@
                 "Steuern Sie das MFRC522-Modul mit Ihrem Raspberry PI und Javascript",
                 "Rückwärtsentwicklung von Arduino C++ Code zu JavaScript (NodeJs)",
                 "Einrichten einer Testsuite",
-                "71 Sterne, 3 Mitwirkende"
+                "94 Sterne, 3 Mitwirkende"
             ],
             "technologies": [
                 "Raspberry PI",

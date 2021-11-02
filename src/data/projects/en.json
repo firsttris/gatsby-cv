@@ -1,9 +1,46 @@
 {
     "projects": [
         {
+            "title": "Development of Heidelbergcements HConnect product suite ",
+            "role": "Developer",
+            "company": "Heidelberg Cement ag with Etengo",
+            "from": "10/2020",
+            "to": "12/2021",
+            "location": "Heidelberg/DE",
+            "description": "Supported Heidelbergcement ag in building the HConnect product suite. HConnect is designed to offer an ‘end-to-end’ digital experience for customers and will build additional revenues as well as reduced logistics and back-office work.",
+            "achievements": [
+                "Created Cypress Tests & Integrated them with Gitlab pipeline",
+                "Created automated Code-Coverage reports & Test results for Cypress and integrated them with Jira X-Ray",
+                "Enabled out-of-source import in CRA-4 Mono-Repo",
+                "Migrated the mono-repo from tslint to eslint & prettier",
+                "Test driven development around User Management & Authentication in the HConnect product suite",
+                "Implemented a nginx reverse proxy docker container for react-router",
+                "Implemented Live-SAS token creation for build scripts in Azure cloud",
+                "POC Migration from Yarn1 to Yarn2 with Zero Install and pnp",
+                "Created Deployments scripts with Azure CLI & Azcopy"
+            ],
+            "technologies": [
+                "Azure Cloud",
+                "CRA",
+                "Vscode",
+                "Typescript",
+                "React",
+                "Redux",
+                "React-Testing-Library",
+                "Jest",
+                "Material-ui",
+                "Cypress",
+                "Jira",
+                "X-Ray",
+                "Confluence",
+                "Gitlab",
+                "nginx"
+            ]
+        },
+        {
             "title": "Development of software for automotive suppliers",
             "role": "Developer",
-            "company": "Seeburger ag",
+            "company": "Seeburger ag with it-experts",
             "from": "01/2020",
             "to": "09/2020",
             "location": "Bretten/DE",
