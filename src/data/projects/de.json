@@ -1,13 +1,13 @@
 {
     "projects": [
         {
-            "title": "Entwicklung von Heidelbergcements HConnect Produktsuite",
+            "title": "Entwicklung von Heidelberg Cement's HConnect Produktsuite",
             "role": "Entwickler",
             "company": "Heidelberg Cement ag über Etengo",
             "from": "10/2020",
             "to": "12/2021",
             "location": "Heidelberg/DE",
-            "description": "Unterstützung der Heidelbergcement ag beim Aufbau der HConnect Produktsuite. HConnect wurde entwickelt, um den Kunden ein digitales „End-to-End“-Erlebnis zu bieten und wird zusätzliche Einnahmen sowie weniger Logistik- und Backoffice-Arbeiten erzielen.",
+            "description": "Unterstützung der Heidelberg Cement ag beim Aufbau der HConnect Produktsuite. HConnect wurde entwickelt, um den Kunden ein digitales „End-to-End“-Erlebnis zu bieten und wird zusätzliche Einnahmen sowie weniger Logistik- und Backoffice-Arbeiten erzielen.",
             "achievements": [
                 "Cypress-Tests erstellt und mit Gitlab-Pipeline integriert",
                 "Automatische Code-Coverage-Berichte & Testergebnisse für Cypress erstellt und mit Jira X-Ray integriert",
@@ -15,9 +15,9 @@
                 "Migration des Mono-Repo von tslint zu eslint & prettier",
                 "Testgetriebene Entwicklung rund um User Management & Authentication in der Hconnect Produktsuite",
                 "Nginx Reverse Proxy docker container für den React-Router implementiert",
-                "Live-SAS-Tokenerstellung für Buildskripts in der Azure-Cloud Implementiert",
+                "Live-SAS-Tokenerstellung für Buildskripts in der Azure-Cloud implementiert",
                 "POC-Migration von Yarn1 zu Yarn2 mit Zero Install und pnp",
-                "Erstellung von NodeJs buildskripten mit Azure CLI und Azcopy"
+                "Erstellung von NodeJs Buildskripten mit Azure CLI und Azcopy"
             ],
             "technologies": [
                 "Azure Cloud",
