@@ -5,19 +5,21 @@
   "version": "1.0.0",
   "author": "tristan teufel <info@teufel-it.de>",
   "dependencies": {
-    "bootstrap": "latest",
+    "bootstrap": "4.6",
     "gatsby": "latest",
+    "gatsby-background-image": "^1.6.0",
     "gatsby-image": "latest",
+    "gatsby-plugin-google-gtag": "^4.20.0",
     "gatsby-plugin-manifest": "latest",
     "gatsby-plugin-sharp": "latest",
     "gatsby-plugin-typescript": "latest",
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-json": "latest",
-    "gatsby-transformer-sharp": "latest",
     "gatsby-transformer-remark": "latest",
+    "gatsby-transformer-sharp": "latest",
+    "html-to-react": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "html-to-react": "latest"
+    "react-dom": "latest"
   },
   "keywords": [
     "gatsby"
@@ -49,9 +51,9 @@
     "eslint-config-prettier": "latest",
     "eslint-plugin-prettier": "latest",
     "eslint-plugin-react": "latest",
-    "typescript": "latest",
     "gh-pages": "latest",
     "prettier": "latest",
+    "typescript": "latest",
     "uuid": "latest"
   }
 }
