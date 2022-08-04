@@ -1,8 +1,7 @@
 import Img from 'gatsby-image';
 import * as React from 'react';
 import { Props as socialMediaProps, SocialMedia } from './SocialMedia';
-const profil = require('../../src/assets/images/profil.png');
-const Paper = require('../../src/assets/images/backgrounds/paper.png');
+import Paper from "../assets/images/backgrounds/paper.png";
 
 interface Props {
   name: string;
@@ -10,15 +9,13 @@ interface Props {
   email: string;
   phone: string;
   socialMedia: socialMediaProps;
-  profile: any;
 }
 
 export const Header = (props: Props) => (
-  <header className="resume-header pt-4 pt-lg-0">
-    <div className="media flex-column flex-lg-row">
-      <Img className="mr-3 img-fluid picture mx-auto" fluid={props.profile} />
+  <header>
+    <div className="media flex-lg-row">
       <div
-        className="media-body p-4 d-flex flex-column flex-lg-row mx-auto mx-lg-0"
+        className="media-body p-4 d-flex flex-lg-row mx-lg-0"
         style={{ backgroundImage: `url(${Paper})`, color: 'lightgrey' }}
       >
         <div className="primary-info">

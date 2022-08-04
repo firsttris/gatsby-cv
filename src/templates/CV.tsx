@@ -78,7 +78,6 @@ export default (props: Props) => {
       <article className="resume-wrapper text-center position-relative">
         <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
           <Header
-            profile={props.data.profile.childImageSharp.fluid}
             role={props.data.social.nodes[0].childSocialJson.role}
             name={props.data.social.nodes[0].childSocialJson.name}
             phone={props.data.social.nodes[0].childSocialJson.phone}
@@ -251,13 +250,6 @@ export default (props: Props) => {
 
 export const query = graphql`
   query($locale: String!) {
-    profile: file(relativePath: { eq: "profil.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     summary: markdownRemark(frontmatter: { locale: { eq: $locale }, name: { eq: "summary" } }) {
       html
       frontmatter {
