@@ -1,79 +1,142 @@
 {
     "projects": [
         {
-            "title": "VSCode Addon Jest Runner",
+            "title": "DisaVu",
             "role": "",
-            "url": "https://github.com/firsttris/vscode-jest-runner.git",
-            "company": "Teufel-IT",
-            "from": "12/2017",
-            "to": "today",
-            "location": "Github",
-            "description": "Simple way to run or debug a single or multiple Jest tests from context menu. As it is possible in IntelliJ / Webstorm",
+            "url": "https://devpost.com/software/disavu",
+            "company": "",
+            "from": "",
+            "to": "",
+            "location": "Online",
+            "description": "Solution that uses machine learning to improve disaster response after hurricanes/tornados",
             "achievements": [
-                "#2 if you search for Jest in Visual Studio Marketplace",
-                "Jest-Runner will be installed as recommended extension by nrwl's nx-tools",
-                "274,540 installs",
-                "5 star rating in Visual Studio Marketplace",
-                "155 stars on Github, 38 contributors"
+                "First place in the AWS Disaster Response Hackathon",
+                "Machine learning models to predict building footprints and to predict whether those footprints are damaged",
+                "Solution was presented in RE:MARS by AWS"
             ],
             "technologies": [
-                "Typescript",
-                "VSCode API",
-                "Git",
-                "Github",
-                "Jest"
+                "rust",
+                "python",
+                "pytorch",
+                "AWS",
+                "GIS"
             ]
         },
         {
-            "title": "SendToKodi iOS App",
+            "title": "CORTX Spark Integration",
             "role": "",
-            "url": "https://github.com/firsttris/plugin.video.sendtokodi",
-            "company": "Teufel-IT",
-            "from": "01/2016",
-            "to": "today",
-            "location": "Github",
-            "description": "SendToKodi is a iOS App which resolves various video streams using youtube-dl to play them on Kodi",
+            "url": "https://devpost.com/software/cortx-spark-hadoop",
+            "company": "",
+            "from": "",
+            "to": "",
+            "location": "Online",
+            "description": "Hadoop and Spark integration using Seagates CORTX S3 compatible API",
             "achievements": [
-                "Created a kodi-addon (python) which extracts video streams from website urls with YoutubeDL",
-                "Set up a Travis CI job which regularly re-builds the kodi-addon with a recent YoutubeDL version",
-                "Developed a native iOS App with Swift which uses the integrated share option to send links to Kodi",
-                "Added an InApp Payment for multiple hosts",
-                "The InApp Payment achieves about 15$ a quater, which is enough to pay the developer fee",
-                "Two other developers created Apps which make use of my python plugin (see Github Page)",
-                "54 stars, 5 contributors"
+                "Second place in the Seagate CORTX Integration Challenge",
+                "Built an ansible script to deploy Hadoop and Spark using CORTX as object storage to an Ubuntu virtual machine"
+            ],
+            "technologies": ["ansible", "hadoop","spark"]
+        },
+        {
+            "title": "Sensing the air quality in my room",
+            "role": "",
+            "url": "https://community.element14.com/products/devtools/avnetboardscommunity/azure-sphere-starter-kits/b/blog/posts/project-sensing-the-air-quality-in-my-room-co2-dust",
+            "company": "",
+            "from": "",
+            "to": "",
+            "location": "",
+            "description": "Wired up sensors to the Azure Sphere IOT device and used Azure IOT and Azure services to store and display data",
+            "achievements": [
+                "Runner up in the Azure Sensing the World competition",
+                "Used Azure Direct methods to modify mutable state of the device from the cloud",
+                "Wrote my own libraries for the MHZ-19 and PMS-7003 devices"
+            ],
+            "technologies": ["Azure","IOT","C"]
+        },
+        {
+            "title": "Lock and Load",
+            "role": "",
+            "url": "https://www.hackster.io/lock-and-load/azure-sphere-iot-enabled-rfid-lock-e73f70",
+            "company": "",
+            "from": "",
+            "to": "",
+            "location": "",
+            "description": "Cloud enabled RFID lock",
+            "achievements": [
+                "Tier 2 Award (multiple runners up) in the Secure Everything with Azure Sphere Challenge"],
+            "technologies": ["Azure", "IOT","C"]
+        },
+        {
+            "title": "WACTF 2018 - Second Place",
+            "role": "",
+            "url": "https://capture.tf/",
+            "company": "",
+            "from": "",
+            "to": "",
+            "location": "Perth",
+            "description": "WACTF is a weekend long challenge based cybersecurity competition (Capture the Flag) created and hosted by the Perth cybersecurity community. Our team solved a variety of challenges",
+            "achievements": [
+                "Placed second amongst 60 teams competing that weekend"
             ],
             "technologies": [
+                "Wireshark",
                 "Python",
-                "Swift",
-                "Xcode",
-                "Travis CI",
-                "Kodi",
-                "Git",
-                "Github"
+                "Linux"
             ]
         },
         {
-            "title": "mfrc522-rpi",
+            "title": "Spaceapps - ",
             "role": "",
-            "url": "https://github.com/firsttris/mfrc522-rpi",
-            "company": "Teufel-IT",
-            "from": "01/2016",
-            "to": "today",
-            "location": "Github",
-            "description": "JavaScript class to control MFRC522 RFID Module with your Raspberry-pi",
-            "achievements": [
-                "Control MFRC522 Module with your Raspberry PI & Javascript",
-                "Reverse Engineered Arduino C++ Code to JavaScript (NodeJs)",
-                "Set up a Testing Suite",
-                "94 stars, 3 contributors"
+            "url": "https://2018.spaceappschallenge.org/challenges/what-world-needs-now/globe-observer/teams/supergiant-scuti/project/",
+            "company": "",
+            "from": "",
+            "to": "",
+            "location": "",
+            "description": "",
+            "achievements": [""
             ],
-            "technologies": [
-                "Raspberry PI",
-                "MFRC522",
-                "JavaScript",
-                "NodeJs",
-                "Git",
-                "Github"
+            "technologies": [""
+            ]
+        },
+        {
+            "title": "Monte Rocks",
+            "role": "",
+            "url": "https://unearthed.solutions/news/global-crowd-creates-diverse-solutions-crush-newcrests-rock-bridges-challenge",
+            "company": "",
+            "from": "",
+            "to": "",
+            "location": "",
+            "description": "Created a physics based simulator to minimise rock bridges",
+            "achievements": [""
+            ],
+            "technologies": ["Unity"
+            ]
+        },
+        {
+            "title": "Steel Ballers",
+            "role": "",
+            "url": "https://unearthed.solutions/news/perths-brightest-minds-unearth-mine-solutions-nickel-west",
+            "company": "",
+            "from": "",
+            "to": "",
+            "location": "",
+            "description": "",
+            "achievements": [""
+            ],
+            "technologies": [""
+            ]
+        },        {
+            "title": "Klog",
+            "role": "",
+            "url": "https://unearthed.solutions/u/innovators/stephen-mott",
+            "company": "",
+            "from": "",
+            "to": "",
+            "location": "",
+            "description": "",
+            "achievements": [""
+            ],
+            "technologies": [""
             ]
         }
     ]

@@ -16,6 +16,12 @@
     vertical-align: inherit;
   }
 
+  .link-hover:hover {
+    color: #aab4c3;
+    font-size: 1.1rem;
+  }
+
+
   .resume-wrapper {
     padding-top: 30px;
     padding-bottom: 60px;

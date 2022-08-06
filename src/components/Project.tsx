@@ -25,7 +25,9 @@ export const Project = (props: Props) => (
         <div className="resume-company-name ml-auto">{props.company}</div>
       </div>
       {props.role}
-      <a href={props.url} rel="external nofollow" className="link-unstyled" target="_blank">{props.url}</a>
+      <a href={props.url} rel="external nofollow" className="link-unstyled link-hover" target="_blank">{props.url}</a>
+      {
+        props.from.length > 0 &&
       <div className="resume-position-time">
         {props.from} - {props.to}{' '}
         <span
@@ -40,6 +42,7 @@ export const Project = (props: Props) => (
           {props.location}
         </span>
       </div>
+      }
     </div>
     <div className="resume-timeline-item-desc">
       { 
