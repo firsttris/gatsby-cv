@@ -1,12 +1,53 @@
 { 
     "certs": [
         {
-            "title": "Oracle ADF 11g Implementation Specialist",
-            "description": "Oracle's commercial end-to-end Java EE framework"
+            "title": "AWS Certified Developer - Associate",
+            "validity": "13/01/2020 - 13/01/2023",
+            "cert_url": "https://www.credly.com/badges/fdab1c4b-eb4e-4800-89ee-e542dd23ea69/public_url",
+            "cert_id": "NSNBYCEKH1E4QFW2",
+            "sort_date": "13/01/2020",
+            "show": true
         },
         {
-            "title": "FreeCodeCamp: Responsive Web Development Projects",
-            "description": "Non-profit organization that consists of an interactive learning web platform"
+            "title": "Microsoft Azure Fundamentals",
+            "validity": "25/02/2020 -> Current",
+            "cert_id": "H371-6489",
+            "cert_url": "https://www.credly.com/badges/e5fafa9a-31bf-4775-bfc9-2596d81907a8/public_url",
+            "sort_date": "25/03/2021",
+            "show": true
+        },
+        {
+            "title": "AWS Certified Machine Learning - Speciality",
+            "validity": "19/10/2020 - 19/10/2023",
+            "cert_url": "https://www.credly.com/badges/0a1f19e3-cc0d-4831-9f06-49b1f16bd2d5/public_url",
+            "cert_id": "XC44P3LLMMFQQG3W",
+            "sort_date": "19/10/2020",
+            "show": true
+        },
+
+        {
+            "title": "Microsoft Azure Developer Associate",
+            "validity": "25/03/2021 - 25/03/2023",
+            "cert_id": "H730-6974",
+            "cert_url": "https://www.credly.com/badges/a50a6ac7-486d-40a4-84a7-b8c9e783ec5c/public_url",
+            "sort_date": "25/03/2021",
+            "show": true
+        },
+        {
+            "title": "AWS Certified Data Analytics - Speciality",
+            "validity": "02/05/2022 - 02/05/2025",
+            "cert_url": "https://www.credly.com/badges/acede888-7829-47dd-bd32-eabaeec1bd56/public_url",
+            "cert_id": "GRLTFMX1Q2Q41B31",
+            "sort_date": "02/05/2022",
+            "show": true
+        },
+        {
+            "title": "Certified Scrum Product Owner (CSPO)",
+            "validity": "15/06/2022 - 06/15/2024",
+            "cert_id": "1601251",
+            "cert_url": "https://bcert.me/bc/html/show-badge.html?b=qepflnwt",
+            "sort_date": "15/06/2022",
+            "show": true
         }
     ]
 }

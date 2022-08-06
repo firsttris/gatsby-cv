@@ -6,6 +6,7 @@
   "author": "tristan teufel <info@teufel-it.de>",
   "dependencies": {
     "bootstrap": "4.6",
+    "dayjs": "^1.11.4",
     "gatsby": "latest",
     "gatsby-image": "latest",
     "gatsby-plugin-google-gtag": "^4.20.0",

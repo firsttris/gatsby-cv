@@ -139,8 +139,6 @@
     color: #434E5E;
   }
 
-
-  
   .resume-degree-org {
     font-size: 0.875rem;
   }
@@ -154,11 +152,20 @@
     font-weight: bold;
     color: #434E5E;
   }
-  
-  .resume-award-desc {
+  .resume-award-name:hover {
+    color: #aab4c3;
+    font-size: 1.1rem;
+  }
+
+  .resume-award-num {
     font-size: 0.875rem;
   }
   
+  .resume-award-validity {
+    color: #aab4c3;
+    font-size: 0.875rem;
+  }
+
   .resume-lang-name {
     color: #434E5E;
   }

@@ -1,22 +1,16 @@
 {
     "educations": [
         {
-          "titel": "Bachelor of Science (B.Sc.) Business Information Systems",
-          "uni": "Hochschule Karlsruhe – Technik und Wirtschaft",
-          "from": "2008",
-          "to": "2012"
+          "titel": "Master of Professional Engineering: Mechanical Engineering",
+          "uni": "The University Of Western Australia",
+          "from": "2016",
+          "to": "2018"
         },
         { 
-          "titel": "Higher education entrance qualification in Business Information Systems",
-          "uni": "Handelslehranstalt Gernsbach",
-          "from": "2006",
-          "to": "2008"
-        },
-        {
-          "titel": "IHK Certified Automotive Sales Person",
-          "uni": "Autoboos GmbH",
-          "from": "2003",
-          "to": "2006"
+          "titel": "Bachelor of Commerce",
+          "uni": "The University Of Western Australia",
+          "from": "2012",
+          "to": "2016"
         }
       ]
 }

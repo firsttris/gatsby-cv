@@ -46,6 +46,10 @@ export default (props: Props) => {
     );
   };
 
+  const projectIcon = ():string => {
+    return (isWorkSelected() ? 'fa fa-folder':'fa fa-folder-open');
+  }
+
   const [selectedItem, setSelectedItem] = React.useState(isWorkSelected() ? 0 : 1);
   const [items, setItems] = React.useState([
     {
@@ -58,7 +62,7 @@ export default (props: Props) => {
       name: 'Projects',
       path: 'projects',
       checked: props.location.pathname.includes('proj'),
-      icon: 'fab fa-github',
+      icon: projectIcon(),
     },
   ]);
 
@@ -229,7 +233,11 @@ export const query = graphql`
         childCertsJson {
           certs {
             title
-            description
+            validity
+            cert_id
+            cert_url
+            sort_date
+            show
           }
         }
       }
