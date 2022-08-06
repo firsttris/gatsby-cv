@@ -41,7 +41,7 @@ export default (props: Props) => {
 
   const isWorkSelected = () => {
     return (
-      (!props.location.pathname.includes('work') && !props.location.pathname.includes('opensource')) ||
+      (!props.location.pathname.includes('work') && !props.location.pathname.includes('proj')) ||
       props.location.pathname.includes('work')
     );
   };
@@ -55,9 +55,9 @@ export default (props: Props) => {
       icon: 'fas fa-briefcase',
     },
     {
-      name: getTranslatedLabel('OPENSOURCE'),
-      path: 'opensource',
-      checked: props.location.pathname.includes('opensource'),
+      name: 'Projects',
+      path: 'projects',
+      checked: props.location.pathname.includes('proj'),
       icon: 'fab fa-github',
     },
   ]);
@@ -120,7 +120,7 @@ export default (props: Props) => {
                   <section className="resume-section experience-section mb-5">
                     <div className="resume-section-content">
                       <div className="resume-timeline position-relative">
-                        {props.data.projects.nodes[0].childProjectsJson.projects.map(
+                        {props.data.work.nodes[0].childWorkJson.projects.map(
                           (project: ProjectProps, index: number) => (
                             <Project key={index} {...project} />
                           )
@@ -133,7 +133,7 @@ export default (props: Props) => {
                   <section className="resume-section experience-section mb-5">
                     <div className="resume-section-content">
                       <div className="resume-timeline position-relative">
-                        {props.data.opensource.nodes[0].childOpensourceJson.projects.map(
+                        {props.data.projects.nodes[0].childProjectsJson.projects.map(
                           (project: ProjectProps, index: number) => (
                             <Project key={index} {...project} />
                           )
@@ -234,10 +234,10 @@ export const query = graphql`
         }
       }
     }
-    opensource: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "opensource" } }) {
+    projects: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "projects" } }) {
       nodes {
         name
-        childOpensourceJson {
+        childProjectsJson {
           id
           projects {
             title
@@ -254,10 +254,10 @@ export const query = graphql`
         }
       }
     }
-    projects: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "projects" } }) {
+    work: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "work" } }) {
       nodes {
         name
-        childProjectsJson {
+        childWorkJson {
           id
           projects {
             title

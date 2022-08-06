@@ -83,15 +83,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: path.join(__dirname, `src`, `data`, 'projects'),
-        name: 'projects'
+        path: path.join(__dirname, `src`, `data`, 'work'),
+        name: 'work'
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: path.join(__dirname, `src`, `data`, 'opensource'),
-        name: 'opensource'
+        path: path.join(__dirname, `src`, `data`, 'projects'),
+        name: 'projects'
       },
     },
     {
