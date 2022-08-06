@@ -11,7 +11,7 @@
             "description": "Solution that uses machine learning to improve disaster response after hurricanes/tornados",
             "achievements": [
                 "First place in the AWS Disaster Response Hackathon",
-                "Machine learning models to predict building footprints and to predict whether those footprints are damaged",
+                "Machine learning models to predict building footprints and to predict whether buildings in those footprints are damaged",
                 "Solution was presented in RE:MARS by AWS"
             ],
             "technologies": [
@@ -33,9 +33,13 @@
             "description": "Hadoop and Spark integration using Seagates CORTX S3 compatible API",
             "achievements": [
                 "Second place in the Seagate CORTX Integration Challenge",
-                "Built an ansible script to deploy Hadoop and Spark using CORTX as object storage to an Ubuntu virtual machine"
+                "Built an ansible script to deploy Hadoop and Spark using CORTX as a backend object storage on top of HDFS"
             ],
-            "technologies": ["ansible", "hadoop","spark"]
+            "technologies": [
+                "ansible", 
+                "hadoop",
+                "spark"
+            ]
         },
         {
             "title": "Sensing the air quality in my room",
@@ -45,13 +49,17 @@
             "from": "",
             "to": "",
             "location": "",
-            "description": "Wired up sensors to the Azure Sphere IOT device and used Azure IOT and Azure services to store and display data",
+            "description": "Used an Azure Sphere IOT device along with Azure IOT services to create a dashboard of CO2 and Dust levels in my room",
             "achievements": [
                 "Runner up in the Azure Sensing the World competition",
                 "Used Azure Direct methods to modify mutable state of the device from the cloud",
                 "Wrote my own libraries for the MHZ-19 and PMS-7003 devices"
             ],
-            "technologies": ["Azure","IOT","C"]
+            "technologies": [
+                "Azure",
+                "IOT",
+                "C",
+                "Grafana"]
         },
         {
             "title": "Lock and Load",
@@ -61,10 +69,18 @@
             "from": "",
             "to": "",
             "location": "",
-            "description": "Cloud enabled RFID lock",
+            "description": "Cloud enabled RFID lock using the Azure Sphere IOT device",
             "achievements": [
-                "Tier 2 Award (multiple runners up) in the Secure Everything with Azure Sphere Challenge"],
-            "technologies": ["Azure", "IOT","C"]
+                "Tier 2 Award (multiple runners up) in the Secure Everything with Azure Sphere Challenge",
+                "Built an IOT enabled lock that was capable of working on and off network"
+        ],
+            "technologies": [
+                "Azure", 
+                "IOT",
+                "C",
+                "C#",
+                "Python"
+            ]
         },
         {
             "title": "WACTF 2018 - Second Place",
@@ -76,7 +92,8 @@
             "location": "Perth",
             "description": "WACTF is a weekend long challenge based cybersecurity competition (Capture the Flag) created and hosted by the Perth cybersecurity community. Our team solved a variety of challenges",
             "achievements": [
-                "Placed second amongst 60 teams competing that weekend"
+                "Placed second amongst 60 teams competing that weekend",
+                "Learnt a lot during the weekend on defencive and offencive security"
             ],
             "technologies": [
                 "Wireshark",
@@ -93,9 +110,14 @@
             "to": "",
             "location": "",
             "description": "",
-            "achievements": [""
+            "achievements": [
+                "One of four finalists for the Best Use of Hardware award"
             ],
-            "technologies": [""
+            "technologies": [
+                "Unity",
+                "C#",
+                "Virtual Reality",
+                "Augmented Reality"
             ]
         },
         {
@@ -109,7 +131,10 @@
             "description": "Created a physics based simulator to minimise rock bridges",
             "achievements": [""
             ],
-            "technologies": ["Unity"
+            "technologies": [
+                "Unity", 
+                "C#",
+                "Python"
             ]
         },
         {
@@ -123,7 +148,9 @@
             "description": "",
             "achievements": [""
             ],
-            "technologies": [""
+            "technologies": [
+                "Python",
+                "Scikit-learn"
             ]
         },        {
             "title": "Klog",

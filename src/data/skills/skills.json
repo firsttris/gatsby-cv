@@ -1,71 +1,52 @@
 {
-    "frontend": [
+    "languages": [
         {
-            "name": "Javascript / Typescript",
-            "xpInPercentage": "100%"
+            "name": "Python"
         },
         {
-            "name": "HTML, CSS, SCSS",
-            "xpInPercentage": "95%"
+            "name": "SQL"
         },
         {
-            "name": "Webpack",
-            "xpInPercentage": "100%"
+            "name": "Bash"
         },
         {
-            "name": "React",
-            "xpInPercentage": "98%"
+            "name": "VBA"
         },
         {
-            "name": "Redux",
-            "xpInPercentage": "95%"
+            "name": "FastAPI"
         },
         {
-            "name": "Vue",
-            "xpInPercentage": "85%"
-        },
-        {
-            "name": "Angular",
-            "xpInPercentage": "75%"
+            "name": "Flask"
         }
     ],
-    "backend": [
+    "tools": [
         {
-            "name": "NodeJs",
-            "xpInPercentage": "95%"
+            "name": "Jira"
         },
         {
-            "name": "Swagger / OpenAPI",
-            "xpInPercentage": "85%"
+            "name": "Git"
         },
         {
-            "name": "MongoDb",
-            "xpInPercentage": "90%"
+            "name": "Linux"
         },
         {
-            "name": "GraphQL",
-            "xpInPercentage": "80%"
+            "name": "Flask"
         },
         {
-            "name": "SQL",
-            "xpInPercentage": "90%"
+            "name": "FastAPI"
         },
         {
-            "name": "Docker",
-            "xpInPercentage": "85%"
+            "name": "Docker"
         },
         {
-            "name": "Java / Groovy",
-            "xpInPercentage": "70%"
+            "name": "Hadoop"
         },
         {
-            "name": "PHP",
-            "xpInPercentage": "70%"
+            "name": "Kafka"
         },
         {
-            "name": "Phyton",
-            "xpInPercentage": "70%"
+            "name": "NiFi"
         }
-    ],
-    "others": ["Jira", "Confluence", "Git", "SVN", "devOps", "CI", "TDD", "CleanCode", "Linux", "Immutable-js", "jQuery"]
+
+    ]
 }

@@ -4,7 +4,6 @@ import * as React from 'react';
 import { CertificationList } from './../components/CertificationList';
 import { EducationList } from './../components/EducationList';
 import { Header } from './../components/Header';
-import { LanguageList } from './../components/LanguageList';
 import { OtherSkillList } from './../components/OtherSkillList';
 import { Project, Props as ProjectProps } from './../components/Project';
 import { ResumeSkillList } from './../components/ResumeSkillList';
@@ -76,9 +75,10 @@ export default (props: Props) => {
       ? navigate(`/en/${items[selectedItem].path}`)
       : navigate(`/de/${items[selectedItem].path}`);
   };
-
+//TODO remove hardcoded title
   return (
     <div className="container" style={{ userSelect: 'none' }}>
+      <title>Stephen Mott CV</title>
       <article className="resume-wrapper text-center position-relative">
         <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
           <Header
@@ -91,16 +91,6 @@ export default (props: Props) => {
               website: props.data.social.nodes[0].childSocialJson.social.website,            }}
           />
           <div className="resume-body p-5" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
-            <div className="text-right">
-              <button
-                type="button"
-                className="btn"
-                onClick={() => onLanguageClick(props.location.pathname)}
-                style={{ cursor: 'pointer', backgroundImage: `url(${Paper})`, color: 'lightgrey' }}
-              >
-                {props.pageContext.locale === 'de' ? 'EN' : 'DE'}
-              </button>
-            </div>
 
             <section className="resume-section summary-section mb-5">
               <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
@@ -164,12 +154,8 @@ export default (props: Props) => {
                     {getTranslatedLabel('SKILLS')}
                   </h2>
                   <div className="resume-section-content">
-                    <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.frontend} title={'Frontend'} />
-                    <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.backend} title={'Backend'} />
-                    <OtherSkillList
-                      skills={props.data.skills.nodes[0].childSkillsJson.others}
-                      title={getTranslatedLabel('OTHERS')}
-                    />
+                    <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.languages} title={'Languages and Frameworks'} />
+                    <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.tools} title={'Tools and Platforms'} />
                   </div>
                 </section>
                 <section className="resume-section education-section mb-5">
@@ -285,13 +271,12 @@ export const query = graphql`
       nodes {
         name
         childSkillsJson {
-          frontend {
+          languages {
             name
           }
-          backend {
+          tools {
             name
           }
-          others
         }
       }
     }

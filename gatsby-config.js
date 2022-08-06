@@ -1,7 +1,7 @@
 const path = require(`path`);
 
 module.exports = {
-  pathPrefix: '/gatsby-cv',
+  pathPrefix: '/',
   siteMetadata: {
     title: 'Tristan Teufel CV',
     siteUrl: `https://firsttris.github.io`
