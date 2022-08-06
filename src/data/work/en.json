@@ -1,41 +1,81 @@
 {
     "projects": [
         {
-            "title": "Development of Heidelberg Cement's HConnect product suite ",
-            "role": "Developer",
-            "company": "Heidelberg Cement ag with Etengo",
-            "from": "10/2020",
-            "to": "12/2021",
-            "location": "Heidelberg/DE",
-            "description": "Supported Heidelberg Cement ag in building the HConnect product suite. HConnect is designed to offer an ‘end-to-end’ digital experience for customers and will build additional revenues as well as reduced logistics and back-office work.",
+            "title": "Principal Cybernetics Engineer",
+            "role": "",
+            "company": "BHP",
+            "from": "08/2021",
+            "to": "Current",
+            "location": "Western Australia",
+            "description": "",
             "achievements": [
-                "Created Cypress Tests & Integrated them with Gitlab pipeline",
-                "Created automated Code-Coverage reports & Test results for Cypress and integrated them with Jira X-Ray",
-                "Enabled out-of-source import in CRA-4 Mono-Repo",
-                "Migrated the mono-repo from tslint to eslint & prettier",
-                "Test driven development around User Management & Authentication in the HConnect product suite",
-                "Implemented a nginx reverse proxy docker container for react-router",
-                "Implemented Live-SAS token creation for build scripts in Azure cloud",
-                "POC Migration from Yarn1 to Yarn2 with Zero Install and pnp",
-                "Created Deployments scripts with Azure CLI & Azcopy"
+                "Filled in for a product management roll to cover a secondment",
+                "Performed technical architecture reivew on a brownfields project"
             ],
-            "technologies": [
-                "Azure Cloud",
-                "CRA",
-                "Vscode",
-                "Typescript",
-                "React",
-                "Redux",
-                "React-Testing-Library",
-                "Jest",
-                "Material-ui",
-                "Cypress",
-                "Jira",
-                "X-Ray",
-                "Confluence",
-                "Gitlab",
-                "nginx"
-            ]
+            "technologies": [""]
+        },
+        {
+            "title": "Specialist Engineer/Technical Lead",
+            "role": "",
+            "company": "BHP",
+            "from": "10/2019",
+            "to": "08/2021",
+            "location": "Western Australia",
+            "description": "",
+            "achievements": [
+                "Involved in multiple projects including conveyor optimisation, safety dashboard development and WTS/LTE network monitoring for autonomous and conventional haulage vehicles",
+                "Performed root cause analysis on incidents to focus efforts to improve application reliability",
+                "Built reliable stream and batch data collection and processing pipelines using NiFi, Kafka and Python",
+                "Managed work for four people in an agile team, under the scrum of scrums structure"            
+            ],
+            "technologies": [""]
+        },
+        {
+            "title": "Specialist Cybernetics Engineer",
+            "role": "",
+            "company": "BHP",
+            "from": "10/2019",
+            "to": "08/2021",
+            "location": "Western Australia",
+            "description": "",
+            "achievements": [
+                "Primarily involved in an operational technology project which collects approximately 20,000 numeric metrics a second",
+                "Rolled out projects to enable monitoring for South American and East Australian sites",
+                "Developed collection code for operational technolgy assets including radios, safety systems, access points, microwave links and LTE equipment through a variety of protocols",
+                "Proactively identifying and fixing issues within existing code and within the RedHat Linux production environments that hosted them."
+            ],
+            "technologies": [""]
+        },
+        {
+            "title": "Undergraduate/Graduate Mechanical Engineer",
+            "role": "",
+            "company": "WorleyParsons",
+            "from": "10/2019",
+            "to": "08/2021",
+            "location": "Western Australia",
+            "description": "",
+            "achievements": [
+                "Standardised thousands of legacy vessel and pipeline inspections with data sources including paper based inspections, Microsoft Access databases and Excel spreadsheets",
+                "Assisted in a reconciliation process involving identifying the differences between as‑built isometrics and general arrangements with items presently on site",
+                "Wrote numerous VBA scripts to improve productivity of myself and others"
+            ],
+            "technologies": [""]
+        },
+        {
+            "title": "Undergraduate Engineer",
+            "role": "",
+            "company": "Primero Group PTY LTD",
+            "from": "10/2019",
+            "to": "08/2021",
+            "location": "Western Australia",
+            "description": "",
+            "achievements": [
+                "Worked across the Project Management and Mechanical Engineering Departments",
+                "Developed software in VBA to automate the creation of standardised engineering calculations",
+                "Automated the creation of Project Management documents and processes using the VBA object models for Excel, Outlook and Word",
+                "Used Primevera P6 to update the schedule of ongoing projects"
+            ],
+            "technologies": [""]
         }
     ]
 }

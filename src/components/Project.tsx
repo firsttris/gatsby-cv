@@ -42,9 +42,15 @@ export const Project = (props: Props) => (
       </div>
     </div>
     <div className="resume-timeline-item-desc">
-      <p>{props.description}</p>
+      { 
+        props.description.trim().length > 0 &&
+        <p>{props.description}</p>
+      }
       <AchievementList achievements={props.achievements} />
+      {
+      props.technologies.filter(n => n.length > 0).length > 0 && 
       <TechnologyList technologies={props.technologies} />
+      }
     </div>
   </article>
 );
