@@ -24,11 +24,7 @@
   .resume-wrapper-inner {
     max-width: 1000px;
   }
-  
-  .resume-header .picture {
-    width: 219px;
-  }
-  
+
   .resume-header .name {
     font-size: 2.25rem;
     letter-spacing: 0.175rem;
@@ -38,7 +34,7 @@
   .resume-header .title {
     font-size: 1.5rem;
   }
-  
+
   .resume-header a {
     color: rgba(255, 255, 255, 0.6);
   }
@@ -46,7 +42,7 @@
   .resume-header a:hover {
     color: white;
   }
-  
+
   .resume-social {
     font-size: 0.875rem;
   }
@@ -142,6 +138,8 @@
   .resume-degree {
     color: #434E5E;
   }
+
+
   
   .resume-degree-org {
     font-size: 0.875rem;
@@ -150,12 +148,6 @@
   .resume-degree-time {
     color: #aab4c3;
     font-size: 0.875rem;
-  }
-  
-  .resume-award-icon {
-    left: 0;
-    top: 4px;
-    color: #aab4c3;
   }
   
   .resume-award-name {
@@ -174,7 +166,7 @@
   .footer .fa-heart {
     color: #fb866a;
   }
-  
+
   @media (max-width: 769px) {
     .resume-wrapper {
       padding-top: 0;
@@ -182,11 +174,12 @@
     .resume-header {
       height: auto;
     }
-    .resume-header .picture {
-      width: 120px;
-      border-radius: 4px;
-    }
     .media-body {
       width: 100%
     }
   }
+
+  @media print
+{    
+  .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+}

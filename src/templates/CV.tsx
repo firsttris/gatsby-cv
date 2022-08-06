@@ -84,10 +84,7 @@ export default (props: Props) => {
             email={props.data.social.nodes[0].childSocialJson.email}
             socialMedia={{
               github: props.data.social.nodes[0].childSocialJson.social.github,
-              linkedin: props.data.social.nodes[0].childSocialJson.social.linkedin,
-              website: props.data.social.nodes[0].childSocialJson.social.website,
-              xing: props.data.social.nodes[0].childSocialJson.social.xing,
-            }}
+              website: props.data.social.nodes[0].childSocialJson.social.website,            }}
           />
           <div className="resume-body p-5" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
             <div className="text-right">
@@ -187,36 +184,6 @@ export default (props: Props) => {
                     <CertificationList certifications={props.data.certs.nodes[0].childCertsJson.certs} />
                   </div>
                 </section>
-                <section className="resume-section language-section mb-5">
-                  <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
-                    {getTranslatedLabel('LANGUAGES')}
-                  </h2>
-                  <div className="resume-section-content">
-                    <LanguageList
-                      languages={[
-                        {
-                          language: getTranslatedLabel('GERMAN'),
-                          skill: getTranslatedLabel('NATIVE'),
-                        },
-                        {
-                          language: getTranslatedLabel('ENGLISH'),
-                          skill: getTranslatedLabel('FLUENT'),
-                        },
-                      ]}
-                    />
-                  </div>
-                </section>
-                <section className="resume-section interests-section mb-5">
-                  <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
-                    {getTranslatedLabel('INTEREST')}
-                  </h2>
-                  <div className="resume-section-content">
-                    <ul className="list-unstyled">
-                      <li className="mb-1">{getTranslatedLabel('WATERSPORT')}</li>
-                      <li className="mb-1">{getTranslatedLabel('HOMEAUTOMATION')}</li>
-                    </ul>
-                  </div>
-                </section>
               </div>
             </div>
           </div>
@@ -312,11 +279,9 @@ export const query = graphql`
         childSkillsJson {
           frontend {
             name
-            xpInPercentage
           }
           backend {
             name
-            xpInPercentage
           }
           others
         }
@@ -331,9 +296,7 @@ export const query = graphql`
           role
           social {
             github
-            linkedin
             website
-            xing
           }
         }
       }

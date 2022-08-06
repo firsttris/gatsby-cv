@@ -5,7 +5,7 @@ exports.createPages = async ({ page, actions }) => {
 
   const router = [{ path: '/', name: 'CV' }];
 
-  const locales = ['de', 'en'];
+  const locales = ['en'];
 
   const types = ['', 'work', 'opensource'];
 

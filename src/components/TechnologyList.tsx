@@ -14,7 +14,7 @@ export const TechnologyList = (props: Props) => (
       {props.technologies.map((tech: string, index: number) => (
         <li className="list-inline-item" key={index}>
           <span
-            className="badge badge-primary badge-pill"
+            className="badge badge-secondary badge-pill"
             style={{ backgroundImage: `url(${Paper})`, fontWeight: 'normal' }}
           >
             {tech}

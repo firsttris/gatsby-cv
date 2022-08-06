@@ -12,7 +12,7 @@ interface Props {
 }
 
 export const Header = (props: Props) => (
-  <header>
+  <header className='resume-header pt-lg-0'>
     <div className="media flex-lg-row">
       <div
         className="media-body p-4 d-flex flex-lg-row mx-lg-0"
