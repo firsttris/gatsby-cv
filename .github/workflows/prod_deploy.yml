@@ -1,0 +1,59 @@
+name: Deploy code
+# Deploys to both AWS and Github Pages
+on:
+  push:
+    branches:
+      - main
+    workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+      - name: Build
+        run: |
+          npm ci --legacy-peer-deps
+          npm run build
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v1
+        with:
+          static_site_generator: gatsby
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+
+  deploy_pages:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+  
+  check_gh_deploy:
+    runs-on: ubuntu-22.04
+    needs: deploy_pages
+    steps:
+      - name: Check github.io page
+        uses: lakuapik/gh-actions-http-status@v1
+        with:
+          expected: '[200]'
+          sites: '["https://stephen.resume.engineering/en/"]'
