@@ -15,6 +15,9 @@
                 "Set up monitoring for Kafka and Hbase to quickly diagnose degradations and issues"
             ],
             "technologies": [
+                "HBase",
+                "Kafka",
+                "Python"
             ]
         },
         {

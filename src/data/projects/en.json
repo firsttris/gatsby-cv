@@ -15,9 +15,9 @@
                 "Solution was presented in RE:MARS by AWS"
             ],
             "technologies": [
-                "rust",
-                "python",
-                "pytorch",
+                "Rust",
+                "Python",
+                "Pytorch",
                 "AWS",
                 "GIS"
             ]
@@ -36,9 +36,9 @@
                 "Built an ansible script to deploy Hadoop and Spark using CORTX as a backend object storage on top of HDFS"
             ],
             "technologies": [
-                "ansible", 
-                "hadoop",
-                "spark"
+                "Ansible", 
+                "Hadoop",
+                "Spark"
             ]
         },
         {
@@ -59,7 +59,8 @@
                 "Azure",
                 "IOT",
                 "C",
-                "Grafana"]
+                "Grafana",
+                "Python"]
         },
         {
             "title": "Lock and Load",
@@ -71,8 +72,9 @@
             "location": "",
             "description": "Cloud enabled RFID lock using the Azure Sphere IOT device",
             "achievements": [
-                "Tier 2 Award (multiple runners up) in the Secure Everything with Azure Sphere Challenge",
-                "Built an IOT enabled lock that was capable of working on and off network"
+                "One of several runners up in the Secure Everything with Azure Sphere Challenge",
+                "Built an IOT enabled lock that was capable of working on and off network",
+                "Allowed over the air addition of new RFID cards"
         ],
             "technologies": [
                 "Azure", 
@@ -90,7 +92,7 @@
             "from": "",
             "to": "",
             "location": "Perth",
-            "description": "WACTF is a weekend long challenge based cybersecurity competition (Capture the Flag) created and hosted by the Perth cybersecurity community. Our team solved a variety of challenges",
+            "description": "WACTF is a weekend long challenge based cybersecurity competition (Capture the Flag) created and hosted by the Perth cybersecurity community.",
             "achievements": [
                 "Placed second amongst 60 teams competing that weekend",
                 "Learnt a lot during the weekend on defencive and offencive security"
@@ -102,22 +104,24 @@
             ]
         },
         {
-            "title": "Spaceapps - ",
+            "title": "NASA Spaceapps - Supergiant Scuti ",
             "role": "",
             "url": "https://2018.spaceappschallenge.org/challenges/what-world-needs-now/globe-observer/teams/supergiant-scuti/project/",
             "company": "",
             "from": "",
             "to": "",
             "location": "",
-            "description": "",
+            "description": "AR/VR data exploration and visualisation",
             "achievements": [
-                "One of four finalists for the Best Use of Hardware award"
+                "One of four finalists for the Best Use of Hardware award",
+                "Used Unity to build an AR/VR data visualation solutions to be used in classrooms"
             ],
             "technologies": [
                 "Unity",
                 "C#",
                 "Virtual Reality",
-                "Augmented Reality"
+                "Augmented Reality",
+                "Vuforia"
             ]
         },
         {
@@ -128,13 +132,16 @@
             "from": "",
             "to": "",
             "location": "",
-            "description": "Created a physics based simulator to minimise rock bridges",
-            "achievements": [""
+            "description": "Created a physics based monte carlo simulator to minimise rock bridges",
+            "achievements": [
+                "Built a simulator which would take in blasting parameters generate rock sizes based on a cumulative distribution function based on that blasting pattern",
+                "The simulator would then simulate a truck full of rocks, see whether they blocked the schute and run this multiple times",
+                "The end output of the simulation was and optimisation on explosive cost to get a specific fragmentation distribution and that distributions chance of generating a rock bridge"
             ],
             "technologies": [
                 "Unity", 
                 "C#",
-                "Python"
+                "Rust"
             ]
         },
         {
@@ -145,25 +152,33 @@
             "from": "",
             "to": "",
             "location": "",
-            "description": "",
-            "achievements": [""
+            "description": "Machine Learning production optimisation",
+            "achievements": [
+                "Built a digital twin of a grinding circuit",
+                "Used a genetic algorithm to provide reccomendations to operators for settings that may optimise the grinder for a given set of inputs"
             ],
             "technologies": [
                 "Python",
                 "Scikit-learn"
             ]
-        },        {
-            "title": "Klog",
+        },        
+        {
+            "title": "KLOG - IOT Safety Device",
             "role": "",
             "url": "https://unearthed.solutions/u/innovators/stephen-mott",
             "company": "",
             "from": "",
             "to": "",
             "location": "",
-            "description": "",
-            "achievements": [""
+            "description": "Mesh networked IOT safety device using the B.A.T.M.A.N mesh networking protocol",
+            "achievements": [
+                "First place in the BHP/Unearthed Digital Tribes Hackathon",
+                "Built an IOT device to improve safety in minesites with limited telemetry by using mesh networking over 2.4GHz WiFi"
             ],
-            "technologies": [""
+            "technologies": [
+                "Arduino",
+                "C++",
+                "Python"
             ]
         }
     ]
