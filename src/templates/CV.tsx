@@ -136,12 +136,12 @@ export default (props: Props) => {
                     <div className="my-5 text-center">
                       <div>{getTranslatedLabel('MORE_PROJECTS')}</div>
                       <a
-                        href="https://github.com/firsttris?tab=repositories"
+                        href="https://github.com/SrzStephen/?tab=repositories"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-unstyled"
                       >
-                        https://github.com/firsttris?tab=repositories
+                        https://github.com/SrzStephen/?tab=repositories
                       </a>
                     </div>
                   </section>
@@ -191,7 +191,7 @@ export default (props: Props) => {
         <small className="source-code">
           <i className="fab fa-github" />{' '}
           <a
-            href="https://github.com/firsttris/gatsby-cv"
+            href="https://github.com/SrzStephen/CV"
             className="link-unstyled"
             target="_blank"
             rel="noopener noreferrer"
