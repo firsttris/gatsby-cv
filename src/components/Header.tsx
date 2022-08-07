@@ -8,6 +8,7 @@ interface Props {
   role: string;
   email: string;
   phone: string;
+  location: string;
   socialMedia: socialMediaProps;
 }
 
@@ -22,6 +23,10 @@ export const Header = (props: Props) => (
           <h1 className="name mt-0 mb-1 text-white text-uppercase text-uppercase">{props.name}</h1>
           <div className="title mb-3">{props.role}</div>
           <ul className="list-unstyled">
+          <li className="mb-2">                
+          <i className="fa fa-location-arrow fa-fw mr-2" data-fa-transform="grow-3" />
+                {props.location}
+            </li>
             <li className="mb-2">
               <a href={`mailto:${props.email}`} className="link-unstyled">
                 <i className="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3" />
@@ -30,10 +35,11 @@ export const Header = (props: Props) => (
             </li>
             <li>
               <a href={`tel:${props.phone}`} className="link-unstyled">
-                <i className="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6" />
+                <i className="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-3" />
                 {props.phone}
               </a>
             </li>
+            
           </ul>
         </div>
         <SocialMedia {...props.socialMedia} />

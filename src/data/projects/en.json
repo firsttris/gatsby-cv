@@ -155,7 +155,7 @@
             "description": "Machine Learning production optimisation",
             "achievements": [
                 "Built a digital twin of a grinding circuit",
-                "Used a genetic algorithm to provide reccomendations to operators for settings that may optimise the grinder for a given set of inputs"
+                "Used a genetic algorithm to provide recommendations to operators for settings that may optimise the grinder for a given set of inputs"
             ],
             "technologies": [
                 "Python",
@@ -173,7 +173,7 @@
             "description": "Mesh networked IOT safety device using the B.A.T.M.A.N mesh networking protocol",
             "achievements": [
                 "First place in the BHP/Unearthed Digital Tribes Hackathon",
-                "Built an IOT device to improve safety in minesites with limited telemetry by using mesh networking over 2.4GHz WiFi"
+                "Built an IOT device to improve safety in mine sites with limited telemetry by using mesh networking over 2.4GHz WiFi"
             ],
             "technologies": [
                 "Arduino",

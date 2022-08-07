@@ -84,6 +84,7 @@ export default (props: Props) => {
             name={props.data.social.nodes[0].childSocialJson.name}
             phone={props.data.social.nodes[0].childSocialJson.phone}
             email={props.data.social.nodes[0].childSocialJson.email}
+            location={props.data.social.nodes[0].childSocialJson.location}
             socialMedia={{
               github: props.data.social.nodes[0].childSocialJson.social.github,
               website: props.data.social.nodes[0].childSocialJson.social.website,            }}
@@ -285,6 +286,7 @@ export const query = graphql`
           name
           phone
           role
+          location
           social {
             github
             website
