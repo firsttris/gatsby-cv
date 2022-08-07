@@ -4,7 +4,6 @@ import * as React from 'react';
 import { CertificationList } from './../components/CertificationList';
 import { EducationList } from './../components/EducationList';
 import { Header } from './../components/Header';
-import { OtherSkillList } from './../components/OtherSkillList';
 import { Project, Props as ProjectProps } from './../components/Project';
 import { ResumeSkillList } from './../components/ResumeSkillList';
 import { TabSelector } from './../components/TabSelector';
@@ -75,10 +74,9 @@ export default (props: Props) => {
       ? navigate(`/en/${items[selectedItem].path}`)
       : navigate(`/de/${items[selectedItem].path}`);
   };
-//TODO remove hardcoded title
+
   return (
     <div className="container" style={{ userSelect: 'none' }}>
-      <title>Stephen Mott CV</title>
       <article className="resume-wrapper text-center position-relative">
         <div className="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
           <Header

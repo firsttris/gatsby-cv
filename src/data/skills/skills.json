@@ -30,12 +30,6 @@
             "name": "Linux"
         },
         {
-            "name": "Flask"
-        },
-        {
-            "name": "FastAPI"
-        },
-        {
             "name": "Docker"
         },
         {

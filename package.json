@@ -1,9 +1,9 @@
 {
-  "name": "teufel-it-gatsby",
-  "description": "teufel-it gatsby",
-  "homepage": "https://teufel-it.de",
+  "name": "stephen-cv-gatsby",
+  "description": "Stephen CV",
+  "homepage": "stephen.resume.engineering",
   "version": "1.0.0",
-  "author": "tristan teufel <info@teufel-it.de>",
+  "author": "Stephen Mott <Stephen@{lastname}.email>",
   "dependencies": {
     "bootstrap": "4.6",
     "dayjs": "^1.11.4",
@@ -11,7 +11,9 @@
     "gatsby-image": "latest",
     "gatsby-plugin-google-gtag": "^4.20.0",
     "gatsby-plugin-manifest": "latest",
+    "gatsby-plugin-next-seo": "^1.10.0",
     "gatsby-plugin-sharp": "latest",
+    "gatsby-plugin-sitemap": "^5.20.0",
     "gatsby-plugin-typescript": "latest",
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-json": "latest",
@@ -19,7 +21,8 @@
     "gatsby-transformer-sharp": "latest",
     "html-to-react": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-helmet-async": "^1.3.0"
   },
   "keywords": [
     "gatsby"

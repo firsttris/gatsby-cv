@@ -4,27 +4,23 @@ Curriculum Vitae with [gatsbyJS](https://www.gatsbyjs.org/) a static page genera
 
 ## Motivation
 
-- Most recruiters request a CV in Word to convert it in their layout. Often they even tweak the history in your CV in the hope's to win the project. that's why i decited to create an HTML CV which cannot be changed.
+- I dislike centralisation that has cause LinkedIn to become a dominant platform for an online identity
 
-- With a CV coded Javascript you could already show some of your skills by providing the CV.
+- I agree that there is some utility in having work information publicly available
 
-- It's easier to always have the exact same styling / format and just change the data.
+- I wanted to apply some React knowlege that I learnt doing [A Udemy Course](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) and modifying the version [firsttris created](https://github.com/firsttris/gatsby-cv) to meet my needs seemed like a good opportunity.
 
-- I wanted to have a multi-language CV.
 
 ## Page
 
-https://firsttris.github.io/gatsby-cv/
+https://stephen.resume.engineering
 
 ## Template, Author & License
 
-Instead of creating my own design, which would probably not so awesome, i decided to search on Github if someone already had a similar idea which i could fork and integrate with GatsbyJs.
+Creating my own design seemed lame, I forked [A design made by tristan teufel](https://github.com/firsttris/gatsby-cv) which looked fantastic but needed a few things changed to fit my tastes.
 
-This is what i used as source:
+Tristan cites https://github.com/xriley/pillar-theme by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) as the design that he based his on.
 
-Source https://github.com/xriley/pillar-theme
-
-This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE under the [Creative Commons Attribution 3.0 License (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
 
 ## Bootstraping & Development
 

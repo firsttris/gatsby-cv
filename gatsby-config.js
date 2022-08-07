@@ -1,12 +1,27 @@
 const path = require(`path`);
+const SITE_URL = process.env.URL || `https://stephen.resume.engineering`;
+const titleDesc = 'Stephen Mott CV';
+const buildDate = Date.now();
 
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    title: 'Tristan Teufel CV',
-    siteUrl: `https://firsttris.github.io`
+    title: titleDesc,
+    siteUrl: SITE_URL,
+    description: titleDesc,
   },
   plugins: [
+
+    {
+      resolve: 'gatsby-plugin-next-seo',
+      options:
+      {
+        title: titleDesc,
+        language: 'en',
+        description: titleDesc
+      }
+    },
+    
     'gatsby-plugin-typescript',
     {
       resolve: `gatsby-source-filesystem`,
@@ -122,5 +137,43 @@ module.exports = {
         name: 'educations'
       },
     },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output:'/',
+        createLinkInHead:true,
+        //TODO this is being ignored by sitemap plugin
+        //It's probably related to
+        query: `
+        query MyQuery {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+      resolveSiteUrl: () => SITE_URL,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-N2T71SCH5X"
+        ],
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"]
+        },
+      },
+    }
   ]
 };

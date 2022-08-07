@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://stephen.resume.engineering/sitemap-index.xml
