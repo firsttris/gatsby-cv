@@ -24,7 +24,7 @@ export const Header = (props: Props) => (
           <div className="title mb-3">{props.role}</div>
           <ul className="list-unstyled">
           <li className="mb-2">                
-          <i className="fa fa-location-arrow fa-fw mr-2" data-fa-transform="grow-3" />
+          <i className="fa fa-map-marker fa-fw mr-2" data-fa-transform="grow-3" />
                 {props.location}
             </li>
             <li className="mb-2">
@@ -39,10 +39,10 @@ export const Header = (props: Props) => (
                 {props.phone}
               </a>
             </li>
-            
+            <SocialMedia {...props.socialMedia} />
           </ul>
         </div>
-        <SocialMedia {...props.socialMedia} />
+
       </div>
     </div>
   </header>
