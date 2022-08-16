@@ -89,7 +89,7 @@ export default (props: Props) => {
               github: props.data.social.nodes[0].childSocialJson.social.github,
               website: props.data.social.nodes[0].childSocialJson.social.website,            }}
           />
-          <div className="resume-body p-5" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
+          <div className="resume-body p-4" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
 
             <section className="resume-section summary-section mb-5">
               <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
