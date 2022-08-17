@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 export interface Props {
   title: string;
@@ -13,9 +14,9 @@ export interface Props {
 
 export const Certification = (props: Props) => (
   <li className="mb-2 position-relative">
-    <a href={props.cert_url} target="_blank" rel="noopener noreferrer" className="link-unstyled">
+    <OutboundLink href={props.cert_url} target="_blank" rel="noopener noreferrer" className="link-unstyled">
     <div className="resume-award-name">{props.title}</div>
-    </a>
+    </OutboundLink>
     <div className="resume-award-validity">{props.validity}</div>
   </li>
 );

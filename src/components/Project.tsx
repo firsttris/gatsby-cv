@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { AchievementList } from './AchievementList';
 import { TechnologyList } from './TechnologyList';
-
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 const Paper = require('../../src/assets/images/backgrounds/paper.png');
 
 export interface Props {
@@ -18,11 +18,11 @@ export interface Props {
 }
 
 export const Project = (props: Props) => (
-  <article className="resume-timeline-item position-relative pb-5">
+  <article className="resume-timeline-item position-relative pb-3">
     <div className="resume-timeline-item-header mb-2">
       <div className="d-flex flex-column flex-md-row">
         {props.url 
-        ? <a href={props.url} className="resume-position-title font-weight-bold mb-1 link-unstyled link-hover">{props.title} <i className='fa fa-link'></i></a> 
+        ? <OutboundLink href={props.url} className="resume-position-title font-weight-bold mb-1 link-unstyled ">{props.title} <i className='fa fa-link'></i></OutboundLink> 
         :<h3 className="resume-position-title font-weight-bold mb-1">{props.title}</h3>}
         <div className="resume-company-name ml-auto">{props.company}</div>
       </div>
