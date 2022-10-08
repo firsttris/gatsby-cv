@@ -63,5 +63,10 @@ jobs:
           expected: '[200]'
           sites: '["https://stephen.resume.engineering/en/"]'
 
+      - name: Cypress install
+        uses: cypress-io/github-action@v4.x.x
+        with:
+          runTests: false
+
       - name: Cypress Test
         run: npm run test:ci-develop
