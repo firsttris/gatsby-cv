@@ -63,10 +63,18 @@ jobs:
           expected: '[200]'
           sites: '["https://stephen.resume.engineering/en/"]'
 
-      - name: Cypress install
-        uses: cypress-io/github-action@v4.2.0
+      - name: Use Node.js
+        uses: actions/setup-node@v2
         with:
-          runTests: false
+          node-version: 18
+
+      - name: install npm dependencies
+        run: npm ci --legacy-peer-deps
 
       - name: Cypress Test
-        run: npm run test:ci-develop
+        run: npm run test:ci-live
+
+      - name: Upload test video
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./cypress/videos

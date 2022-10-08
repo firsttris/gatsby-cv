@@ -8,3 +8,7 @@ yarn-error.log
 /public
 .vscode/
 .idea
+/cypress/screenshots/
+/cypress/videos/
+/cypress/downloads/
+/cypress/fixtures/

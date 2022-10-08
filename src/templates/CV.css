@@ -131,7 +131,15 @@
     color: #aab4c3;
     font-size: 1.125rem;
   }
-  
+    .resume-position-title-no-link {
+    font-size: 1.125rem;
+    color: #434E5E;
+  }
+  .resume-position-title-no-link:hover
+  {
+    font-size: 1.125rem;
+  }
+
   .resume-timeline-item-desc-heading {
     font-size: 1rem;
   }
