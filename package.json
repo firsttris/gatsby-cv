@@ -38,7 +38,6 @@
     "build": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "predeploy": "rm -Rf public && rm -Rf .cache && npm run build",
-    "deploy": "gh-pages -d public",
     "prod": "gatsby serve"
   },
   "devDependencies": {

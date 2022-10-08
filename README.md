@@ -48,8 +48,6 @@ npm run
     gatsby develop
   predeploy
     rm -Rf public && rm -Rf .cache && npm run build
-  deploy
-    gh-pages -d public
   prod
     gatsby serve
 ```
