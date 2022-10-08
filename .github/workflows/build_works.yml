@@ -18,6 +18,10 @@ jobs:
         run: |
           npm ci --legacy-peer-deps
           npm run build
-      - name: Cypress Test
+      - name: Cypress Installation
         uses: cypress-io/github-action@v4.2.0
-        with: npm run test:ci-develop
+        with:
+          browser: chrome
+          runTests: false
+      - name: Cypress Test
+        run: npm test:ci-develop

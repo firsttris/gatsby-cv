@@ -58,6 +58,8 @@ jobs:
           expected: '[200]'
           sites: '["https://stephen.resume.engineering/en/"]'
 
-      - name: Cypress live check
+      - name: Cypress Test
         uses: cypress-io/github-action@v4.2.0
-        with: npm run test:ci-live
+        with:
+          browser: chrome
+          config-file: cypress.config-live.js
