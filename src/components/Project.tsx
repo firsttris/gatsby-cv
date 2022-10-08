@@ -18,7 +18,7 @@ export interface Props {
 }
 
 export const Project = (props: Props) => (
-  <article className="resume-timeline-item position-relative pb-3">
+  <article className="resume-timeline-item position-relative pb-3" id="ProjectContainer">
     <div className="resume-timeline-item-header mb-2">
       <div className="d-flex flex-column flex-md-row">
         {props.url 
