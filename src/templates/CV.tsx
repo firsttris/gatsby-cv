@@ -300,7 +300,7 @@ export const query = graphql`
           id
           educations {
             from
-            titel
+            title
             to
             uni
           }

@@ -8,7 +8,7 @@
             "from": "",
             "to": "",
             "location": "Online",
-            "description": "Solution that uses machine learning to improve disaster response after hurricanes/tornados",
+            "description": "Solution that uses machine learning to improve disaster response after hurricanes/tornadoes",
             "achievements": [
                 "First place in the AWS Disaster Response Hackathon",
                 "Machine learning models to predict building footprints and to predict whether buildings in those footprints are damaged",

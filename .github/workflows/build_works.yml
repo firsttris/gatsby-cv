@@ -3,9 +3,9 @@ name: Gatsby Build
 on:
   push:
     branches:
-      - '!main'
+      - '*'
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
