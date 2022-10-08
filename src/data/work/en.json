@@ -9,9 +9,9 @@
             "location": "Western Australia",
             "description": "",
             "achievements": [
-                "Filled in for a product management roll to cover a secondment",
-                "Performed technical architecture reivew on a brownfields project",
-                "Analysed and improved HBase and HDFS performance",
+                "Took up a Product Management role to cover a secondment (6 months)",
+                "Performed technical architecture review on a brownfields project",
+                "Analysed and improved HBase and HDFS performance and reliability",
                 "Set up monitoring for Kafka and Hbase to quickly diagnose degradations and issues"
             ],
             "technologies": [
@@ -32,7 +32,8 @@
                 "Involved in multiple projects including conveyor optimisation, safety dashboard development and WTS/LTE network monitoring for autonomous and conventional haulage vehicles",
                 "Performed root cause analysis on incidents to focus efforts to improve application reliability",
                 "Built reliable stream and batch data collection and processing pipelines using NiFi, Kafka and Python",
-                "Managed work for four people in an agile team, under the scrum of scrums structure"            
+                "Managed work for four people in an agile team, under the scrum of scrums structure",
+                "Worked to migrate edge deployments from RHEL packages to Docker compose stacks to improve reliability"
             ],
             "technologies": [
                 "HDFS",
@@ -60,8 +61,8 @@
             "achievements": [
                 "Primarily involved in an operational technology project which collects approximately 20,000 numeric metrics a second",
                 "Rolled out projects to enable monitoring for South American and East Australian sites",
-                "Developed collection code for operational technolgy assets including radios, safety systems, access points, microwave links and LTE equipment through a variety of protocols",
-                "Proactively identifying and fixing issues within existing code and within the RedHat Linux production environments that hosted them."
+                "Developed collection code for operational technology assets including radios, safety systems, access points, microwave links and LTE equipment through a variety of protocols",
+                "Proactively identifying and fixing issues within existing code and within the RedHat Linux production environments that hosted them"
             ],
             "technologies": [
                 "Python",

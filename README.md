@@ -4,11 +4,13 @@ Curriculum Vitae with [gatsbyJS](https://www.gatsbyjs.org/) a static page genera
 
 ## Motivation
 
-- I dislike centralisation that has cause LinkedIn to become a dominant platform for an online identity
+- I dislike centralisation that has cause LinkedIn to become a dominant platform for an online "work" identity
 
-- I agree that there is some utility in having work information publicly available
+- I agree that there is some utility in having my work history, projects and certifications publicly available
 
-- I wanted to apply some React knowlege that I learnt doing [A Udemy Course](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) and modifying the version [firsttris created](https://github.com/firsttris/gatsby-cv) to meet my needs seemed like a good opportunity.
+- I wanted to apply some React knowledge that I learnt doing [A Udemy course](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
+and modifying a gatsby CV that [firsttris created](https://github.com/firsttris/gatsby-cv)
+to meet my needs seemed like a good opportunity to try this out in an existing code base.
 
 
 ## Page
@@ -17,9 +19,11 @@ https://stephen.resume.engineering
 
 ## Template, Author & License
 
-Creating my own design seemed lame, I forked [A design made by tristan teufel](https://github.com/firsttris/gatsby-cv) which looked fantastic but needed a few things changed to fit my tastes.
+Creating my own design seemed lame, I forked [A design made by Tristan Teufel](https://github.com/firsttris/gatsby-cv) 
+which looked fantastic but needed a few things changed to fit my tastes.
 
-Tristan cites https://github.com/xriley/pillar-theme by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) as the design that he based his on.
+Tristan cites https://github.com/xriley/pillar-theme by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) 
+as the design that he based his on.
 
 
 ## Bootstraping & Development
@@ -34,3 +38,24 @@ Based on best practices of [gatsbyJS](https://www.gatsbyjs.org/)
 - src/assets - Assets, pictures and stuff
 
 for more information on how to get started with Gatsby if refer to https://www.gatsbyjs.org/docs/
+
+### Commands
+```zsh
+npm run
+  build
+    rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths
+  develop
+    gatsby develop
+  predeploy
+    rm -Rf public && rm -Rf .cache && npm run build
+  deploy
+    gh-pages -d public
+  prod
+    gatsby serve
+```
+
+## Deployment
+Deployment is dealt with through GitHub Pages, check the `.github/workflows` folder for the details.
+
+If you're setting this up yourself you'll want to check the [ReadMe](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+for Github Pages, and the section about [Setting up a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
