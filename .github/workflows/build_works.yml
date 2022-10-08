@@ -20,4 +20,4 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Cypress Test
-        run: npm test:ci-develop
+        run: npm run test:ci-develop

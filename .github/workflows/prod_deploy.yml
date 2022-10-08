@@ -64,4 +64,4 @@ jobs:
           sites: '["https://stephen.resume.engineering/en/"]'
 
       - name: Cypress Test
-        run: npm test:ci-develop
+        run: npm run test:ci-develop
