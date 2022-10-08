@@ -17,21 +17,26 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
+      -
       - name: Checkout
         uses: actions/checkout@v2
+
       - name: Use Node.js
         uses: actions/setup-node@v2
         with:
           node-version: 18
+
       - name: Build
         run: |
           npm ci --legacy-peer-deps
           npm run build
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1
         with:
           static_site_generator: gatsby
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
@@ -59,7 +64,4 @@ jobs:
           sites: '["https://stephen.resume.engineering/en/"]'
 
       - name: Cypress Test
-        uses: cypress-io/github-action@v4.2.0
-        with:
-          browser: chrome
-          config-file: cypress.config-live.js
+        run: npm test:ci-develop
