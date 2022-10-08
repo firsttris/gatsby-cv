@@ -30,7 +30,7 @@ export const Project = (props: Props) => (
       {
         props.from.length > 0 &&
       <div className="resume-position-time">
-        {props.from} - {props.to}{' '}
+        {props.from} {props.to && "-" + props.to + ' '}
         <span
           style={{
             backgroundImage: `url(${Paper})`,
