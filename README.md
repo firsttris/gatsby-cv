@@ -41,21 +41,37 @@ for more information on how to get started with Gatsby if refer to https://www.g
 
 ### Commands
 ```zsh
-npm run
+➜  npm run
   build
     rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths
   develop
     gatsby develop
   predeploy
     rm -Rf public && rm -Rf .cache && npm run build
-  deploy
-    gh-pages -d public
   prod
     gatsby serve
+  cy:open
+    cypress open
+  cy:run
+    cypress run
+  test:interactive-develop
+    start-server-and-test develop http://localhost:8000 cy:open
+  test:ci-develop
+    start-server-and-test develop http://localhost:8000 cy:run
+  test:ci-live
+    cypress run -C cypress.config-live.js
+
 ```
 
 ## Deployment
 Deployment is dealt with through GitHub Pages, check the `.github/workflows` folder for the details.
 
 If you're setting this up yourself you'll want to check the [ReadMe](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
-for Github Pages, and the section about [Setting up a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
+for GitHub Pages, and the section about [Setting up a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
+
+## Testing
+I use [Cypress](https://docs.cypress.io/) for some basic tests to make sure
+the button is working and that some text exists on the webpage.
+
+This testing can happen with the local version `npm run test:ci-develop` and with the live version `test:ci-live` hosted
+by GitHub. If you need to change the URL check `cypress.config-live.js`.
