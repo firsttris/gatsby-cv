@@ -64,7 +64,7 @@ jobs:
           sites: '["https://stephen.resume.engineering/en/"]'
 
       - name: Cypress install
-        uses: cypress-io/github-action@v4.x.x
+        uses: cypress-io/github-action@v4.2.0
         with:
           runTests: false
 

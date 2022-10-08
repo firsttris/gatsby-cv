@@ -26,7 +26,7 @@ Tristan cites https://github.com/xriley/pillar-theme by UX/UI designer [Xiaoying
 as the design that he based his on.
 
 
-## Bootstraping & Development
+## Bootstrapping & Development
 
 Based on best practices of [gatsbyJS](https://www.gatsbyjs.org/)
 
