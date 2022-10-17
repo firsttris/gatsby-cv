@@ -12,7 +12,6 @@ function checkdata(url: string, path: string, contains: boolean) {
     cy.fixture(path).then((data: JsonDoc) => {
         for (const p of data.projects) {
             if (contains) {
-
                 cy.get('[id=ProjectContainer]').should('include.text', p.title)
             } else {
                 cy.get('[id=ProjectContainer]').should('not.include.text', p.title)
@@ -21,7 +20,6 @@ function checkdata(url: string, path: string, contains: boolean) {
         }
     })
 }
-
 
 describe("Button related checks", () => {
     it("Check Work", () => {
@@ -34,6 +32,7 @@ describe("Button related checks", () => {
         checkdata("/en/work", projects, false)
         checkdata("/en/projects", projects, true)
     })
+    // # TODO make this better
     // it("Check Projects Button", () => {
     //     cy.visit("/en/work")
     //     cy.get('input').last().check({force: true}).wait(5000).url().should('contain', 'projects')

@@ -70,8 +70,13 @@ If you're setting this up yourself you'll want to check the [ReadMe](https://doc
 for GitHub Pages, and the section about [Setting up a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
 
 ## Testing
-I use [Cypress](https://docs.cypress.io/) for some basic tests to make sure
-the button is working and that some text exists on the webpage.
+I use [Cypress](https://docs.cypress.io/) for some sanity tests on every commit, again on the live website post deploy.
+These tests include:
+* Checks for link rot (checking if links on my page sends a non 200 response code)
+* Checks to make sure the content my work and projects pages matches what's in my configuration
+
+Eventually I'll include accessibility tests (the code is in there but commented out). Currently, my header fails for
+having grey on grey text.
 
 This testing can happen with the local version `npm run test:ci-develop` and with the live version `test:ci-live` hosted
 by GitHub. If you need to change the URL check `cypress.config-live.js`.

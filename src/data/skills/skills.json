@@ -1,49 +1,51 @@
 {
-    "languages": [
-        {
-            "name": "Python"
-        },
-        {
-            "name": "SQL"
-        },
-        {
-            "name": "Bash"
-        },
-        {
-            "name": "VBA"
-        },
-        {
-            "name": "FastAPI"
-        },
-        {
-            "name": "Flask"
-        }
-    ],
-    "tools": [
-        {
-            "name": "Jira"
-        },
-        {
-            "name": "Git"
-        },
-        {
-            "name": "Linux"
-        },
-        {
-            "name": "Docker"
-        },
-        {
-            "name": "Hadoop"
-        },
-        {
-            "name": "Kafka"
-        },
-        {
-            "name": "NiFi"
-        },
-        {
-            "name": "AWS"
-        }
-
-    ]
+  "languages": [
+    {
+      "name": "Python"
+    },
+    {
+      "name": "SQL"
+    },
+    {
+      "name": "Bash"
+    },
+    {
+      "name": "VBA"
+    },
+    {
+      "name": "FastAPI"
+    },
+    {
+      "name": "Flask"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Jira"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "Linux"
+    },
+    {
+      "name": "Docker"
+    },
+    {
+      "name": "Hadoop"
+    },
+    {
+      "name": "Kafka"
+    },
+    {
+      "name": "NiFi"
+    },
+    {
+      "name": "AWS"
+    },
+    {
+      "name": "Pytest"
+    }
+  ]
 }

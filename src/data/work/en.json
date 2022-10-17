@@ -1,115 +1,115 @@
 {
-    "projects": [
-        {
-            "title": "Principal Cybernetics Engineer",
-            "role": "",
-            "company": "BHP",
-            "from": "10/2021",
-            "to": "Current",
-            "location": "Western Australia",
-            "description": "",
-            "achievements": [
-                "Took up a Product Management role to cover a secondment (6 months)",
-                "Performed technical architecture review on a brownfields project",
-                "Analysed and improved HBase and HDFS performance and reliability",
-                "Set up monitoring for Kafka and Hbase to quickly diagnose degradations and issues"
-            ],
-            "technologies": [
-                "HBase",
-                "Kafka",
-                "Python"
-            ]
-        },
-        {
-            "title": "Specialist Engineer/Technical Lead",
-            "role": "",
-            "company": "BHP",
-            "from": "06/2020",
-            "to": "10/2021",
-            "location": "Western Australia",
-            "description": "",
-            "achievements": [
-                "Involved in multiple projects including conveyor optimisation, safety dashboard development and WTS/LTE network monitoring for autonomous and conventional haulage vehicles",
-                "Performed root cause analysis on incidents to focus efforts to improve application reliability",
-                "Built reliable stream and batch data collection and processing pipelines using NiFi, Kafka and Python",
-                "Managed work for four people in an agile team, under the scrum of scrums structure",
-                "Worked to migrate edge deployments from RHEL packages to Docker compose stacks to improve reliability"
-            ],
-            "technologies": [
-                "HDFS",
-                "HBase",
-                "OpenTSDB",
-                "Python",
-                "NiFi",
-                "Kafka",
-                "SQL",
-                "Linux",
-                "NGINX",
-                "Docker",
-                "Git",
-                "Jira"
-            ]
-        },
-        {
-            "title": "Specialist Cybernetics Engineer",
-            "role": "",
-            "company": "BHP",
-            "from": "11/2018",
-            "to": "06/2020",
-            "location": "Western Australia",
-            "description": "",
-            "achievements": [
-                "Primarily involved in an operational technology project which collects approximately 20,000 numeric metrics a second",
-                "Rolled out projects to enable monitoring for South American and East Australian sites",
-                "Developed collection code for operational technology assets including radios, safety systems, access points, microwave links and LTE equipment through a variety of protocols",
-                "Proactively identifying and fixing issues within existing code and within the RedHat Linux production environments that hosted them"
-            ],
-            "technologies": [
-                "Python",
-                "SNMP",
-                "Linux",
-                "TeamCity",
-                "Git",
-                "Jira"
-            ]
-        },
-        {
-            "title": "Undergraduate/Graduate Mechanical Engineer",
-            "role": "",
-            "company": "WorleyParsons",
-            "from": "01/2018",
-            "to": "10/2018",
-            "location": "Western Australia",
-            "description": "",
-            "achievements": [
-                "Standardised thousands of legacy vessel and pipeline inspections with data sources including paper based inspections, Microsoft Access databases and Excel spreadsheets",
-                "Assisted in a reconciliation process involving identifying the differences between as‑built isometrics and general arrangements with items presently on site",
-                "Wrote numerous VBA scripts to improve productivity of myself and others"
-            ],
-            "technologies": [
-                "VBA",
-                "Excel"
-            ]
-        },
-        {
-            "title": "Undergraduate Engineer",
-            "role": "",
-            "company": "Primero Group PTY LTD",
-            "from": "10/2015",
-            "to": "03/2016",
-            "location": "Western Australia",
-            "description": "",
-            "achievements": [
-                "Worked across the Project Management and Mechanical Engineering Departments",
-                "Developed software in VBA to automate the creation of standardised engineering calculations",
-                "Automated the creation of Project Management documents and processes using the VBA object models for Excel, Outlook and Word",
-                "Used Primevera P6 to update the schedule of ongoing projects"
-            ],
-            "technologies": [
-                "Primevera P6",
-                "VBA",
-                "Excel"
-            ]
-        }
-    ]
+  "projects": [
+    {
+      "title": "Principal Cybernetics Engineer",
+      "role": "",
+      "company": "BHP",
+      "from": "10/2021",
+      "to": "Current",
+      "location": "Western Australia",
+      "description": "",
+      "achievements": [
+        "Took up a Product Management role to cover a secondment (6 months)",
+        "Performed technical architecture review on a brownfields project",
+        "Analysed and improved HBase and HDFS performance and reliability",
+        "Set up monitoring for Kafka and Hbase to quickly diagnose degradations and issues"
+      ],
+      "technologies": [
+        "HBase",
+        "Kafka",
+        "Python"
+      ]
+    },
+    {
+      "title": "Specialist Engineer/Technical Lead",
+      "role": "",
+      "company": "BHP",
+      "from": "06/2020",
+      "to": "10/2021",
+      "location": "Western Australia",
+      "description": "",
+      "achievements": [
+        "Involved in multiple projects including conveyor optimisation, safety dashboard development and WTS/LTE network monitoring for autonomous and conventional haulage vehicles",
+        "Performed root cause analysis on incidents to focus efforts to improve application reliability",
+        "Built reliable stream and batch data collection and processing pipelines using NiFi, Kafka and Python",
+        "Managed work for four people in an agile team, under the scrum of scrums structure",
+        "Worked to migrate edge deployments from RHEL packages to Docker compose stacks to improve reliability"
+      ],
+      "technologies": [
+        "HDFS",
+        "HBase",
+        "OpenTSDB",
+        "Python",
+        "NiFi",
+        "Kafka",
+        "SQL",
+        "Linux",
+        "NGINX",
+        "Docker",
+        "Git",
+        "Jira"
+      ]
+    },
+    {
+      "title": "Specialist Cybernetics Engineer",
+      "role": "",
+      "company": "BHP",
+      "from": "11/2018",
+      "to": "06/2020",
+      "location": "Western Australia",
+      "description": "",
+      "achievements": [
+        "Primarily involved in an operational technology project which collects approximately 20,000 numeric metrics a second",
+        "Rolled out projects to enable monitoring for South American and East Australian sites",
+        "Developed collection code for operational technology assets including radios, safety systems, access points, microwave links and LTE equipment through a variety of protocols",
+        "Proactively identifying and fixing issues within existing code and within the RedHat Linux production environments that hosted them"
+      ],
+      "technologies": [
+        "Python",
+        "SNMP",
+        "Linux",
+        "TeamCity",
+        "Git",
+        "Jira"
+      ]
+    },
+    {
+      "title": "Undergraduate/Graduate Mechanical Engineer",
+      "role": "",
+      "company": "WorleyParsons",
+      "from": "01/2018",
+      "to": "10/2018",
+      "location": "Western Australia",
+      "description": "",
+      "achievements": [
+        "Standardised thousands of legacy vessel and pipeline inspections with data sources including paper based inspections, Microsoft Access databases and Excel spreadsheets",
+        "Assisted in a reconciliation process involving identifying the differences between as‑built isometrics and general arrangements with items presently on site",
+        "Wrote numerous VBA scripts to improve productivity of myself and others"
+      ],
+      "technologies": [
+        "VBA",
+        "Excel"
+      ]
+    },
+    {
+      "title": "Undergraduate Engineer",
+      "role": "",
+      "company": "Primero Group PTY LTD",
+      "from": "10/2015",
+      "to": "03/2016",
+      "location": "Western Australia",
+      "description": "",
+      "achievements": [
+        "Worked across the Project Management and Mechanical Engineering Departments",
+        "Developed software in VBA to automate the creation of standardised engineering calculations",
+        "Automated the creation of Project Management documents and processes using the VBA object models for Excel, Outlook and Word",
+        "Used Primevera P6 to update the schedule of ongoing projects"
+      ],
+      "technologies": [
+        "Primevera P6",
+        "VBA",
+        "Excel"
+      ]
+    }
+  ]
 }

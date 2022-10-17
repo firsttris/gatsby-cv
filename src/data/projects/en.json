@@ -1,185 +1,209 @@
 {
-    "projects": [
-        {
-            "title": "DisaVu",
-            "role": "",
-            "url": "https://devpost.com/software/disavu",
-            "company": "",
-            "from": "",
-            "to": "",
-            "location": "Online",
-            "description": "Solution that uses machine learning to improve disaster response after hurricanes/tornadoes",
-            "achievements": [
-                "First place in the AWS Disaster Response Hackathon",
-                "Machine learning models to predict building footprints and to predict whether buildings in those footprints are damaged",
-                "Solution was presented in RE:MARS by AWS"
-            ],
-            "technologies": [
-                "Rust",
-                "Python",
-                "Pytorch",
-                "AWS",
-                "GIS"
-            ]
-        },
-        {
-            "title": "CORTX Spark Integration",
-            "role": "",
-            "url": "https://devpost.com/software/cortx-spark-hadoop",
-            "company": "",
-            "from": "",
-            "to": "",
-            "location": "Online",
-            "description": "Hadoop and Spark integration using Seagates CORTX S3 compatible API",
-            "achievements": [
-                "Second place in the Seagate CORTX Integration Challenge",
-                "Built an ansible script to deploy Hadoop and Spark using CORTX as a backend object storage on top of HDFS"
-            ],
-            "technologies": [
-                "Ansible", 
-                "Hadoop",
-                "Spark"
-            ]
-        },
-        {
-            "title": "Sensing the air quality in my room",
-            "role": "",
-            "url": "https://community.element14.com/products/devtools/avnetboardscommunity/azure-sphere-starter-kits/b/blog/posts/project-sensing-the-air-quality-in-my-room-co2-dust",
-            "company": "",
-            "from": "",
-            "to": "",
-            "location": "",
-            "description": "Used an Azure Sphere IOT device along with Azure IOT services to create a dashboard of CO2 and Dust levels in my room",
-            "achievements": [
-                "Runner up in the Azure Sensing the World competition",
-                "Used Azure Direct methods to modify mutable state of the device from the cloud",
-                "Wrote my own libraries for the MHZ-19 and PMS-7003 devices"
-            ],
-            "technologies": [
-                "Azure",
-                "IOT",
-                "C",
-                "Grafana",
-                "Python"]
-        },
-        {
-            "title": "Lock and Load",
-            "role": "",
-            "url": "https://www.hackster.io/lock-and-load/azure-sphere-iot-enabled-rfid-lock-e73f70",
-            "company": "",
-            "from": "",
-            "to": "",
-            "location": "",
-            "description": "Cloud enabled RFID lock using the Azure Sphere IOT device",
-            "achievements": [
-                "One of several runners up in the Secure Everything with Azure Sphere Challenge",
-                "Built an IOT enabled lock that was capable of working on and off network",
-                "Allowed over the air addition of new RFID cards"
-        ],
-            "technologies": [
-                "Azure", 
-                "IOT",
-                "C",
-                "C#",
-                "Python"
-            ]
-        },
-        {
-            "title": "WACTF 2018 - Second Place",
-            "role": "",
-            "url": "https://capture.tf/",
-            "company": "",
-            "from": "",
-            "to": "",
-            "location": "Perth",
-            "description": "WACTF is a weekend long challenge based cybersecurity competition (Capture the Flag) created and hosted by the Perth cybersecurity community.",
-            "achievements": [
-                "Placed second amongst 60 teams competing that weekend",
-                "Learnt a lot during the weekend on defencive and offencive security"
-            ],
-            "technologies": [
-                "Wireshark",
-                "Python",
-                "Linux"
-            ]
-        },
-        {
-            "title": "NASA Spaceapps - Supergiant Scuti ",
-            "role": "",
-            "url": "https://2018.spaceappschallenge.org/challenges/what-world-needs-now/globe-observer/teams/supergiant-scuti/project/",
-            "company": "",
-            "from": "",
-            "to": "",
-            "location": "",
-            "description": "AR/VR data exploration and visualisation",
-            "achievements": [
-                "One of four finalists for the Best Use of Hardware award",
-                "Used Unity to build an AR/VR data visualation solutions to be used in classrooms"
-            ],
-            "technologies": [
-                "Unity",
-                "C#",
-                "Virtual Reality",
-                "Augmented Reality",
-                "Vuforia"
-            ]
-        },
-        {
-            "title": "Monte Rocks",
-            "role": "",
-            "url": "https://unearthed.solutions/news/global-crowd-creates-diverse-solutions-crush-newcrests-rock-bridges-challenge",
-            "company": "",
-            "from": "",
-            "to": "",
-            "location": "",
-            "description": "Created a physics based monte carlo simulator to minimise rock bridges",
-            "achievements": [
-                "Built a simulator which would take in blasting parameters generate rock sizes based on a cumulative distribution function based on that blasting pattern",
-                "The simulator would then simulate a truck full of rocks, see whether they blocked the schute and run this multiple times",
-                "The end output of the simulation was and optimisation on explosive cost to get a specific fragmentation distribution and that distributions chance of generating a rock bridge"
-            ],
-            "technologies": [
-                "Unity", 
-                "C#",
-                "Rust"
-            ]
-        },
-        {
-            "title": "Steel Ballers",
-            "role": "",
-            "url": "https://unearthed.solutions/news/perths-brightest-minds-unearth-mine-solutions-nickel-west",
-            "company": "",
-            "from": "",
-            "to": "",
-            "location": "",
-            "description": "Machine Learning production optimisation",
-            "achievements": [
-                "Built a digital twin of a grinding circuit",
-                "Used a genetic algorithm to provide recommendations to operators for settings that may optimise the grinder for a given set of inputs"
-            ],
-            "technologies": [
-                "Python",
-                "Scikit-learn"
-            ]
-        },        
-        {
-            "title": "KLOG - IOT Safety Device",
-            "role": "",
-            "url": "https://unearthed.solutions/u/innovators/stephen-mott",
-            "company": "",
-            "from": "",
-            "to": "",
-            "location": "",
-            "description": "Mesh networked IOT safety device using the B.A.T.M.A.N mesh networking protocol",
-            "achievements": [
-                "First place in the BHP/Unearthed Digital Tribes Hackathon",
-                "Built an IOT device to improve safety in mine sites with limited telemetry by using mesh networking over 2.4GHz WiFi"
-            ],
-            "technologies": [
-                "Arduino",
-                "C++",
-                "Python"
-            ]
-        }
-    ]
+  "projects": [
+    {
+      "title": "AWS IOT Custom Authorizer",
+      "role": "",
+      "url": "https://github.com/SrzStephen/python-aws-iot-custom-authorizer",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "Online",
+      "description": "Custom AWS IOT Authorizer for use with MQTT clients that couldn't support x509 certificate authentication",
+      "achievements": [
+        "Got annoyed with AWS documentation because it was unclear on implementation and how to connect",
+        "Spent time focusing on making my code readable and testable with pydantic typing and pytest tests",
+        "Included connection examples for Pacheo, AWS IOT Client and Arduino (PubSubLib), with the first 2 included as part of integration tests."
+      ],
+      "technologies": [
+        "Python",
+        "Pytest",
+        "AWS"
+      ]
+    },
+    {
+      "title": "DisaVu",
+      "role": "",
+      "url": "https://devpost.com/software/disavu",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "Online",
+      "description": "Solution that uses machine learning to improve disaster response after hurricanes/tornadoes",
+      "achievements": [
+        "First place in the AWS Disaster Response Hackathon",
+        "Machine learning models to predict building footprints and to predict whether buildings in those footprints are damaged to evaluate damage after a natural disaster",
+        "Solution was presented in RE:MARS by AWS"
+      ],
+      "technologies": [
+        "Rust",
+        "Python",
+        "Pytorch",
+        "AWS",
+        "GIS"
+      ]
+    },
+    {
+      "title": "CORTX Spark Integration",
+      "role": "",
+      "url": "https://devpost.com/software/cortx-spark-hadoop",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "Online",
+      "description": "Hadoop and Spark integration using Seagates CORTX S3 compatible API",
+      "achievements": [
+        "Second place in the Seagate CORTX Integration Challenge",
+        "Integration with Hadoop and Spark to use the Seagate COTRX object storage as a backend instead of HDFS",
+        "Created an ansible script to automate the setup of the integration for a standalone single node cluster"
+      ],
+      "technologies": [
+        "Ansible",
+        "Hadoop",
+        "Spark"
+      ]
+    },
+    {
+      "title": "Sensing the air quality in my room",
+      "role": "",
+      "url": "https://community.element14.com/products/devtools/avnetboardscommunity/azure-sphere-starter-kits/b/blog/posts/project-sensing-the-air-quality-in-my-room-co2-dust",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "",
+      "description": "Used an Azure Sphere IOT device along with Azure IOT services to create a dashboard of CO2 and Dust levels in my room",
+      "achievements": [
+        "Runner up in the Azure Sensing the World competition",
+        "Wrote C code targeting the Azure Sphere IOT device (including libraries for the MHZ-19 and PMS7003 sensors)",
+        "Used Azure IOT for transport of device to cloud messages",
+        "Implemented Azure Direct Methods on the Azure Sphere to modify the devices mutable state via cloud to device messages"
+      ],
+      "technologies": [
+        "Azure",
+        "IOT",
+        "C",
+        "Grafana",
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Lock and Load",
+      "role": "",
+      "url": "https://www.hackster.io/lock-and-load/azure-sphere-iot-enabled-rfid-lock-e73f70",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "",
+      "description": "Cloud enabled RFID lock using the Azure Sphere IOT device",
+      "achievements": [
+        "One of several runners up in the Secure Everything with Azure Sphere Challenge",
+        "Built an IOT enabled lock that was capable of working with and without a network connection",
+        "Allowed over the air addition of new RFID cards"
+      ],
+      "technologies": [
+        "Azure",
+        "IOT",
+        "C",
+        "C#",
+        "Python"
+      ]
+    },
+    {
+      "title": "WACTF 2018 - Second Place",
+      "role": "",
+      "url": "https://capture.tf/",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "Perth",
+      "description": "WACTF is a weekend long challenge based cybersecurity competition (Capture the Flag) created and hosted by the Perth cybersecurity community.",
+      "achievements": [
+        "Placed second amongst 60 teams competing that weekend",
+        "Learnt a lot during the weekend about defencive and offencive security"
+      ],
+      "technologies": [
+        "Wireshark",
+        "Python",
+        "Linux"
+      ]
+    },
+    {
+      "title": "NASA Spaceapps - Supergiant Scuti ",
+      "role": "",
+      "url": "https://2018.spaceappschallenge.org/challenges/what-world-needs-now/globe-observer/teams/supergiant-scuti/project/",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "",
+      "description": "AR/VR data exploration and visualisation",
+      "achievements": [
+        "One of four finalists for the Best Use of Hardware award",
+        "Used Unity to build an AR/VR data visualisation solutions to be used in classrooms"
+      ],
+      "technologies": [
+        "Unity",
+        "C#",
+        "Virtual Reality",
+        "Augmented Reality",
+        "Vuforia"
+      ]
+    },
+    {
+      "title": "Monte Rocks",
+      "role": "",
+      "url": "https://unearthed.solutions/news/global-crowd-creates-diverse-solutions-crush-newcrests-rock-bridges-challenge",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "",
+      "description": "Created a physics based monte carlo simulator to minimise rock bridges",
+      "achievements": [
+        "Built a simulator that was capable of doing a physics based simulation of rocks being tipped from a dump truck to calculate blockages in a primary crusher chute",
+        "The simulator would generate the rock distribution of the dump truck based on blasting parameters",
+        "The end output of the simulation was an optimisation on explosive cost to get a specific fragmentation distribution and that distributions chance of generating a rock bridge"
+      ],
+      "technologies": [
+        "Unity",
+        "C#",
+        "Rust"
+      ]
+    },
+    {
+      "title": "Steel Ballers",
+      "role": "",
+      "url": "https://unearthed.solutions/news/perths-brightest-minds-unearth-mine-solutions-nickel-west",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "",
+      "description": "Machine Learning production optimisation",
+      "achievements": [
+        "Built a digital twin of a grinding circuit",
+        "Used a genetic algorithm to provide recommendations to operators for settings that may optimise the grinder for a given set of inputs"
+      ],
+      "technologies": [
+        "Python",
+        "Scikit-learn"
+      ]
+    },
+    {
+      "title": "KLOG - IOT Safety Device",
+      "role": "",
+      "url": "https://unearthed.solutions/u/innovators/stephen-mott",
+      "company": "",
+      "from": "",
+      "to": "",
+      "location": "",
+      "description": "Mesh networked IOT safety device using the B.A.T.M.A.N mesh networking protocol",
+      "achievements": [
+        "First place in the BHP/Unearthed Digital Tribes Hackathon",
+        "Built an IOT device to improve safety in mine sites with limited telemetry by using mesh networking over 2.4GHz WiFi"
+      ],
+      "technologies": [
+        "Arduino",
+        "C++",
+        "Python"
+      ]
+    }
+  ]
 }
