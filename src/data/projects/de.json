@@ -1,6 +1,37 @@
 {
     "projects": [
         {
+            "title": "Erstellung von Benutzeroberflächen im Bereich der Telekommunikationsüberwachung",
+            "role": "Developer",
+            "company": "ATIS® systems über Solcom",
+            "from": "10/2022",
+            "to": "06/2023",
+            "location": "Bad Homburg/DE",
+            "description": "Unterstützen und schulen der ATIS systems beim erstellen von Benutzeroberflächen mit React.",
+            "achievements": [
+                "Bootstrap React/TypeScript-Projekt mit NX-Tools.",
+                "Cypress-Tests erstellt, die API-Antworten automatisch aufzeichnen, um sie im nächsten Lauf als Mocks zu verwenden",
+                "Webpack so konfigurieren, dass es Anfragen für mehrere APIs weiterleitet",
+                "TypeScript-Codegenerierung vom OpenAPI-Endpunkt einrichten.",
+                "Customizing von MUI Componenten",
+                "Umsetzung von Features nach Anforderung des Kunden",
+                "Jenkins-Pipeline erstellen"
+            ],
+            "technologies": [
+                "TypeScript",
+                "React",
+                "Cypress",
+                "MUI",
+                "React-Query",
+                "VsCode",
+                "React-Beautiful-Dnd",
+                "OpenAPI-Typescript-generator",
+                "NX-Tools",
+                "Leaflet",
+                "recharts"
+            ]
+        },
+        {
             "title": "Entwicklung von Heidelberg Cement's HConnect Produktsuite",
             "role": "Entwickler",
             "company": "Heidelberg Cement ag über Etengo",

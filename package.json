@@ -13,11 +13,11 @@
     "gatsby-plugin-typescript": "latest",
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-json": "latest",
-    "gatsby-transformer-sharp": "latest",
     "gatsby-transformer-remark": "latest",
+    "gatsby-transformer-sharp": "latest",
+    "html-to-react": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "html-to-react": "latest"
+    "react-dom": "latest"
   },
   "keywords": [
     "gatsby"
@@ -31,7 +31,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths",
-    "develop": "gatsby develop",
+    "develop": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby develop",
     "predeploy": "rm -Rf public && rm -Rf .cache && npm run build",
     "deploy": "gh-pages -d public",
     "prod": "gatsby serve"
@@ -49,9 +49,9 @@
     "eslint-config-prettier": "latest",
     "eslint-plugin-prettier": "latest",
     "eslint-plugin-react": "latest",
-    "typescript": "latest",
     "gh-pages": "latest",
     "prettier": "latest",
+    "typescript": "latest",
     "uuid": "latest"
   }
 }
