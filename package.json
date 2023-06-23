@@ -30,9 +30,9 @@
   ],
   "license": "UNLICENSED",
   "scripts": {
-    "build": "rm -Rf public && rm -Rf .cache && gatsby build",
+    "build": "rm -Rf public && rm -Rf .cache && export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
     "develop": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby develop",
-    "predeploy": "rm -Rf public && rm -Rf .cache && npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d public",
     "prod": "gatsby serve"
   },
