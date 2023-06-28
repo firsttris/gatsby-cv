@@ -4,10 +4,11 @@ module.exports = {
   pathPrefix: '/gatsby-cv',
   siteMetadata: {
     title: 'Tristan Teufel CV',
-    siteUrl: `https://firsttris.github.io`
+    siteUrl: `https://cv.teufel-it.de`
   },
   plugins: [
     'gatsby-plugin-typescript',
+    'gatsby-plugin-cname',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

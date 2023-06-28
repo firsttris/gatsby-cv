@@ -8,6 +8,7 @@
     "bootstrap": "latest",
     "gatsby": "latest",
     "gatsby-image": "latest",
+    "gatsby-plugin-cname": "^1.0.0",
     "gatsby-plugin-manifest": "latest",
     "gatsby-plugin-sharp": "latest",
     "gatsby-plugin-typescript": "latest",
