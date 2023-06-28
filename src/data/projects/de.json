@@ -3,19 +3,19 @@
         {
             "title": "Erstellung von Benutzeroberflächen im Bereich der Telekommunikationsüberwachung",
             "role": "Developer",
-            "company": "ATIS® systems über Solcom",
+            "company": "ATIS® Systems GmbH über Solcom",
             "from": "10/2022",
             "to": "06/2023",
             "location": "Bad Homburg/DE",
-            "description": "Unterstützen und schulen der ATIS systems beim erstellen von Benutzeroberflächen mit React.",
+            "description": "Unterstützen der ATIS Systems GmbH beim erstellen von Benutzeroberflächen mit React.",
             "achievements": [
-                "Bootstrap React/TypeScript-Projekt mit NX-Tools.",
-                "Cypress-Tests erstellt, die API-Antworten automatisch aufzeichnen, um sie im nächsten Lauf als Mocks zu verwenden",
-                "Webpack so konfigurieren, dass es Anfragen für mehrere APIs weiterleitet",
-                "TypeScript-Codegenerierung vom OpenAPI-Endpunkt einrichten.",
+                "Aufsetzen eines React/TypeScript-Projekts mit NX-Tools",
+                "Cypress-Tests die API-Antworten automatisch aufzeichnen, um sie als Mocks zu verwenden",
+                "Webpack API Proxy eingerichtet um Same-Origin-Policy zu umgehen",
+                "TypeScript-Codegenerierung für OpenAPI-Endpunkte eingerichtet",
                 "Customizing von MUI Componenten",
                 "Umsetzung von Features nach Anforderung des Kunden",
-                "Jenkins-Pipeline erstellen"
+                "Jenkins-Pipeline mit Gitlab und Rocket Chat integriert"
             ],
             "technologies": [
                 "TypeScript",
