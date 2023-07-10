@@ -309,172 +309,35 @@
             ]
         },
         {
-            "title": "jQuery mit Oracle Siebel OpenUI",
-            "role": "Entwickler",
-            "company": "Swisscom (Switzerland) Ltd über ec4u",
-            "from": "06/2014",
-            "to": "12/2014",
-            "location": "Bern/CH",
-            "description": "Oracle Siebel OpenUI ist ein leichtes jQuery-Frontend für Oracle Siebel CRM. Erkundung einer besseren Benutzerfreundlichkeit in SiebelCRM durch die Verwendung von jQuery UI Widgets und Siebel OpenUI.",
-            "achievements": [
-                "Halten von Schulungen zu HTML, CSS und JavaScript",
-                "Erstellt ein neues CSS-Theme für Oracle Siebel OpenUI",
-                "Neue Unternehmensdienste mit Siebel Tools erstellt",
-                "Automatisierte Tests mit Selenium IDE"
-            ],
-            "technologies": [
-                "Oracle siebel CRM",
-                "Firebug IDE",
-                "Selenium IDE",
-                "JavaScript",
-                "jQuery",
-                "jQuery UI"
-            ]
-        },
-        {
-            "title": "jQuery mit Oracle Siebel OpenUI",
-            "role": "Entwickler",
-            "company": "JTI International S.A. über ec4u",
-            "from": "11/2013",
-            "to": "06/2014",
-            "location": "Madrid/ES",
-            "description": "Oracle Siebel OpenUI ist ein leichtes jQuery-Frontend für Oracle Siebel CRM. Rapid Prototyping von jQuery UI Widgets und Views für verschiedene Applets.",
-            "achievements": [
-                "Requirements Engineering",
-                "Widgets nach Anforderungen erstellt",
-                "Prototyping von Applets",
-                "Automatisierte Tests mit Selenium IDE"
-            ],
-            "technologies": [
-                "Oracle siebel CRM",
-                "Firebug IDE",
-                "Selenium IDE",
-                "JavaScript",
-                "jQuery",
-                "jQuery UI"
-            ]
-        },
-        {
-            "title": "Oracle on Demand CRM Desktop Integration",
-            "role": "Entwickler",
-            "company": "SGS S.A. über ec4u",
-            "from": "01/2014",
-            "to": "03/2014",
-            "location": "Camberley/GB",
-            "description": "Oracle on Demand CRM Desktop ist ein Outlook-Plug-In, das mit geeigneten Webservices interagiert und mit JavaScript und XML anpassbar ist.",
-            "achievements": [
-                "Mit XML erstellte Datenzuordnungen",
-                "Transformationslogik mit JavaScript erstellt",
-                "Integration neuer Felder"
-            ],
-            "technologies": [
-                "Oracle on Demand CRM",
-                "JavaScript",
-                "XML",
-                "Nodepad++",
-                "Subversion"
-            ]
-        },
-        {
-            "title": "JavaEE WebApp mit Oracle ADF",
-            "role": "Entwickler",
-            "company": "Stryker S.A. über ec4u",
-            "from": "12/2012",
-            "to": "11/2013",
-            "location": "Duisburg/DE, Montreux/CH, Lyon/FR, Newbury/UK",
-            "description": "Stryker - New Sales Attribution Tool: Planung, Design und Implementierung einer JavaEE-Anwendung für das multinationale (EMEA) und mehrsprachige (Englisch, Deutsch, Französisch, Italienisch) Gebietsmanagement. Die fachliche Beratung von Ec4u deckt alle Prozesse ab: Bedarfs- und Bedarfsanalyse, Projektleitung und -management, Entwicklung, Anpassung, Lieferung und Schulung.",
-            "achievements": [
-                "Unabhängige Entwicklung einer JavaEE-Webanwendung, die Prozesse aus dem Gebietsmanagement der Oracle Sales Cloud (Fusion CRM) vereinheitlicht und vereinfacht",
-                "Entwicklung von SOA-Schnittstellen zur Integration von Oracle Sales Cloud (Fusion CRM) mit anderen Legacy-Systemen",
-                "Unabhängige Entwicklung einer JavaEE / Oracle ADF-Webanwendung, die den Prozess der Verwaltung von Rechnungsausnahmen darstellt",
-                "Verwaltung und Bereitstellung für Oracle Java & Database Cloud Service"
-            ],
-            "technologies": [
-                "Oracle ADF",
-                "Oracle Sales Cloud",
-                "Oracle Fusion CRM",
-                "SoapUI",
-                "JDeveloper",
-                "SQLDeveloper",
-                "Oracel Public Cloud",
-                "Java",
-                "JavaEE",
-                "Oracle SOA Suite"
-            ]
-        },
-        {
-            "title": "Cordova App mit jQuery Mobile",
-            "role": "Leitender Entwickler",
+            "title": "Integration von Unternehmensanwendungen mit Oracle-Software",
+            "role": "Consultant",
             "company": "ec4u expert consulting ag",
             "from": "09/2012",
             "to": "12/2014",
             "location": "Karlsruhe/DE",
-            "description": "Unabhängige Entwicklung einer plattformübergreifenden mobilen Hybridanwendung für die Personalbeschaffung. (Ec4u-Jobs in AppStore und PlayStore)",
+            "description": "Mitarbeit an verschiedenen Oracle Application Integration-Projekten für ec4u",
             "achievements": [
-                "Entwicklung einer hybriden mobilen Anwendung mit jQuery mobile und PhoneGap",
-                "Paketierung und Kompilierung für iOS und Android",
-                "Design und Layout von Benutzeroberfläche und Grafik",
-                "Integration von REST Services aus Wordpress (JSON)",
-                "Pre, Post Processing und Transformation von Daten",
-                "Zertifikatsverwaltung und Veröffentlichung im Apple App-Store und Google Play-Store"
+                "jQuery mit Oracle Siebel OpenUI",
+                "Oracle on Demand CRM Desktop-Integration",
+                "JavaEE WebApp mit Oracle ADF",
+                "Cordova-App mit jQuery Mobile",
+                "Oracle Siebel CRM Webservices-Integration",
+                "Evaluierung der Google Checkout & Wallet API"
             ],
             "technologies": [
+                "JavaScript",
+                "jQuery",
+                "jQuery UI",
+                "Oracle ADF",
+                "SoapUI",
+                "Oracle JDeveloper",
+                "Oracle SQLDeveloper",
+                "Java",
+                "JavaEE",
+                "Oracle SOA Suite",
                 "PhoneGap",
                 "Cordova",
-                "Eclipse",
-                "Xcode",
-                "Adobe Photoshop CS5",
-                "Wordpress",
-                "REST",
-                "JavaScript",
-                "jQuery Mobile",
-                "jQuery"
-            ]
-        },
-        {
-            "title": "Oracle Siebel CRM Webservices Integration",
-            "role": "Student",
-            "company": "ec4u expert consulting ag",
-            "from": "03/2012",
-            "to": "08/2012",
-            "location": "Karlsruhe/DE",
-            "description": "Bachelorarbeit: Entwicklung einer mobilen Webanwendung, die den Prozess für Urlaubsanträge von Oracle Siebel CRM abbildet.",
-            "achievements": [
-                "Entwicklung einer mobilen Webanwendung auf Basis von jQuery mobile",
-                "Integration eines SOAP-Webservice von Oracle Siebel CRM",
-                "Datentransformation"
-            ],
-            "technologies": [
-                "Eclipse",
-                "SoapUI",
-                "SOAP",
-                "PHP",
-                "JavaScript",
-                "jQuery",
-                "jQuery Mobile"
-            ]
-        },
-        {
-            "title": "Evaluierung der Google Checkout & Wallet-API",
-            "role": "Student",
-            "company": "ec4u expert consulting ag",
-            "from": "09/2011",
-            "to": "03/2012",
-            "location": "Karlsruhe/DE",
-            "description": "Anwendungsprojekt im Rahmen des Studiums an der Hochschule Karlsruhe: Beispielhafte Implementierung einer mobilen Webanwendung zur Evaluierung der Google Payment-APIs (Google Checkout und Google Wallet).",
-            "achievements": [
-                "Entwicklung einer mobilen Webanwendung auf Basis von jQuery mobile",
-                "Entwicklung eines PHP-basierten Webshops",
-                "Integration der Google Checkout-API (PHP)",
-                "Integration der Google Wallet API (JavaScript)",
-                "Authentifizierung mit Google OAuth"
-            ],
-            "technologies": [
-                "Netbeans",
-                "PHP",
-                "JavaScript",
-                "jQuery",
-                "jQuery Mobile"
+                "REST"
             ]
         }
     ]
