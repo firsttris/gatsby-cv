@@ -2,6 +2,12 @@
 
 Curriculum Vitae with [gatsbyJS](https://www.gatsbyjs.org/) a static page generator for [reactJs](https://reactjs.org/).
 
+Im currently working on a new Version of my CV which is more optimized for PDF.
+
+It uses MUI instead of Bootstraps and MDX instead of JSON files
+
+Check it out: [gatsby-mui-cv](https://github.com/firsttris/gatsby-mui-cv)
+
 ## Motivation
 
 - Most recruiters request a CV in Word to convert it in their layout. Often they even tweak the history in your CV in the hope's to win the project. that's why i decited to create an HTML CV which cannot be changed.
