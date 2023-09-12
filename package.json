@@ -35,9 +35,11 @@
     "develop": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby develop",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public",
-    "prod": "gatsby serve"
+    "prod": "gatsby serve",
+    "transform": "ts-node src/data/projects/transform.ts"
   },
   "devDependencies": {
+    "ts-node": "10.9.1",
     "@types/classnames": "latest",
     "@types/emojione": "latest",
     "@types/node": "latest",
